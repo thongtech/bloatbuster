@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <filter id="glow-blue">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glow-red">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="64" height="64" fill="#0A0A0A" rx="12"/>
+  
+  <!-- Rounded square container with blue border and glow -->
+  <rect x="12" y="12" width="40" height="40" fill="none" stroke="#6366F1" stroke-width="3" rx="8" filter="url(#glow-blue)"/>
+  
+  <!-- Phone icon inside -->
+  <g transform="translate(20, 18)">
+    <!-- Phone body -->
+    <rect x="2" y="2" width="20" height="28" fill="none" stroke="#6366F1" stroke-width="2" rx="2" ry="2"/>
+    <!-- Notch at top center -->
+    <rect x="9" y="0" width="6" height="2" fill="#6366F1" rx="1"/>
+    <!-- Home indicator dot at bottom center -->
+    <circle cx="12" cy="26" r="1.5" fill="#6366F1"/>
+  </g>
+  
+  <!-- Red notification dot in top-right -->
+  <circle cx="50" cy="14" r="6" fill="#EF4444" filter="url(#glow-red)"/>
+  <circle cx="50" cy="14" r="4" fill="#DC2626"/>
+</svg>

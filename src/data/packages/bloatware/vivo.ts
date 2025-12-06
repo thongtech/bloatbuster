@@ -1,0 +1,36 @@
+/**
+ * Vivo Bloatware
+ * Pre-installed Vivo applications and services
+ */
+export const vivoBloatwarePackages: string[] = [
+	"com.android.bbklog",
+	"com.bbk.iqoo.logsystem",
+	"com.truecaller",
+	"com.vivo.browser",
+	"com.vivo.card",
+	"com.vivo.countdownwidget",
+	"com.vivo.desktopstickers",
+	"com.vivo.easyshare",
+	"com.vivo.epm",
+	"com.vivo.feedback",
+	"com.vivo.game",
+	"com.vivo.healthwidget",
+	"com.vivo.monochromeicons",
+	"com.vivo.motionrecognition",
+	"com.vivo.musicmixcard",
+	"com.vivo.musicwidgetmix",
+	"com.vivo.nps",
+	"com.vivo.remotecontrol",
+	"com.vivo.setupwizard",
+	"com.vivo.share",
+	"com.vivo.simplelauncher",
+	"com.vivo.smartoffice",
+	"com.vivo.Tips",
+	"com.vivo.tws.vivotws",
+	"com.vivo.unionpay",
+	"com.vivo.vdfs",
+	"com.vivo.widget.cleanspeed",
+	"com.vivo.widget.gallery",
+	"com.vivo.widgetweather",
+	"com.yozo.vivo.office",
+];
