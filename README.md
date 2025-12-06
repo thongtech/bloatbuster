@@ -2,7 +2,7 @@
 
 **Take back control of your Android.**
 
-BloatBuster is a privacy-first bloatware detection and removal tool that helps you reclaim your device's performance and privacy. Scan your installed packages against a curated database of 1,600+ packages and get ready-to-use ADB removal commands—all processed locally in your browser.
+BloatBuster helps you reclaim your device’s speed, privacy, and space. It scans your installed apps against a curated list of over 1,600 bloatware packages and gives you ready-to-use ADB removal commands so you can clean up your device with confidence.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Bun](https://img.shields.io/badge/runtime-bun-red)](https://bun.sh)
@@ -10,6 +10,7 @@ BloatBuster is a privacy-first bloatware detection and removal tool that helps y
 [![TypeScript](https://img.shields.io/badge/typescript-5+-blue.svg)](https://www.typescriptlang.org/)
 
 <div align="center">
+   <img src="docs/screenshots/home.jpg" alt="Homepage" width="640">
 
 ### 🚀 **[Use BloatBuster →](https://thongtech.github.io/bloatbuster/)**
 
@@ -81,12 +82,20 @@ BloatBuster uses a three-tier safety rating system for bloatware packages:
    - Browse by category (Brand, Chipset, Generic, Suspicious)
    - Check safety ratings for each package
    - Use search to find specific packages
+   <br>
+   <div align="center">
+      <img src="docs/screenshots/detection.jpg" alt="Package Detection" width="640">
+   </div>
 
 5. **Select packages to remove:**
 
    - Packages are pre-selected if they're known bloatware
    - **Important:** Carefully review all pre-selected packages before removal. These selections reflect my personal usage patterns and may not match yours — for example, I don't use Samsung Dex, PC connection features, Android Auto, or similar services. Uncheck any packages you want to keep.
    - Recognised legitimate apps are not selected by default
+   <br>
+   <div align="center">
+      <img src="docs/screenshots/commands.jpg" alt="ADB Commands" width="640">
+   </div>
 
 6. **Copy commands** and follow the on-site instructions to execute them
 
