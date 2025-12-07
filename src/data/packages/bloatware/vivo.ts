@@ -17,8 +17,6 @@ export const vivoBloatwarePackages: string[] = [
 	"com.vivo.healthwidget",
 	"com.vivo.monochromeicons",
 	"com.vivo.motionrecognition",
-	"com.vivo.musicmixcard",
-	"com.vivo.musicwidgetmix",
 	"com.vivo.nps",
 	"com.vivo.remotecontrol",
 	"com.vivo.setupwizard",

@@ -97,6 +97,8 @@ export const vivoSystemPackages: string[] = [
 	"com.vivo.magazine",
 	"com.vivo.minscreen",
 	"com.vivo.multinlp",
+	"com.vivo.musicmixcard",
+	"com.vivo.musicwidgetmix",
 	"com.vivo.myeuiccoverlayapp",
 	"com.vivo.networkimprove",
 	"com.vivo.networkstate",
