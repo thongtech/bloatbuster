@@ -33,7 +33,6 @@ export const miscBloatwarePackages: string[] = [
 	"com.opera.max.oem",
 	"com.opera.max.preinstall",
 	"com.rongcard.eidapi",
-	"com.skms.android.agent",
 	"com.sukhavati.gotoplaying.bubble.BubbleShooter.mint",
 	"com.swiftkey.swiftkeyconfigurator",
 	"com.tencent.igxiaomi",
