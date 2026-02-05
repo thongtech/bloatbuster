@@ -40,7 +40,6 @@ export const honorBloatwarePackages: string[] = [
 	"com.hihonor.magicvoice",
 	"com.hihonor.mmitest",
 	"com.hihonor.nearby",
-	"com.hihonor.pcassistant",
 	"com.hihonor.popularapps",
 	"com.hihonor.printservice",
 	"com.hihonor.remotepassword",

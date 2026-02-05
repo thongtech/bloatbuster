@@ -69,6 +69,7 @@ export const honorSystemPackages: string[] = [
 	"com.hihonor.notepad",
 	"com.hihonor.numberidentity",
 	"com.hihonor.ouc",
+	"com.hihonor.pcassistant",
 	"com.hihonor.permissioncontroller.overlay",
 	"com.hihonor.phoneservice",
 	"com.hihonor.photos",

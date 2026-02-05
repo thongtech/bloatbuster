@@ -149,6 +149,7 @@ export const googleSystemPackages: string[] = [
 	"com.google.android.pixelnfc",
 	"com.google.android.providers.media.module",
 	"com.google.android.safetycore",
+	"com.google.android.safetycenter.resources",
 	"com.google.android.sdksandbox",
 	"com.google.android.server.deviceconfig.resources",
 	"com.google.android.settings.intelligence",

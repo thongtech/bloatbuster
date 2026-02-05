@@ -39,7 +39,6 @@ export const googleBloatwarePackages: string[] = [
 	"com.google.android.play.games",
 	"com.google.android.printservice.recommendation",
 	"com.google.android.projection.gearhead",
-	"com.google.android.safetycenter.resources",
 	"com.google.android.setupwizard",
 	"com.google.android.tag",
 	"com.google.android.tungsten.setupwraith",
@@ -54,5 +53,5 @@ export const googleBloatwarePackages: string[] = [
 	"com.google.mainline.telemetry",
 	"com.google.oslo",
 	"com.google.SSRestartDetector",
-	"com.google.vr.apps.ornament"
+	"com.google.vr.apps.ornament",
 ];
