@@ -60,6 +60,7 @@ BloatBuster uses a three-tier safety rating system for bloatware packages:
 
 - **Samsung** – Galaxy One UI phones and watches
 - **Xiaomi** – MIUI/HyperOS devices, POCO phones, and TVs
+- **Honor** – MagicOS devices
 - **Google** – Pixel devices and Android One
 - **Vivo** – Funtouch OS/OriginOS devices
 - **Qualcomm** – Chipset-specific packages
@@ -78,7 +79,6 @@ BloatBuster uses a three-tier safety rating system for bloatware packages:
 3. **Click "Detect Bloatware"** – BloatBuster will analyse your packages
 
 4. **Review detected packages:**
-
    - Browse by category (Brand, Chipset, Generic, Suspicious)
    - Check safety ratings for each package
    - Use search to find specific packages
@@ -88,7 +88,6 @@ BloatBuster uses a three-tier safety rating system for bloatware packages:
    </div>
 
 5. **Select packages to remove:**
-
    - Packages are pre-selected if they're known bloatware
    - **Important:** Carefully review all pre-selected packages before removal. These selections reflect my personal usage patterns and may not match yours — for example, I don't use Samsung Dex, PC connection features, Android Auto, or similar services. Uncheck any packages you want to keep.
    - Recognised legitimate apps are not selected by default

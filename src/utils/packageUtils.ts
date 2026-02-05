@@ -42,14 +42,14 @@ const BRAND_PREFIXES: readonly string[] = [
 	"com.oppo.",
 	"com.vivo.",
 	"com.oneplus.",
-	"com.google.android.apps.",
-	"com.google.android.pixel",
+	"com.google.",
 	"com.lge.",
 	"com.motorola.",
 	"com.asus.",
 	"com.sony.",
 	"com.nokia.",
 	"com.facebook.",
+	"com.hihonor.",
 ];
 
 /**
@@ -71,7 +71,7 @@ const CHIPSET_PREFIXES: readonly string[] = [
  * @returns Category classification: "brand" for vendor-specific, "chipset" for chipset-specific, or "generic" for other bloatware
  */
 function categorisePackage(
-	packageName: string
+	packageName: string,
 ): "brand" | "chipset" | "generic" {
 	const lower = packageName.toLowerCase();
 	if (BRAND_PREFIXES.some((p) => lower.startsWith(p))) return "brand";
@@ -87,7 +87,7 @@ function categorisePackage(
  */
 export function detectBloatware(
 	installedPackages: string[],
-	deviceData: DeviceData
+	deviceData: DeviceData,
 ): DetectedPackage[] {
 	const { recognisedPackages, bloatwarePackages } = deviceData;
 
@@ -147,14 +147,20 @@ export function detectBloatware(
 				packageCategory: meta?.category,
 			});
 		} else {
+			const meta = getPackageMetadata(packageName);
+			const appName = meta?.appName || packageName;
 			const description =
+				meta?.description ||
 				"Unrecognised package - not in our verified database. Research carefully before removing.";
 			detected.push({
 				packageName,
-				appName: packageName,
+				appName,
 				description,
 				category: "suspicious" as const,
 				selected: false,
+				safetyRating: meta?.safetyRating,
+				removalImpact: meta?.removalImpact,
+				packageCategory: meta?.category,
 			});
 		}
 	}
@@ -198,13 +204,13 @@ const DEFAULT_CATEGORY_PRIORITY = 999;
  * @returns Map of category labels to sorted package arrays
  */
 export function groupByCategory(
-	packages: DetectedPackage[]
+	packages: DetectedPackage[],
 ): Map<string, DetectedPackage[]> {
 	const groups = new Map<string, DetectedPackage[]>();
 	const sorted = [...packages].sort(
 		(a, b) =>
 			(categoryOrderMap.get(a.category) ?? DEFAULT_CATEGORY_PRIORITY) -
-			(categoryOrderMap.get(b.category) ?? DEFAULT_CATEGORY_PRIORITY)
+			(categoryOrderMap.get(b.category) ?? DEFAULT_CATEGORY_PRIORITY),
 	);
 	for (const pkg of sorted) {
 		const label = categoryLabels[pkg.category] || pkg.category;
