@@ -14,7 +14,6 @@ export const honorBloatwarePackages: string[] = [
 	"com.hihonor.autoinstallapkfrommcc",
 	"com.hihonor.behaviorauth",
 	"com.hihonor.browserhomepage",
-	"com.hihonor.coauthservice",
 	"com.hihonor.collectcenter",
 	"com.hihonor.contacts.sync",
 	"com.hihonor.cooperatedconfig",

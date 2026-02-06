@@ -6017,8 +6017,9 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		appID: "com.hihonor.coauthservice",
 		appName: "Co-Auth Service",
 		description: "Cross-device authentication service",
-		safetyRating: "caution",
-		removalImpact: "Cross-device auth disabled. Device auth still works.",
+		safetyRating: "risky",
+		removalImpact:
+			"Breaks authentication overlay. Device auth will not function.",
 		category: "Security",
 	},
 	"com.hihonor.collectcenter": {

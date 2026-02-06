@@ -34,6 +34,7 @@ export const honorSystemPackages: string[] = [
 	"com.hihonor.camera",
 	"com.hihonor.cameraextension",
 	"com.hihonor.carrierlocation",
+	"com.hihonor.coauthservice",
 	"com.hihonor.contacts",
 	"com.hihonor.controlcenter",
 	"com.hihonor.credentialmanager.overlay",
