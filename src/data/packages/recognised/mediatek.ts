@@ -6,7 +6,6 @@ export const mediatekSystemPackages: string[] = [
 	"com.mediatek",
 	"com.mediatek.android.boot.appsplashscreen",
 	"com.mediatek.atci.service",
-	"com.mediatek.atmwifimeta",
 	"com.mediatek.batterywarning",
 	"com.mediatek.callrecorder",
 	"com.mediatek.capctrl.service",
@@ -20,7 +19,6 @@ export const mediatekSystemPackages: string[] = [
 	"com.mediatek.ims",
 	"com.mediatek.location.lppe.main",
 	"com.mediatek.mdmconfig",
-	"com.mediatek.mdmlsample",
 	"com.mediatek.miravision.ui",
 	"com.mediatek.mt6989.gamedriver",
 	"com.mediatek.MtkSettingsResOverlay",
@@ -41,5 +39,4 @@ export const mediatekSystemPackages: string[] = [
 	"com.mediatek.voicecommand",
 	"com.mediatek.voiceunlock",
 	"com.mediatek.wwtv.webview",
-	"com.mediatek.ygps"
 ];

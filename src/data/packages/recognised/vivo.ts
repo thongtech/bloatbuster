@@ -88,6 +88,7 @@ export const vivoSystemPackages: string[] = [
 	"com.vivo.globalsearch",
 	"com.vivo.hiboard",
 	"com.vivo.hover",
+	"com.vivo.hybrid",
 	"com.vivo.imanager",
 	"com.vivo.livewallpaper.behavior",
 	"com.vivo.livewallpaper.behavior.resources",

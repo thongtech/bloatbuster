@@ -2,7 +2,7 @@
 
 **Take back control of your Android.**
 
-BloatBuster helps you reclaim your device’s speed, privacy, and space. It scans your installed apps against a curated list of over 1,600 bloatware packages and gives you ready-to-use ADB removal commands so you can clean up your device with confidence.
+BloatBuster helps you reclaim your device’s speed, privacy, and space. It scans your installed apps against a curated list of over 2,000 bloatware packages and gives you ready-to-use ADB removal commands so you can clean up your device with confidence.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Bun](https://img.shields.io/badge/runtime-bun-red)](https://bun.sh)
@@ -24,11 +24,11 @@ No installation required • Runs in your browser • Privacy-first
 
 **Manufacturers and carriers pre-install dozens of unnecessary apps on Android devices.** Beyond consuming resources and cluttering your interface, many of these packages include advertisements, diagnostic tools, and unconsented telemetry that collect and transmit your data. These apps can't be uninstalled through normal means, leaving you with no control over what runs in the background.
 
-**BloatBuster identifies these packages and generates removal commands**, giving you control over your device's privacy and performance. With 1,600+ packages in our database covering phones, watches, and TVs, you can confidently remove unwanted tracking and bloatware without risking system stability.
+**BloatBuster identifies these packages and generates removal commands**, giving you control over your device's privacy and performance. Covering phones, watches, and TVs from major manufacturers, you can confidently remove unwanted tracking and bloatware without risking system stability.
 
 ## ✨ Features
 
-- 🎯 **Comprehensive Database** – 1,600+ recognised packages (~1,100+ legitimate apps, ~550+ bloatware) across phones, watches, and TVs from major manufacturers
+- 🎯 **Comprehensive Database** – Extensive package coverage across phones, watches, and TVs from major manufacturers
 
 - 🔒 **Privacy First** – Everything processes locally in your browser; no data ever sent to servers
 

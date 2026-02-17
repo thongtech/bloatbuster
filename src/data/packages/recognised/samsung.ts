@@ -218,6 +218,7 @@ export const samsungSystemPackages: string[] = [
 	"com.samsung.android.wearable.setupwizard",
 	"com.samsung.android.wearable.setupwizard.fota",
 	"com.samsung.android.wearable.sysui",
+	"com.samsung.wearable.watch7plugin",
 	"com.samsung.android.wifi.ai",
 	"com.samsung.android.wifi.decrease.scan.interval.resources",
 	"com.samsung.android.wifi.h2e.resources",

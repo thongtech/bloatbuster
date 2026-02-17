@@ -4,13 +4,16 @@
  */
 export const mediatekBloatwarePackages: string[] = [
 	"com.mediatek.android.leanbacklauncher.partnercustomizer",
+	"com.mediatek.atmwifimeta",
 	"com.mediatek.dmp.mediaplayer",
 	"com.mediatek.engineermode",
 	"com.mediatek.gnssdebugreport",
 	"com.mediatek.lbs.em2.ui",
 	"com.mediatek.magtapp",
+	"com.mediatek.mdmlsample",
 	"com.mediatek.testpq",
 	"com.mediatek.tv.service",
 	"com.mediatek.wwtv.setupwizard",
-	"com.mediatek.wwtv.tvcenter"
+	"com.mediatek.wwtv.tvcenter",
+	"com.mediatek.ygps",
 ];

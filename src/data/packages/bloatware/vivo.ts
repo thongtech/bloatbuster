@@ -6,6 +6,7 @@ export const vivoBloatwarePackages: string[] = [
 	"com.android.bbklog",
 	"com.bbk.iqoo.logsystem",
 	"com.truecaller",
+	"com.vivo.backuprestore",
 	"com.vivo.browser",
 	"com.vivo.card",
 	"com.vivo.countdownwidget",
