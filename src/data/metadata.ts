@@ -229,6 +229,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "ReVanced YouTube removed. No system impact.",
 		category: "Entertainment",
 	},
+	"app.alextran.immich": {
+		appID: "app.alextran.immich",
+		appName: "Immich",
+		description: "Self-hosted photo and video backup solution",
+		safetyRating: "safe",
+		removalImpact: "Immich removed. No system impact.",
+		category: "Photography",
+	},
 	"asuk.com.android.app": {
 		appID: "asuk.com.android.app",
 		appName: "7-Eleven TH",
@@ -404,6 +412,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "Agoda removed. No system impact.",
 		category: "Travel",
+	},
+	"com.aia.vitality.mypage.th": {
+		appID: "com.aia.vitality.mypage.th",
+		appName: "AIA+ Thailand",
+		description: "AIA Thailand insurance and wellness superapp",
+		safetyRating: "safe",
+		removalImpact: "AIA+ removed. No system impact.",
+		category: "Finance",
 	},
 	"com.aimp.player": {
 		appID: "com.aimp.player",
@@ -816,6 +832,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "caution",
 		removalImpact: "Chrome removed. Use alternative browsers.",
 		category: "Browser",
+	},
+	"com.android.ncm.overlay.common": {
+		appID: "com.android.ncm.overlay.common",
+		appName: "NCM Common Overlay",
+		description: "Network Control Module common resource overlay",
+		safetyRating: "safe",
+		removalImpact: "NCM overlay removed. No system impact.",
+		category: "System Overlay",
 	},
 	"com.android.companiondevicemanager": {
 		appID: "com.android.companiondevicemanager",
@@ -1448,6 +1472,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Auto-generated vendor overlay for NFC",
 		safetyRating: "caution",
 		removalImpact: "NFC vendor customisations may not work.",
+		category: "System Overlay",
+	},
+	"com.android.nfc.resources.overlay.common": {
+		appID: "com.android.nfc.resources.overlay.common",
+		appName: "NFC Resources Common Overlay",
+		description: "Common NFC resources overlay for device customisation",
+		safetyRating: "safe",
+		removalImpact: "NFC resource overlay removed. No system impact.",
 		category: "System Overlay",
 	},
 	"com.android.omadm.service": {
@@ -3149,6 +3181,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Game removed. No system impact.",
 		category: "Gaming",
 	},
+	"com.bmaapp": {
+		appID: "com.bmaapp",
+		appName: "BMAQ",
+		description: "Bangkok Metropolitan Administration queue management app",
+		safetyRating: "safe",
+		removalImpact: "BMAQ removed. No system impact.",
+		category: "Government",
+	},
 	"com.booking": {
 		appID: "com.booking",
 		appName: "Booking.com",
@@ -3285,6 +3325,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "CommBank removed. No system impact.",
 		category: "Banking",
 	},
+	"com.commsource.beautyplus": {
+		appID: "com.commsource.beautyplus",
+		appName: "BeautyPlus",
+		description: "Selfie camera and photo editor with AI beauty tools",
+		safetyRating: "safe",
+		removalImpact: "BeautyPlus removed. No system impact.",
+		category: "Photography",
+	},
 	"com.connect.enduser": {
 		appID: "com.connect.enduser",
 		appName: "Hik-Connect",
@@ -3396,6 +3444,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "Dictionary removed. No system impact.",
 		category: "Utility",
+	},
+	"com.dticket": {
+		appID: "com.dticket",
+		appName: "SRT D-Ticket",
+		description: "State Railway of Thailand train ticket booking app",
+		safetyRating: "safe",
+		removalImpact: "SRT D-Ticket removed. No system impact.",
+		category: "Travel",
 	},
 	"com.didiglobal.passenger": {
 		appID: "com.didiglobal.passenger",
@@ -4767,6 +4823,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "Play Music removed. Use YouTube Music or other players.",
 		category: "Media",
+	},
+	"com.google.android.ncm.overlay.common": {
+		appID: "com.google.android.ncm.overlay.common",
+		appName: "Google NCM Common Overlay",
+		description: "Google Network Control Module common resource overlay",
+		safetyRating: "safe",
+		removalImpact: "NCM overlay removed. No system impact.",
+		category: "System Overlay",
 	},
 	"com.google.android.nearby.halfsheet": {
 		appID: "com.google.android.nearby.halfsheet",
@@ -6920,6 +6984,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "KTB QR removed. No system impact.",
 		category: "Banking",
 	},
+	"com.ktb.merchant.tungngern": {
+		appID: "com.ktb.merchant.tungngern",
+		appName: "TungNgern Merchant",
+		description: "KTC merchant QR payment network app",
+		safetyRating: "safe",
+		removalImpact: "TungNgern Merchant removed. No system impact.",
+		category: "Finance",
+	},
 	"com.lastpass.lpandroid": {
 		appID: "com.lastpass.lpandroid",
 		appName: "LastPass",
@@ -8069,6 +8141,15 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Mi Share removed. Use alternatives.",
 		category: "File Sharing",
 	},
+	"com.miui.misightservice": {
+		appID: "com.miui.misightservice",
+		appName: "Advanced Textures",
+		description: "MIUI/HyperOS blurring service (Advanced Textures)",
+		safetyRating: "safe",
+		removalImpact:
+			"Advanced Textures disabled. Reverts to Android's blur engine.",
+		category: "Graphics",
+	},
 	"com.miui.misound": {
 		appID: "com.miui.misound",
 		appName: "Mi Sound",
@@ -8438,6 +8519,23 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Voice assistant removed. No system impact.",
 		category: "Voice Assistant",
 	},
+	"com.miui.virtualsim": {
+		appID: "com.miui.virtualsim",
+		appName: "Mi Roaming",
+		description:
+			"Xiaomi's virtual SIM roaming service for temporary data plans abroad",
+		safetyRating: "safe",
+		removalImpact: "Mi Roaming service disabled. Standard eSIM still works.",
+		category: "Telephony",
+	},
+	"com.miui.vsimcore": {
+		appID: "com.miui.vsimcore",
+		appName: "Virtual SIM Core",
+		description: "Core service for virtual SIM functionality",
+		safetyRating: "safe",
+		removalImpact: "Virtual SIM features may not work.",
+		category: "Telephony",
+	},
 	"com.miui.wallpaper.overlay": {
 		appID: "com.miui.wallpaper.overlay",
 		appName: "MIUI Wallpaper Overlay",
@@ -8511,6 +8609,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "caution",
 		removalImpact: "MIUI editor features disabled.",
 		category: "System",
+	},
+	"com.mobilife.gsb.mymo": {
+		appID: "com.mobilife.gsb.mymo",
+		appName: "MyMo by GSB",
+		description: "Government Savings Bank Thailand mobile banking app",
+		safetyRating: "safe",
+		removalImpact: "MyMo removed. No system impact.",
+		category: "Banking",
 	},
 	"com.mobisystems.msdict.embedded.wireless.oxford.dictionaryofenglish": {
 		appID:
@@ -8762,6 +8868,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "Poe removed. No system impact.",
 		category: "AI",
+	},
+	"com.pinterest": {
+		appID: "com.pinterest",
+		appName: "Pinterest",
+		description: "Visual discovery and social media platform",
+		safetyRating: "safe",
+		removalImpact: "Pinterest removed. No system impact.",
+		category: "Social",
 	},
 	"com.qiyi.video": {
 		appID: "com.qiyi.video",
@@ -9036,6 +9150,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Power-off alarms removed. No system impact.",
 		category: "Utilities",
 	},
+	"com.qualcomm.qti.powersavemode": {
+		appID: "com.qualcomm.qti.powersavemode",
+		appName: "Qualcomm Power Save Mode",
+		description: "Qualcomm power saving mode control service",
+		safetyRating: "caution",
+		removalImpact: "Power save mode features may be affected.",
+		category: "Battery",
+	},
 	"com.qualcomm.qti.qcolor": {
 		appID: "com.qualcomm.qti.qcolor",
 		appName: "Qualcomm QColor",
@@ -9188,6 +9310,22 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "XR video removed. No system impact.",
 		category: "XR",
 	},
+	"com.qualcomm.qti.xrwifi": {
+		appID: "com.qualcomm.qti.xrwifi",
+		appName: "Qualcomm XR WiFi",
+		description: "WiFi connectivity service for XR (Extended Reality) devices",
+		safetyRating: "caution",
+		removalImpact: "XR WiFi features disabled. Standard WiFi unaffected.",
+		category: "WiFi",
+	},
+	"com.qualcomm.qtil.aptxacu": {
+		appID: "com.qualcomm.qtil.aptxacu",
+		appName: "Qualcomm aptX ACU",
+		description: "Qualcomm aptX audio codec utilities for Bluetooth",
+		safetyRating: "caution",
+		removalImpact: "aptX audio features may be affected.",
+		category: "Audio",
+	},
 	"com.qualcomm.timeservice": {
 		appID: "com.qualcomm.timeservice",
 		appName: "Qualcomm Time Service",
@@ -9220,6 +9358,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact:
 			"Wireless display (Miracast) disabled. Chromecast still works.",
 		category: "Connectivity",
+	},
+	"com.pttor.evstationpluz": {
+		appID: "com.pttor.evstationpluz",
+		appName: "EV Station PluZ",
+		description: "PTT OR electric vehicle charging station network app",
+		safetyRating: "safe",
+		removalImpact: "EV Station PluZ removed. No system impact.",
+		category: "Transportation",
 	},
 	"com.quora.android": {
 		appID: "com.quora.android",
@@ -13563,6 +13709,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Weibo removed. No system impact.",
 		category: "Social",
 	},
+	"com.siamnorthsolution.thaifastdictionary": {
+		appID: "com.siamnorthsolution.thaifastdictionary",
+		appName: "Thai Fast Dictionary",
+		description: "Thai-English bilingual dictionary with over 80,000 words",
+		safetyRating: "safe",
+		removalImpact: "Thai Fast Dictionary removed. No system impact.",
+		category: "Utility",
+	},
 	"com.sitron.amway": {
 		appID: "com.sitron.amway",
 		appName: "Amway",
@@ -13635,6 +13789,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "TikTok removed. No system impact.",
 		category: "Social",
+	},
+	"com.st.android.nfc_extensions_16": {
+		appID: "com.st.android.nfc_extensions_16",
+		appName: "ST NFC Extensions",
+		description: "STMicroelectronics NFC vendor extensions for Android",
+		safetyRating: "safe",
+		removalImpact: "ST NFC extensions removed. Standard NFC may still work.",
+		category: "NFC",
 	},
 	"com.studentbeans.studentbeans": {
 		appID: "com.studentbeans.studentbeans",
@@ -14134,6 +14296,15 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Camera tools removed. No system impact.",
 		category: "Camera",
 	},
+	"com.xiaomi.continuity.sdkapp": {
+		appID: "com.xiaomi.continuity.sdkapp",
+		appName: "Xiaomi Continuity SDK",
+		description:
+			"Cross-device continuity framework for HyperOS interconnectivity",
+		safetyRating: "safe",
+		removalImpact: "Cross-device features like screen sharing disabled.",
+		category: "Connectivity",
+	},
 	"com.xiaomi.discover": {
 		appID: "com.xiaomi.discover",
 		appName: "Mi Discover",
@@ -14174,6 +14345,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact: "Xiaomi Health removed. No system impact.",
 		category: "Health",
+	},
+	"com.xiaomi.hypercomm": {
+		appID: "com.xiaomi.hypercomm",
+		appName: "HyperComm",
+		description: "HyperOS communication service for cross-device connectivity",
+		safetyRating: "safe",
+		removalImpact: "HyperOS connectivity features may be affected.",
+		category: "Communication",
 	},
 	"com.xiaomi.joyose": {
 		appID: "com.xiaomi.joyose",
@@ -14417,6 +14596,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Miracast sink removed. No system impact.",
 		category: "Connectivity",
 	},
+	"com.xiaomi.wearable": {
+		appID: "com.xiaomi.wearable",
+		appName: "Mi Fitness",
+		description: "Xiaomi wearable smartwatch and fitness band companion app",
+		safetyRating: "safe",
+		removalImpact: "Mi Fitness removed. Wearables will not sync.",
+		category: "Health",
+	},
 	"com.xiaomi.xmsf": {
 		appID: "com.xiaomi.xmsf",
 		appName: "Xiaomi Service Framework",
@@ -14465,6 +14652,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Pinduoduo removed. No system impact.",
 		category: "Shopping",
 	},
+	"com.zerntrino.giffarine": {
+		appID: "com.zerntrino.giffarine",
+		appName: "Giffarine",
+		description: "Giffarine health and beauty products shopping app",
+		safetyRating: "safe",
+		removalImpact: "Giffarine removed. No system impact.",
+		category: "Shopping",
+	},
 	"com.zhiliaoapp.musically": {
 		appID: "com.zhiliaoapp.musically",
 		appName: "TikTok",
@@ -14472,6 +14667,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "TikTok removed. No system impact.",
 		category: "Social",
+	},
+	"com.zyhwplatform.shortplay": {
+		appID: "com.zyhwplatform.shortplay",
+		appName: "FlickReels",
+		description: "Short drama and TV content streaming app",
+		safetyRating: "safe",
+		removalImpact: "FlickReels removed. No system impact.",
+		category: "Entertainment",
 	},
 	"cz.mroczis.netmonster": {
 		appID: "cz.mroczis.netmonster",
@@ -14562,6 +14765,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "LINE removed. No system impact.",
 		category: "Communication",
 	},
+	"kbt.sc006.nci.patient.mobileapp": {
+		appID: "kbt.sc006.nci.patient.mobileapp",
+		appName: "NCI Patient App",
+		description: "National Cancer Institute patient care and management app",
+		safetyRating: "safe",
+		removalImpact: "NCI Patient App removed. No system impact.",
+		category: "Healthcare",
+	},
 	"kerry.express.th.mobile.tracking": {
 		appID: "kerry.express.th.mobile.tracking",
 		appName: "Kerry Express",
@@ -14632,6 +14843,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Network diagnostic and analysis tool",
 		safetyRating: "safe",
 		removalImpact: "Network analyser removed. No system impact.",
+		category: "Network",
+	},
+	"net.techet.netanalyzerlite.an": {
+		appID: "net.techet.netanalyzerlite.an",
+		appName: "Network Analyzer Lite",
+		description: "Network scanner and diagnostic tool with WiFi analysis",
+		safetyRating: "safe",
+		removalImpact: "Network Analyzer Lite removed. No system impact.",
 		category: "Network",
 	},
 	"org.adblockplus.adblockplussbrowser": {
@@ -14722,6 +14941,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Speedtest removed. No system impact.",
 		category: "Network",
 	},
+	"photoeditor.layout.collagemaker": {
+		appID: "photoeditor.layout.collagemaker",
+		appName: "Collage Maker",
+		description: "Photo editor and collage maker with 100+ layouts",
+		safetyRating: "safe",
+		removalImpact: "Collage Maker removed. No system impact.",
+		category: "Photography",
+	},
 	"pl.solidexplorer2": {
 		appID: "pl.solidexplorer2",
 		appName: "Solid Explorer",
@@ -14753,6 +14980,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "Carrot Rewards removed. No system impact.",
 		category: "Rewards",
+	},
+	"th.co.cardx": {
+		appID: "th.co.cardx",
+		appName: "CardX Thailand",
+		description: "Credit card and loan services by SCBX Group",
+		safetyRating: "safe",
+		removalImpact: "CardX removed. No system impact.",
+		category: "Finance",
 	},
 	"th.co.crie.tron2.android": {
 		appID: "th.co.crie.tron2.android",
@@ -14866,6 +15101,15 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Bluetooth UI may change.",
 		category: "System Overlay",
 	},
+	"vendor.qti.data.ntnsatapp": {
+		appID: "vendor.qti.data.ntnsatapp",
+		appName: "Qualcomm NTN Satellite",
+		description: "Non-Terrestrial Network satellite connectivity service",
+		safetyRating: "safe",
+		removalImpact:
+			"Satellite connectivity disabled. Standard network unaffected.",
+		category: "Network",
+	},
 	"vendor.qti.data.txpwradmin": {
 		appID: "vendor.qti.data.txpwradmin",
 		appName: "Qualcomm TX Power Admin",
@@ -14873,6 +15117,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact: "TX power control removed. No system impact.",
 		category: "Network",
+	},
+	"vendor.qti.frameworks.utils": {
+		appID: "vendor.qti.frameworks.utils",
+		appName: "Qualcomm Frameworks Utilities",
+		description: "Qualcomm vendor framework utilities for system management",
+		safetyRating: "safe",
+		removalImpact: "Qualcomm framework utilities removed. May affect features.",
+		category: "System",
 	},
 	"vendor.qti.hardware.cacert.server": {
 		appID: "vendor.qti.hardware.cacert.server",
@@ -16357,6 +16609,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "UWB features may not work if device supports UWB.",
 		category: "System",
+	},
+	"com.google.android.uwb.resources.overlay.common": {
+		appID: "com.google.android.uwb.resources.overlay.common",
+		appName: "UWB Resources Common Overlay",
+		description: "Common UWB resources overlay for device customisation",
+		safetyRating: "safe",
+		removalImpact: "UWB resource overlay removed. No system impact.",
+		category: "System Overlay",
 	},
 	"com.google.android.rkpdapp": {
 		appID: "com.google.android.rkpdapp",
