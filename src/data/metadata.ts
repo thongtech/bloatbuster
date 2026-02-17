@@ -552,14 +552,6 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Kindle removed. No system impact.",
 		category: "Media",
 	},
-	"com.amazon.mShop.android": {
-		appID: "com.amazon.mShop.android",
-		appName: "Amazon Mobile",
-		description: "Amazon mobile shopping",
-		safetyRating: "safe",
-		removalImpact: "Amazon Mobile removed. No system impact.",
-		category: "Shopping",
-	},
 	"com.amazon.mShop.android.shopping": {
 		appID: "com.amazon.mShop.android.shopping",
 		appName: "Amazon Shopping",
@@ -4028,14 +4020,6 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact: "AI features disabled across apps.",
 		category: "AI/ML",
-	},
-	"com.google.android.ambient.streaming": {
-		appID: "com.google.android.ambient.streaming",
-		appName: "Ambient Streaming",
-		description: "Audio streaming for ambient display features",
-		safetyRating: "safe",
-		removalImpact: "Ambient audio features disabled.",
-		category: "Audio",
 	},
 	"com.google.android.apps.accessibility.voiceaccess": {
 		appID: "com.google.android.apps.accessibility.voiceaccess",
@@ -8991,22 +8975,6 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Background task management affected.",
 		category: "System Service",
 	},
-	"com.miui.zmanhelper": {
-		appID: "com.miui.zmanhelper",
-		appName: "Z Manager Helper",
-		description: "Helper service for Z Manager",
-		safetyRating: "caution",
-		removalImpact: "Background management helper disabled.",
-		category: "System Service",
-	},
-	"com.miui.zmanplugin": {
-		appID: "com.miui.zmanplugin",
-		appName: "Z Manager Plugin",
-		description: "Plugin for Z Manager functionality",
-		safetyRating: "caution",
-		removalImpact: "Z Manager plugins disabled.",
-		category: "System Service",
-	},
 	"com.miuix.editor": {
 		appID: "com.miuix.editor",
 		appName: "MIUIX Editor",
@@ -9924,22 +9892,6 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Apps edge panel removed. No system impact.",
 		category: "UI Feature",
 	},
-	"com.samsung.android.app.audio": {
-		appID: "com.samsung.android.app.audio",
-		appName: "Audio Accessories",
-		description: "Management for Samsung audio accessories",
-		safetyRating: "safe",
-		removalImpact: "Samsung audio accessory features disabled.",
-		category: "Audio",
-	},
-	"com.samsung.android.app.camera.sticker.facear.preload": {
-		appID: "com.samsung.android.app.camera.sticker.facear.preload",
-		appName: "Face AR Stickers",
-		description: "Augmented reality face stickers for camera",
-		safetyRating: "safe",
-		removalImpact: "AR face stickers removed. No system impact.",
-		category: "Camera",
-	},
 	"com.samsung.android.app.camera.sticker.facearavatar.preload": {
 		appID: "com.samsung.android.app.camera.sticker.facearavatar.preload",
 		appName: "AR Avatar Stickers",
@@ -10035,23 +9987,6 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact: "Galaxy Finder search removed. No system impact.",
 		category: "Search",
-	},
-	"com.samsung.android.app.galaxythemes": {
-		appID: "com.samsung.android.app.galaxythemes",
-		appName: "Galaxy Themes (New)",
-		description: "Updated theme store for Galaxy devices",
-		safetyRating: "safe",
-		removalImpact: "Cannot download new themes.",
-		category: "Customisation",
-	},
-	"com.samsung.android.app.headphones": {
-		appID: "com.samsung.android.app.headphones",
-		appName: "Galaxy Buds",
-		description: "Galaxy Buds management and equaliser settings",
-		safetyRating: "safe",
-		removalImpact:
-			"Cannot manage Galaxy Buds. Only remove if you don't have them.",
-		category: "Audio",
 	},
 	"com.samsung.android.app.interpreter": {
 		appID: "com.samsung.android.app.interpreter",
@@ -10199,14 +10134,6 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Quick Share disabled. Nearby Share (Google) still works.",
 		category: "File Sharing",
 	},
-	"com.samsung.android.app.slowmo": {
-		appID: "com.samsung.android.app.slowmo",
-		appName: "Slow Motion",
-		description: "Slow motion video recording and editing",
-		safetyRating: "safe",
-		removalImpact: "Slow motion features disabled.",
-		category: "Camera",
-	},
 	"com.samsung.android.app.smartcapture": {
 		appID: "com.samsung.android.app.smartcapture",
 		appName: "Smart Capture",
@@ -10281,14 +10208,6 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact: "ESIM UI disabled.",
 		category: "Telephony",
-	},
-	"com.samsung.android.app.tiltcamera": {
-		appID: "com.samsung.android.app.tiltcamera",
-		appName: "Tilt Camera",
-		description: "Camera mode using device tilt for effects",
-		safetyRating: "safe",
-		removalImpact: "Tilt camera mode disabled.",
-		category: "Camera",
 	},
 	"com.samsung.android.app.tips": {
 		appID: "com.samsung.android.app.tips",
@@ -10889,14 +10808,6 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "VR services disabled. Only remove if no Gear VR.",
 		category: "VR",
 	},
-	"com.samsung.android.hmt.vrsvc.core": {
-		appID: "com.samsung.android.hmt.vrsvc.core",
-		appName: "VR Core Service",
-		description: "Core VR service for Samsung VR experiences",
-		safetyRating: "safe",
-		removalImpact: "VR core removed. No system impact.",
-		category: "VR",
-	},
 	"com.samsung.android.honeyboard": {
 		appID: "com.samsung.android.honeyboard",
 		appName: "Samsung Keyboard (Honeyboard)",
@@ -10929,14 +10840,6 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "IceCone removed. Cloud sync may be affected.",
 		category: "Cloud",
-	},
-	"com.samsung.android.incall.ar": {
-		appID: "com.samsung.android.incall.ar",
-		appName: "AR Emoji Call",
-		description: "AR emoji during video calls",
-		safetyRating: "safe",
-		removalImpact: "AR emoji in calls removed. No system impact.",
-		category: "Communication",
 	},
 	"com.samsung.android.incall.contentprovider": {
 		appID: "com.samsung.android.incall.contentprovider",
@@ -11205,14 +11108,6 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Samsung accessory pairing and management service",
 		safetyRating: "safe",
 		removalImpact: "May affect Galaxy Watch, Buds pairing.",
-		category: "Connectivity",
-	},
-	"com.samsung.android.mateservice": {
-		appID: "com.samsung.android.mateservice",
-		appName: "Mate Service",
-		description: "Service for Samsung ecosystem device pairing",
-		safetyRating: "caution",
-		removalImpact: "Device pairing features affected.",
 		category: "Connectivity",
 	},
 	"com.samsung.android.mcfds": {
@@ -11722,14 +11617,6 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Air View dictionary removed. Only affects S Pen users.",
 		category: "Utility",
 	},
-	"com.samsung.android.service.devicemanagement": {
-		appID: "com.samsung.android.service.devicemanagement",
-		appName: "Device Management",
-		description: "Enterprise device management service",
-		safetyRating: "safe",
-		removalImpact: "Device management removed. Personal devices unaffected.",
-		category: "Enterprise",
-	},
 	"com.samsung.android.service.health": {
 		appID: "com.samsung.android.service.health",
 		appName: "Samsung Health Service",
@@ -12114,14 +12001,6 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"Bixby Vision features in camera disabled. Camera still functions normally.",
 		category: "AR/Vision",
 	},
-	"com.samsung.android.visionprovider": {
-		appID: "com.samsung.android.visionprovider",
-		appName: "Vision Provider",
-		description: "Provides vision intelligence services for Samsung features",
-		safetyRating: "safe",
-		removalImpact: "Vision-based features may be affected.",
-		category: "AR/Vision",
-	},
 	"com.samsung.android.visual.cloudcore": {
 		appID: "com.samsung.android.visual.cloudcore",
 		appName: "Visual Cloud Core",
@@ -12147,14 +12026,6 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact:
 			"Samsung Members removed. Cannot access Samsung support or diagnostics.",
 		category: "Support",
-	},
-	"com.samsung.android.vtcamerasdk": {
-		appID: "com.samsung.android.vtcamerasdk",
-		appName: "Video Call Camera SDK",
-		description: "SDK for video calling camera features",
-		safetyRating: "caution",
-		removalImpact: "Video call features may be affected.",
-		category: "Communication",
 	},
 	"com.samsung.android.vtcamerasettings": {
 		appID: "com.samsung.android.vtcamerasettings",

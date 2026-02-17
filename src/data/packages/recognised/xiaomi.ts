@@ -58,10 +58,13 @@ export const xiaomiSystemPackages: string[] = [
 	"com.miui.systemui.carriers.overlay",
 	"com.miui.systemui.devices.overlay",
 	"com.miui.systemui.overlay.devices.android",
+	"com.miui.video",
 	"com.miui.videoplayer",
 	"com.miui.wallpaper.overlay",
 	"com.miui.wallpaper.overlay.customize",
 	"com.miui.weather2",
+	"com.miui.wmsvc",
+	"com.miui.zman",
 	"com.miuix.editor",
 	"com.novatek.novavis",
 	"com.xiaomi.account",
@@ -93,5 +96,5 @@ export const xiaomiSystemPackages: string[] = [
 	"com.xiaomi.xmsf",
 	"com.xiaomi.xmsfkeeper",
 	"mitv.service",
-	"miui.systemui.plugin"
+	"miui.systemui.plugin",
 ];

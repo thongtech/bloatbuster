@@ -21,5 +21,5 @@ export const factoryTestingBloatwarePackages: string[] = [
 	"com.modemdebug",
 	"com.wing.wtsarcontrol",
 	"com.wingtech.sartest",
-	"mediatek.factorymenu.ui"
+	"mediatek.factorymenu.ui",
 ];

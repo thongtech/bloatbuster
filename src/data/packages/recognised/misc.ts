@@ -6,10 +6,10 @@ export const miscSystemPackages: string[] = [
 	"com.airoha.android.bluetoothlegatt",
 	"com.airoha.android.btd",
 	"com.debug.loggerui",
-	"com.st.android.nfc_extensions_16",
 	"com.dolby.android.audio.service",
 	"com.goodix.fingerprint.setting",
 	"com.gsma.rcs",
+	"com.st.android.nfc_extensions_16",
 	"com.wapi.wapicertmanager",
 	"com.wsomacp",
 ];
