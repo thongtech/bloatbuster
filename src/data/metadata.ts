@@ -375,6 +375,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Proton Mail removed. No system impact.",
 		category: "Communication",
 	},
+	"ch.protonvpn.android": {
+		appID: "ch.protonvpn.android",
+		appName: "Proton VPN",
+		description: "Privacy-focused VPN service",
+		safetyRating: "safe",
+		removalImpact: "Proton VPN removed. No system impact.",
+		category: "Security",
+	},
 	"cn.wps.moffice_eng": {
 		appID: "cn.wps.moffice_eng",
 		appName: "WPS Office",
@@ -3070,6 +3078,15 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Pineapple Wi-Fi features affected.",
 		category: "System Overlay",
 	},
+	"com.android.wifi.resources.overlay.spf": {
+		appID: "com.android.wifi.resources.overlay.spf",
+		appName: "WiFi Resources SPF Overlay",
+		description:
+			"Platform-specific Wi-Fi resource overlay for system customisation",
+		safetyRating: "risky",
+		removalImpact: "Wi-Fi settings and features may malfunction.",
+		category: "System Overlay",
+	},
 	"com.android.wifi.resources.overlay.target": {
 		appID: "com.android.wifi.resources.overlay.target",
 		appName: "WiFi Resources Target Overlay",
@@ -3205,6 +3222,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "Setup wizard removed. Only needed during first boot.",
 		category: "Setup",
+	},
+	"com.aura.oobe.vodafone": {
+		appID: "com.aura.oobe.vodafone",
+		appName: "Vodafone Adware",
+		description: "Adware for Vodafone carrier",
+		safetyRating: "safe",
+		removalImpact: "Vodafone Adware removed. Stops ads data harvesting.",
+		category: "Carrier",
 	},
 	"com.authy.authy": {
 		appID: "com.authy.authy",
@@ -3614,6 +3639,15 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "Daily Mail removed. No system impact.",
 		category: "News",
+	},
+	"com.d4viddf.hyperbridge": {
+		appID: "com.d4viddf.hyperbridge",
+		appName: "Hyper Bridge",
+		description: "Enables third-party apps to use Xiaomi's HyperIsland",
+		safetyRating: "safe",
+		removalImpact:
+			"Hyper Bridge removed. Dynamic island integration for third-party apps disabled.",
+		category: "Utility",
 	},
 	"com.dashlane": {
 		appID: "com.dashlane",
@@ -5896,6 +5930,15 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Pineapple Wi-Fi UI affected.",
 		category: "System Overlay",
 	},
+	"com.google.android.wifi.resources.overlay.spf": {
+		appID: "com.google.android.wifi.resources.overlay.spf",
+		appName: "Google WiFi Resources SPF Overlay",
+		description:
+			"Google-specific Wi-Fi resource overlay for platform customisation",
+		safetyRating: "risky",
+		removalImpact: "Google Wi-Fi features may be affected.",
+		category: "System Overlay",
+	},
 	"com.google.android.wifi.resources.overlay.target": {
 		appID: "com.google.android.wifi.resources.overlay.target",
 		appName: "WiFi Resources Target Overlay",
@@ -7250,6 +7293,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "iQOO power saving features disabled.",
 		category: "Battery",
+	},
+	"com.ironsource.appcloud.oobe.hutchison": {
+		appID: "com.ironsource.appcloud.oobe.hutchison",
+		appName: "Hutchison Adware",
+		description: "Adware for Hutchison carrier",
+		safetyRating: "safe",
+		removalImpact: "Hutchison Adware removed. Stops ads data harvesting.",
+		category: "Carrier",
 	},
 	"com.jeremysteckling.facerrel": {
 		appID: "com.jeremysteckling.facerrel",
@@ -16575,6 +16626,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "KTB Netbank removed. No system impact.",
 		category: "Banking",
 	},
+	"me.proton.android.drive": {
+		appID: "me.proton.android.drive",
+		appName: "Proton Drive",
+		description: "End-to-end encrypted cloud storage",
+		safetyRating: "safe",
+		removalImpact: "Proton Drive removed. No system impact.",
+		category: "Cloud Storage",
+	},
 	"mediatek.factorymenu.ui": {
 		appID: "mediatek.factorymenu.ui",
 		appName: "MediaTek Factory Menu",
@@ -16742,6 +16801,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "Solid Explorer removed. No system impact.",
 		category: "Utility",
+	},
+	"proton.android.pass": {
+		appID: "proton.android.pass",
+		appName: "Proton Pass",
+		description: "Open-source password manager with end-to-end encryption",
+		safetyRating: "safe",
+		removalImpact: "Proton Pass removed. No system impact.",
+		category: "Security",
 	},
 	"ru.yandex.mail": {
 		appID: "ru.yandex.mail",

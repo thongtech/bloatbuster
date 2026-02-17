@@ -182,6 +182,7 @@ export const googleSystemPackages: string[] = [
 	"com.google.android.wifi.resources",
 	"com.google.android.wifi.resources.overlay.common",
 	"com.google.android.wifi.resources.overlay.pineapple",
+	"com.google.android.wifi.resources.overlay.spf",
 	"com.google.android.wifi.resources.overlay.target",
 	"com.google.android.wifi.resources.pixel",
 	"com.google.android.wifi.resources.xiaomi",

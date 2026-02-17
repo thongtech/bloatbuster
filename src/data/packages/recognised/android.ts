@@ -300,6 +300,7 @@ export const androidSystemPackages: string[] = [
 	"com.android.wifi.resources.overlay",
 	"com.android.wifi.resources.overlay.common",
 	"com.android.wifi.resources.overlay.pineapple",
+	"com.android.wifi.resources.overlay.spf",
 	"com.android.wifi.resources.overlay.target",
 	"com.android.wifi.resources.rro",
 	"com.android.wifi.resources.xiaomi",
