@@ -61,7 +61,6 @@ export const qualcommSystemPackages: string[] = [
 	"com.qualcomm.uimremoteserver",
 	"com.qualcomm.wfd.service",
 	"com.trustonic.teeservice",
-	"com.trustonic.telecoms.setup",
 	"org.codeaurora.ims",
 	"org.ifaa.aidl.manager",
 	"vendor.qti.bluetooth.xpan",
@@ -72,5 +71,5 @@ export const qualcommSystemPackages: string[] = [
 	"vendor.qti.imsdatachannel",
 	"vendor.qti.imsrcs",
 	"vendor.qti.iwlan",
-	"vendor.qti.qesdk.sysservice"
+	"vendor.qti.qesdk.sysservice",
 ];
