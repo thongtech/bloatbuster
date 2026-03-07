@@ -48,8 +48,6 @@ export const xiaomiBloatwarePackages: string[] = [
 	"com.miui.phone.carriers.overlay.vodafone",
 	"com.miui.phrase",
 	"com.miui.player",
-	"com.miui.safetycenter.config.overlay",
-	"com.miui.safetycenter.res.overlay",
 	"com.miui.securityinputmethod",
 	"com.miui.securityscan",
 	"com.miui.smsextra",

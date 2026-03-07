@@ -47,6 +47,8 @@ export const xiaomiSystemPackages: string[] = [
 	"com.miui.powerkeeper",
 	"com.miui.qr",
 	"com.miui.rom",
+	"com.miui.safetycenter.config.overlay",
+	"com.miui.safetycenter.res.overlay",
 	"com.miui.screenrecorder",
 	"com.miui.screenshot",
 	"com.miui.securityadd",
