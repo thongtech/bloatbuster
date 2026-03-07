@@ -1578,6 +1578,15 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "NFC resource overlay removed. No system impact.",
 		category: "System Overlay",
 	},
+	"com.android.nfc.resources.overlay.target": {
+		appID: "com.android.nfc.resources.overlay.target",
+		appName: "NFC Resources Target Overlay",
+		description:
+			"Device-specific runtime resource overlay for NFC system configuration",
+		safetyRating: "caution",
+		removalImpact: "NFC behaviour or appearance may change on this device.",
+		category: "System Overlay",
+	},
 	"com.android.omadm.service": {
 		appID: "com.android.omadm.service",
 		appName: "OMA DM Service",
@@ -2939,6 +2948,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "caution",
 		removalImpact: "UWB appearance may change.",
 		category: "System",
+	},
+	"com.android.uwb.resources.overlay.target": {
+		appID: "com.android.uwb.resources.overlay.target",
+		appName: "UWB Resources Target Overlay",
+		description:
+			"Device-specific runtime resource overlay for Ultra Wideband configuration",
+		safetyRating: "caution",
+		removalImpact:
+			"UWB behaviour or ranging accuracy may be affected on this device.",
+		category: "System Overlay",
 	},
 	"com.android.vending": {
 		appID: "com.android.vending",
@@ -7406,6 +7425,25 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Security features disabled.",
 		category: "Security",
 	},
+	"com.lbe.security.miui.carrieroverlay": {
+		appID: "com.lbe.security.miui.carrieroverlay",
+		appName: "LBE Security Carrier Overlay",
+		description:
+			"Carrier-specific overlay for LBE security permissions on MIUI",
+		safetyRating: "caution",
+		removalImpact:
+			"Carrier-specific security permissions may revert to defaults.",
+		category: "Security",
+	},
+	"com.leica.widget.goldenhour": {
+		appID: "com.leica.widget.goldenhour",
+		appName: "Leica Golden Hour Widget",
+		description:
+			"Home screen widget exclusive to Leitz Phone that alerts users to golden hour lighting windows for photography",
+		safetyRating: "safe",
+		removalImpact: "Golden hour widget removed. No system impact.",
+		category: "Photography",
+	},
 	"com.linecorp.linemanth": {
 		appID: "com.linecorp.linemanth",
 		appName: "LINE MAN",
@@ -8411,6 +8449,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "MIUI services affected.",
 		category: "System",
 	},
+	"com.miui.cotaservice": {
+		appID: "com.miui.cotaservice",
+		appName: "MIUI COTA Service",
+		description:
+			"Configuration Over The Air service for delivering carrier and OEM configuration updates silently",
+		safetyRating: "caution",
+		removalImpact:
+			"Over-the-air configuration updates disabled. Carrier settings may not apply.",
+		category: "System Service",
+	},
 	"com.miui.creation": {
 		appID: "com.miui.creation",
 		appName: "Mi Creation",
@@ -8490,6 +8538,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact: "Cannot install apps.",
 		category: "System",
+	},
+	"com.miui.globalguard": {
+		appID: "com.miui.globalguard",
+		appName: "Mi Guard Client",
+		description:
+			"Xiaomi's remote device lock enforcement agent for global-market financed devices. Functionally equivalent to PayJoy.",
+		safetyRating: "caution",
+		removalImpact:
+			"Remote lock enforcement removed. Safe on outright-purchased devices. May violate financing agreement if device is on an instalment plan.",
+		category: "Finance",
 	},
 	"com.miui.guardprovider": {
 		appID: "com.miui.guardprovider",
@@ -8702,6 +8760,15 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "MIUI Music removed. Use other music apps.",
 		category: "Media",
+	},
+	"com.miui.powerinsight.overlay": {
+		appID: "com.miui.powerinsight.overlay",
+		appName: "Power Insight Overlay",
+		description:
+			"Runtime resource overlay for MIUI Power Insight battery monitoring feature",
+		safetyRating: "safe",
+		removalImpact: "Power Insight overlay removed. No system impact.",
+		category: "System Overlay",
 	},
 	"com.miui.powerkeeper": {
 		appID: "com.miui.powerkeeper",
@@ -9301,6 +9368,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Panopto removed. No system impact.",
 		category: "Education",
 	},
+	"com.payjoy.access": {
+		appID: "com.payjoy.access",
+		appName: "PayJoy Access",
+		description:
+			"Device financing enforcement agent that can lock the handset if payment instalments are missed, targeting emerging-market smartphone financing",
+		safetyRating: "caution",
+		removalImpact:
+			"Device financing lock removed. May violate financing agreement on instalment devices.",
+		category: "Finance",
+	},
 	"com.pinterest": {
 		appID: "com.pinterest",
 		appName: "Pinterest",
@@ -9533,6 +9610,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "caution",
 		removalImpact: "Dynamic SIM switching disabled.",
 		category: "Telephony",
+	},
+	"com.qualcomm.qti.gpudrivers.canoe.api36": {
+		appID: "com.qualcomm.qti.gpudrivers.canoe.api36",
+		appName: "Qualcomm Canoe GPU Driver",
+		description: "Adreno GPU driver for Qualcomm Canoe platform (Android 16)",
+		safetyRating: "risky",
+		removalImpact: "Graphics may not work.",
+		category: "GPU",
 	},
 	"com.qualcomm.qti.gpudrivers.lahaina.api30": {
 		appID: "com.qualcomm.qti.gpudrivers.lahaina.api30",
@@ -9838,6 +9923,15 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "Ring Clip removed.",
 		category: "Audio",
+	},
+	"com.rongcard.eid": {
+		appID: "com.rongcard.eid",
+		appName: "RongCard eID",
+		description:
+			"NFC-based electronic identity card reader application (China)",
+		safetyRating: "safe",
+		removalImpact: "eID card reading removed. China only.",
+		category: "Identity",
 	},
 	"com.rongcard.eidapi": {
 		appID: "com.rongcard.eidapi",
@@ -14421,6 +14515,15 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "ST NFC extensions removed. Standard NFC may still work.",
 		category: "NFC",
 	},
+	"com.strikersoft.lfi.widget": {
+		appID: "com.strikersoft.lfi.widget",
+		appName: "StrikerSoft LFI Widget",
+		description:
+			"Third-party home screen widget by StrikerSoft, pre-loaded on select devices",
+		safetyRating: "safe",
+		removalImpact: "Widget removed. No system impact.",
+		category: "Widget",
+	},
 	"com.studentbeans.studentbeans": {
 		appID: "com.studentbeans.studentbeans",
 		appName: "Student Beans",
@@ -14668,6 +14771,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Trusted Execution Environment service",
 		safetyRating: "risky",
 		removalImpact: "Secure payment features may not work.",
+		category: "Security",
+	},
+	"com.trustonic.telecoms.setup": {
+		appID: "com.trustonic.telecoms.setup",
+		appName: "Trustonic Telecoms Setup",
+		description:
+			"Setup component for Trustonic's TEE-backed telecoms client, used in device financing and payment reminder services",
+		safetyRating: "caution",
+		removalImpact:
+			"Trustonic telecoms configuration removed. May affect financed device payment enforcement.",
 		category: "Security",
 	},
 	"com.twitter.android": {
@@ -16026,6 +16139,15 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "AI call features disabled.",
 		category: "Telephony",
 	},
+	"com.xiaomi.aiservice": {
+		appID: "com.xiaomi.aiservice",
+		appName: "Xiaomi AI Service",
+		description:
+			"Core AI framework providing on-device intelligence features across MIUI and HyperOS",
+		safetyRating: "caution",
+		removalImpact: "AI-powered features across system apps may be disabled.",
+		category: "AI",
+	},
 	"com.xiaomi.android.tvsetup.partnercustomizer": {
 		appID: "com.xiaomi.android.tvsetup.partnercustomizer",
 		appName: "Mi TV Setup Customiser",
@@ -16101,6 +16223,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Cross-device features like screen sharing disabled.",
 		category: "Connectivity",
 	},
+	"com.xiaomi.devauth": {
+		appID: "com.xiaomi.devauth",
+		appName: "Xiaomi Developer Auth",
+		description:
+			"Developer authentication service used for device authorisation and factory/developer tool access",
+		safetyRating: "safe",
+		removalImpact:
+			"Developer authentication removed. No impact for regular users.",
+		category: "Developer Tools",
+	},
 	"com.xiaomi.discover": {
 		appID: "com.xiaomi.discover",
 		appName: "Mi Discover",
@@ -16149,6 +16281,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "HyperOS connectivity features may be affected.",
 		category: "Communication",
+	},
+	"com.xiaomi.incallui": {
+		appID: "com.xiaomi.incallui",
+		appName: "Xiaomi In-Call UI",
+		description:
+			"Xiaomi's in-call screen interface, managing the visual display and controls during active phone calls",
+		safetyRating: "risky",
+		removalImpact:
+			"In-call screen may be blank or non-functional during calls.",
+		category: "Telephony",
 	},
 	"com.xiaomi.joyose": {
 		appID: "com.xiaomi.joyose",
