@@ -71,6 +71,7 @@ export const androidSystemPackages: string[] = [
 	"com.android.dynsystem",
 	"com.android.email",
 	"com.android.email.partnerprovider",
+	"com.android.emergency",
 	"com.android.externalstorage",
 	"com.android.federatedcompute.services",
 	"com.android.hbmsvmanager",

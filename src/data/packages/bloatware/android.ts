@@ -7,7 +7,6 @@ export const androidBloatwarePackages: string[] = [
 	"com.android.dreams.basic",
 	"com.android.dreams.phototable",
 	"com.android.egg",
-	"com.android.emergency",
 	"com.android.hotwordenrollment.okgoogle",
 	"com.android.hotwordenrollment.xgoogle",
 	"com.android.printservice.recommendation",
