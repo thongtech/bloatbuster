@@ -16,7 +16,6 @@ export const xiaomiSystemPackages: string[] = [
 	"com.miui.audiomonitor",
 	"com.miui.autoui.ext",
 	"com.miui.calculator",
-	"com.miui.cit",
 	"com.miui.cleaner",
 	"com.miui.compass",
 	"com.miui.core",

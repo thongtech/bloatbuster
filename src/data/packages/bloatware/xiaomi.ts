@@ -28,6 +28,7 @@ export const xiaomiBloatwarePackages: string[] = [
 	"com.miui.android.fashiongallery",
 	"com.miui.backup",
 	"com.miui.bugreport",
+	"com.miui.cit",
 	"com.miui.cleanmaster",
 	"com.miui.cloudbackup",
 	"com.miui.cloudservice",
