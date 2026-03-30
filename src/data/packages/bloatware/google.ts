@@ -23,6 +23,7 @@ export const googleBloatwarePackages: string[] = [
 	"com.google.android.apps.tachyon",
 	"com.google.android.apps.tips",
 	"com.google.android.apps.turbo",
+	"com.google.android.apps.wearable.retailattractloop",
 	"com.google.android.apps.wearables.maestro.companion",
 	"com.google.android.apps.wellbeing",
 	"com.google.android.apps.work.clouddpc",

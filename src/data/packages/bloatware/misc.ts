@@ -4,7 +4,6 @@
  */
 export const miscBloatwarePackages: string[] = [
 	"cn.wps.moffice_eng",
-	"com.baidu.BaiduMap",
 	"com.baidu.input",
 	"com.baidu.searchbox",
 	"com.booking.aidprovider",

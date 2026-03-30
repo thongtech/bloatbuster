@@ -5,6 +5,7 @@
 export const miscSystemPackages: string[] = [
 	"com.airoha.android.bluetoothlegatt",
 	"com.airoha.android.btd",
+	"com.baidu.BaiduMap",
 	"com.debug.loggerui",
 	"com.dolby.android.audio.service",
 	"com.goodix.fingerprint.setting",

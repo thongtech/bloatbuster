@@ -41,7 +41,6 @@ export const googleSystemPackages: string[] = [
 	"com.google.android.apps.wallpaper",
 	"com.google.android.apps.wallpaper.nexus",
 	"com.google.android.apps.wallpaper.pixel",
-	"com.google.android.apps.wearable.retailattractloop",
 	"com.google.android.apps.wearable.settings",
 	"com.google.android.apps.wearable.systemui",
 	"com.google.android.apps.youtube.music",

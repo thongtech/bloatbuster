@@ -4,11 +4,14 @@
  */
 export const androidBloatwarePackages: string[] = [
 	"com.android.adservices.api",
+	"com.android.devicelockcontroller",
 	"com.android.dreams.basic",
 	"com.android.dreams.phototable",
 	"com.android.egg",
 	"com.android.hotwordenrollment.okgoogle",
 	"com.android.hotwordenrollment.xgoogle",
+	"com.android.managedprovisioning",
+	"com.android.managedprovisioning.overlay",
 	"com.android.printservice.recommendation",
 	"com.android.protips",
 	"com.android.sdm.plugins.sprintdm",
