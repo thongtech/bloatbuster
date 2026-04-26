@@ -4,6 +4,8 @@
  */
 export const miscBloatwarePackages: string[] = [
 	"cn.wps.moffice_eng",
+	"com.android.calllogbackup",
+	"com.android.printspooler",
 	"com.baidu.input",
 	"com.baidu.searchbox",
 	"com.booking.aidprovider",
