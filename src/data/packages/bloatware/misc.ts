@@ -21,8 +21,6 @@ export const miscBloatwarePackages: string[] = [
 	"com.dsi.ant.server",
 	"com.dsi.ant.service.socket",
 	"com.duowan.mobile",
-	"com.fido.asm",
-	"com.fido.xiaomi.uafclient",
 	"com.hiya.star",
 	"com.hk.ugc",
 	"com.imo.android.imoim",

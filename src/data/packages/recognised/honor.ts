@@ -36,6 +36,7 @@ export const honorSystemPackages: string[] = [
 	"com.hihonor.carrierlocation",
 	"com.hihonor.coauthservice",
 	"com.hihonor.contacts",
+	"com.hihonor.contacts.sync",
 	"com.hihonor.controlcenter",
 	"com.hihonor.credentialmanager.overlay",
 	"com.hihonor.deskclock",

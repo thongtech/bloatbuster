@@ -15,7 +15,6 @@ export const honorBloatwarePackages: string[] = [
 	"com.hihonor.behaviorauth",
 	"com.hihonor.browserhomepage",
 	"com.hihonor.collectcenter",
-	"com.hihonor.contacts.sync",
 	"com.hihonor.cooperatedconfig",
 	"com.hihonor.crossdeviceserviceshare",
 	"com.hihonor.ddmp",

@@ -85,7 +85,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Caixun TV pre-installed app configuration",
 		safetyRating: "caution",
 		removalImpact: "Pre-installed TV apps may not auto-install on reset.",
-		category: "TV",
+		category: "Entertainment",
 	},
 	"android.autoinstalls.config.google.nexus": {
 		appID: "android.autoinstalls.config.google.nexus",
@@ -94,7 +94,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "caution",
 		removalImpact:
 			"Auto-install config removed. Stops unwanted app installations.",
-		category: "Installer",
+		category: "System",
 	},
 	"android.autoinstalls.config.samsung": {
 		appID: "android.autoinstalls.config.samsung",
@@ -103,7 +103,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "caution",
 		removalImpact:
 			"Auto-install config removed. Stops bloatware installations.",
-		category: "Installer",
+		category: "System",
 	},
 	"android.autoinstalls.config.vivo.devices": {
 		appID: "android.autoinstalls.config.vivo.devices",
@@ -130,7 +130,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "caution",
 		removalImpact:
 			"Auto-install config removed. Prevents bloatware installation.",
-		category: "Installer",
+		category: "System",
 	},
 	"android.deviceandroidconfig.config.overlay": {
 		appID: "android.deviceandroidconfig.config.overlay",
@@ -148,6 +148,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact:
 			"Extended services disabled. Some system features may not work.",
+		category: "System",
+	},
+	"android.ext.shared": {
+		appID: "android.ext.shared",
+		appName: "Android Extension Shared",
+		description:
+			"Shared library for Android extended services, providing common utilities used by system components",
+		safetyRating: "risky",
+		removalImpact:
+			"Shared extension library removed. Multiple system features may malfunction.",
 		category: "System",
 	},
 	"android.miui.home.launcher.res": {
@@ -188,7 +198,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Wear OS system UI overlay for Clockwork devices",
 		safetyRating: "risky",
 		removalImpact: "System UI overlay removed. Watch interface may break.",
-		category: "Wear OS",
+		category: "Wearables",
 	},
 	"android.overlay.common": {
 		appID: "android.overlay.common",
@@ -237,6 +247,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact:
 			"Honor framework extensions disabled. System features may break.",
+		category: "System",
+	},
+	androidhwext: {
+		appID: "androidhwext",
+		appName: "Huawei Android Extension",
+		description:
+			"Huawei-specific Android framework extensions providing EMUI and HarmonyOS device capabilities",
+		safetyRating: "risky",
+		removalImpact:
+			"Huawei framework extensions disabled. EMUI system features may break.",
 		category: "System",
 	},
 	"app.alextran.immich": {
@@ -293,7 +313,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "HSBC banking app for Australia",
 		safetyRating: "safe",
 		removalImpact: "HSBC removed. No system impact.",
-		category: "Banking",
+		category: "Finance",
 	},
 	"au.com.nab.mobile": {
 		appID: "au.com.nab.mobile",
@@ -301,7 +321,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "National Australia Bank mobile",
 		safetyRating: "safe",
 		removalImpact: "NAB removed. No system impact.",
-		category: "Banking",
+		category: "Finance",
 	},
 	"au.com.realestate.app": {
 		appID: "au.com.realestate.app",
@@ -309,7 +329,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Australian property search",
 		safetyRating: "safe",
 		removalImpact: "Real estate removed. No system impact.",
-		category: "Property",
+		category: "Lifestyle",
 	},
 	"au.com.seek": {
 		appID: "au.com.seek",
@@ -317,7 +337,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Australian job search platform",
 		safetyRating: "safe",
 		removalImpact: "SEEK removed. No system impact.",
-		category: "Employment",
+		category: "Productivity",
 	},
 	"au.com.skybus": {
 		appID: "au.com.skybus",
@@ -325,7 +345,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Melbourne airport shuttle service",
 		safetyRating: "safe",
 		removalImpact: "SkyBus removed. No system impact.",
-		category: "Transport",
+		category: "Travel",
 	},
 	"au.com.studentedge": {
 		appID: "au.com.studentedge.app",
@@ -333,7 +353,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Student discount and deals platform",
 		safetyRating: "safe",
 		removalImpact: "StudentEdge removed. No system impact.",
-		category: "Student",
+		category: "Education",
 	},
 	"au.com.vodafone.mobile.gss": {
 		appID: "au.com.vodafone.mobile.gss",
@@ -365,7 +385,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Public Transport Victoria journey planner",
 		safetyRating: "safe",
 		removalImpact: "PTV removed. No system impact.",
-		category: "Transport",
+		category: "Travel",
 	},
 	"ch.protonmail.android": {
 		appID: "ch.protonmail.android",
@@ -405,7 +425,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "UK digital banking",
 		safetyRating: "safe",
 		removalImpact: "Monzo removed. No system impact.",
-		category: "Banking",
+		category: "Finance",
 	},
 	"co.you.youapp": {
 		appID: "co.you.youapp",
@@ -478,7 +498,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Bluetooth driver for Airoha chipsets",
 		safetyRating: "risky",
 		removalImpact: "Bluetooth may not work properly.",
-		category: "Bluetooth",
+		category: "Connectivity",
 	},
 	"com.airvisual": {
 		appID: "com.airvisual",
@@ -486,7 +506,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Air quality monitoring and forecast",
 		safetyRating: "safe",
 		removalImpact: "Air quality removed. No system impact.",
-		category: "Weather",
+		category: "Utility",
 	},
 	"com.ais.mimo.eservice": {
 		appID: "com.ais.mimo.eservice",
@@ -592,7 +612,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Almost Native Graphics Layer Engine for OpenGL translation",
 		safetyRating: "risky",
 		removalImpact: "Graphics performance may degrade in some apps.",
-		category: "Graphics",
+		category: "System",
 	},
 	"com.android.apps.tag": {
 		appID: "com.android.apps.tag",
@@ -617,7 +637,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Allows selection of user profile avatars",
 		safetyRating: "caution",
 		removalImpact: "Cannot change user avatar easily.",
-		category: "Personalisation",
+		category: "Customisation",
 	},
 	"com.android.backupconfirm": {
 		appID: "com.android.backupconfirm",
@@ -635,7 +655,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "caution",
 		removalImpact:
 			"Custom lock screen features disabled. Stock lock screen still works.",
-		category: "Lock Screen",
+		category: "Display",
 	},
 	"com.android.bbklog": {
 		appID: "com.android.bbklog",
@@ -661,7 +681,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact:
 			"Printing functionality may be broken. Apps requiring print services may fail.",
-		category: "Printing",
+		category: "Utility",
 	},
 	"com.android.bips.auto_generated_rro_product__": {
 		appID: "com.android.bips.auto_generated_rro_product__",
@@ -752,7 +772,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Default Android camera application",
 		safetyRating: "risky",
 		removalImpact: "Stock camera removed. Use alternative camera app.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.android.cameraextensions": {
 		appID: "com.android.cameraextensions",
@@ -761,7 +781,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "caution",
 		removalImpact:
 			"Advanced camera features disabled. Basic camera still works.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.android.captiveportallogin": {
 		appID: "com.android.captiveportallogin",
@@ -853,6 +873,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Pixel overlay removed. Only affects Pixel devices.",
 		category: "System Overlay",
 	},
+	"com.android.cellbroadcastservice": {
+		appID: "com.android.cellbroadcastservice",
+		appName: "Cell Broadcast Service",
+		description:
+			"Core Android service for receiving emergency cell broadcast alerts such as Amber Alerts and Extreme Weather warnings",
+		safetyRating: "risky",
+		removalImpact:
+			"Emergency alert system completely disabled. Public safety risk.",
+		category: "System",
+	},
 	"com.android.cellbroadcastservice.overlay": {
 		appID: "com.android.cellbroadcastservice.overlay",
 		appName: "Cell Broadcast Service Overlay",
@@ -936,7 +966,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Stock Android contacts application",
 		safetyRating: "risky",
 		removalImpact: "Stock contacts removed. Use alternative contacts app.",
-		category: "Contacts",
+		category: "Communication",
 	},
 	"com.android.credentialmanager": {
 		appID: "com.android.credentialmanager",
@@ -952,7 +982,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Compatibility Test Suite shim for testing",
 		safetyRating: "caution",
 		removalImpact: "CTS testing removed. No system impact.",
-		category: "Testing",
+		category: "Developer",
 	},
 	"com.android.cts.priv.ctsshim": {
 		appID: "com.android.cts.priv.ctsshim",
@@ -960,7 +990,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Privileged Compatibility Test Suite shim",
 		safetyRating: "caution",
 		removalImpact: "CTS privileged testing removed. No system impact.",
-		category: "Testing",
+		category: "Developer",
 	},
 	"com.android.deskclock": {
 		appID: "com.android.deskclock",
@@ -1067,7 +1097,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Manages external storage like SD cards",
 		safetyRating: "risky",
 		removalImpact: "External storage may not work. DO NOT REMOVE.",
-		category: "Storage",
+		category: "System",
 	},
 	"com.android.federatedcompute.services": {
 		appID: "com.android.federatedcompute.services",
@@ -1153,7 +1183,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Voice training for 'OK Google' hotword detection",
 		safetyRating: "safe",
 		removalImpact: "OK Google voice activation removed. No system impact.",
-		category: "Voice Assistant",
+		category: "AI",
 	},
 	"com.android.hotwordenrollment.xgoogle": {
 		appID: "com.android.hotwordenrollment.xgoogle",
@@ -1162,7 +1192,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"Extended Google Assistant voice training for additional languages",
 		safetyRating: "safe",
 		removalImpact: "Extended voice training removed. No system impact.",
-		category: "Voice Assistant",
+		category: "AI",
 	},
 	"com.android.htmlviewer": {
 		appID: "com.android.htmlviewer",
@@ -1340,7 +1370,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Internal speaker service for Wear OS devices",
 		safetyRating: "risky",
 		removalImpact: "Watch speaker functionality disabled.",
-		category: "Wear OS",
+		category: "Wearables",
 	},
 	"com.android.keychain": {
 		appID: "com.android.keychain",
@@ -1383,7 +1413,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact:
 			"Enterprise provisioning disabled. Personal devices unaffected.",
-		category: "Enterprise",
+		category: "Productivity",
 	},
 	"com.android.managedprovisioning.overlay": {
 		appID: "com.android.managedprovisioning.overlay",
@@ -1392,7 +1422,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact:
 			"Enterprise provisioning overlay removed. Personal devices unaffected.",
-		category: "Enterprise",
+		category: "Productivity",
 	},
 	"com.android.microdroid.empty_payload": {
 		appID: "com.android.microdroid.empty_payload",
@@ -1416,7 +1446,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Handles MMS messaging",
 		safetyRating: "risky",
 		removalImpact: "Cannot send/receive MMS messages.",
-		category: "Messaging",
+		category: "Communication",
 	},
 	"com.android.modulemetadata": {
 		appID: "com.android.modulemetadata",
@@ -1552,7 +1582,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Core NFC functionality",
 		safetyRating: "risky",
 		removalImpact: "NFC completely disabled. Cannot use mobile payments.",
-		category: "NFC",
+		category: "Connectivity",
 	},
 	"com.android.nfc.auto_generated_rro_product__": {
 		appID: "com.android.nfc.auto_generated_rro_product__",
@@ -1602,7 +1632,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "caution",
 		removalImpact:
 			"On-device personalisation disabled. Some adaptive features may not work.",
-		category: "ML",
+		category: "AI",
 	},
 	"com.android.ons": {
 		appID: "com.android.ons",
@@ -1668,6 +1698,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "System UI appearance may be affected.",
 		category: "System",
 	},
+	"com.android.packageinstaller": {
+		appID: "com.android.packageinstaller",
+		appName: "Package Installer",
+		description:
+			"Android system package installer that handles APK installation, verification, and management",
+		safetyRating: "risky",
+		removalImpact:
+			"APK installation completely broken. Cannot install any apps.",
+		category: "System",
+	},
 	"com.android.pacprocessor": {
 		appID: "com.android.pacprocessor",
 		appName: "PAC Processor",
@@ -1675,6 +1715,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact: "Proxy configuration may not work.",
 		category: "Network",
+	},
+	"com.android.permissioncontroller": {
+		appID: "com.android.permissioncontroller",
+		appName: "Permission Controller",
+		description:
+			"Manages app permissions, privacy controls, and access rights on Android devices",
+		safetyRating: "risky",
+		removalImpact:
+			"Permission management broken. Apps cannot request permissions. DO NOT REMOVE.",
+		category: "System",
 	},
 	"com.android.phone": {
 		appID: "com.android.phone",
@@ -1749,7 +1799,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Suggests appropriate print services when printing",
 		safetyRating: "safe",
 		removalImpact: "Print recommendations removed. No system impact.",
-		category: "Printing",
+		category: "Utility",
 	},
 	"com.android.printspooler": {
 		appID: "com.android.printspooler",
@@ -1757,7 +1807,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "System service for printing documents",
 		safetyRating: "risky",
 		removalImpact: "Printing removed. Only remove if you never print.",
-		category: "Printing",
+		category: "Utility",
 	},
 	"com.android.protips": {
 		appID: "com.android.protips",
@@ -1781,7 +1831,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Calendar data provider for Android calendar apps",
 		safetyRating: "risky",
 		removalImpact: "All calendar apps will break. Do not remove.",
-		category: "System Provider",
+		category: "System",
 	},
 	"com.android.providers.contactkeys": {
 		appID: "com.android.providers.contactkeys",
@@ -1799,7 +1849,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact:
 			"All contacts deleted and contact functionality broken. DO NOT REMOVE.",
-		category: "Contacts",
+		category: "Communication",
 	},
 	"com.android.providers.contacts.auto_generated_rro_product": {
 		appID: "com.android.providers.contacts.auto_generated_rro_product",
@@ -1927,7 +1977,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Stores TV channels and programme data for Android TV",
 		safetyRating: "caution",
 		removalImpact: "TV guide features disabled. Only for Android TV devices.",
-		category: "TV",
+		category: "Entertainment",
 	},
 	"com.android.providers.userdictionary": {
 		appID: "com.android.providers.userdictionary",
@@ -1991,7 +2041,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Device safety and regulatory information",
 		safetyRating: "caution",
 		removalImpact: "Regulatory info not accessible.",
-		category: "System Info",
+		category: "Diagnostics",
 	},
 	"com.android.safetyregulatoryinfo.auto_generated_rro_product__": {
 		appID: "com.android.safetyregulatoryinfo.auto_generated_rro_product__",
@@ -2136,7 +2186,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "IMS presence service for RCS messaging",
 		safetyRating: "caution",
 		removalImpact: "RCS presence features disabled.",
-		category: "Messaging",
+		category: "Communication",
 	},
 	"com.android.settings": {
 		appID: "com.android.settings",
@@ -2264,7 +2314,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Handles WAP Push SMS messages",
 		safetyRating: "caution",
 		removalImpact: "WAP push messages removed. No system impact.",
-		category: "Messaging",
+		category: "Communication",
 	},
 	"com.android.soundpicker": {
 		appID: "com.android.soundpicker",
@@ -2320,7 +2370,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Manages storage and automatic file cleanup",
 		safetyRating: "caution",
 		removalImpact: "Storage management features disabled.",
-		category: "Storage",
+		category: "System",
 	},
 	"com.android.systemui": {
 		appID: "com.android.systemui",
@@ -2426,7 +2476,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Quick access to Google Wallet from power menu",
 		safetyRating: "caution",
 		removalImpact: "Wallet quick access removed. No system impact.",
-		category: "Payment",
+		category: "Finance",
 	},
 	"com.android.theme.color.amethyst": {
 		appID: "com.android.theme.color.amethyst",
@@ -2434,7 +2484,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Purple-themed Material You colour scheme",
 		safetyRating: "caution",
 		removalImpact: "Amethyst colour theme removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.color.aquamarine": {
 		appID: "com.android.theme.color.aquamarine",
@@ -2442,7 +2492,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Teal-themed Material You colour scheme",
 		safetyRating: "caution",
 		removalImpact: "Aquamarine colour theme removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.color.black": {
 		appID: "com.android.theme.color.black",
@@ -2450,7 +2500,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Black-themed Material You colour scheme",
 		safetyRating: "caution",
 		removalImpact: "Black colour theme removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.color.carbon": {
 		appID: "com.android.theme.color.carbon",
@@ -2458,7 +2508,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Dark grey Material You colour scheme",
 		safetyRating: "caution",
 		removalImpact: "Carbon colour theme removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.color.cinnamon": {
 		appID: "com.android.theme.color.cinnamon",
@@ -2466,7 +2516,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Brown-themed Material You colour scheme",
 		safetyRating: "caution",
 		removalImpact: "Cinnamon colour theme removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.color.green": {
 		appID: "com.android.theme.color.green",
@@ -2474,7 +2524,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Green-themed Material You colour scheme",
 		safetyRating: "caution",
 		removalImpact: "Green colour theme removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.color.ocean": {
 		appID: "com.android.theme.color.ocean",
@@ -2482,7 +2532,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Blue-themed Material You colour scheme",
 		safetyRating: "caution",
 		removalImpact: "Ocean colour theme removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.color.orchid": {
 		appID: "com.android.theme.color.orchid",
@@ -2490,7 +2540,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Pink-themed Material You colour scheme",
 		safetyRating: "caution",
 		removalImpact: "Orchid colour theme removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.color.palette": {
 		appID: "com.android.theme.color.palette",
@@ -2498,7 +2548,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Custom palette Material You colour scheme",
 		safetyRating: "caution",
 		removalImpact: "Palette colour theme removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.color.purple": {
 		appID: "com.android.theme.color.purple",
@@ -2506,7 +2556,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Purple-themed Material You colour scheme",
 		safetyRating: "caution",
 		removalImpact: "Purple colour theme removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.color.sand": {
 		appID: "com.android.theme.color.sand",
@@ -2514,7 +2564,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Beige-themed Material You colour scheme",
 		safetyRating: "caution",
 		removalImpact: "Sand colour theme removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.color.space": {
 		appID: "com.android.theme.color.space",
@@ -2522,7 +2572,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Dark blue Material You colour scheme",
 		safetyRating: "caution",
 		removalImpact: "Space colour theme removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.color.tangerine": {
 		appID: "com.android.theme.color.tangerine",
@@ -2530,7 +2580,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Orange-themed Material You colour scheme",
 		safetyRating: "caution",
 		removalImpact: "Tangerine colour theme removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.font.notoserifsource": {
 		appID: "com.android.theme.font.notoserifsource",
@@ -2538,7 +2588,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Noto Serif system font theme",
 		safetyRating: "caution",
 		removalImpact: "Noto Serif font removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon.pebble": {
 		appID: "com.android.theme.icon.pebble",
@@ -2546,7 +2596,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Pebble-shaped icon theme",
 		safetyRating: "caution",
 		removalImpact: "Pebble icon shape removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon.roundedrect": {
 		appID: "com.android.theme.icon.roundedrect",
@@ -2554,7 +2604,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Rounded rectangle icon theme",
 		safetyRating: "caution",
 		removalImpact: "Rounded rectangle icon shape removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon.squircle": {
 		appID: "com.android.theme.icon.squircle",
@@ -2562,7 +2612,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Squircle (square + circle) icon theme",
 		safetyRating: "caution",
 		removalImpact: "Squircle icon shape removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon.taperedrect": {
 		appID: "com.android.theme.icon.taperedrect",
@@ -2570,7 +2620,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Tapered rectangle icon theme",
 		safetyRating: "caution",
 		removalImpact: "Tapered rectangle icon shape removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon.teardrop": {
 		appID: "com.android.theme.icon.teardrop",
@@ -2578,7 +2628,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Teardrop-shaped icon theme",
 		safetyRating: "caution",
 		removalImpact: "Teardrop icon shape removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon.vessel": {
 		appID: "com.android.theme.icon.vessel",
@@ -2586,7 +2636,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Vessel-shaped icon theme",
 		safetyRating: "caution",
 		removalImpact: "Vessel icon shape removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.circular.android": {
 		appID: "com.android.theme.icon_pack.circular.android",
@@ -2594,7 +2644,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Circular icon pack for Android system",
 		safetyRating: "caution",
 		removalImpact: "Circular Android icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.circular.launcher": {
 		appID: "com.android.theme.icon_pack.circular.launcher",
@@ -2602,7 +2652,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Circular icon pack for launcher",
 		safetyRating: "caution",
 		removalImpact: "Circular launcher icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.circular.settings": {
 		appID: "com.android.theme.icon_pack.circular.settings",
@@ -2610,7 +2660,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Circular icon pack for settings",
 		safetyRating: "caution",
 		removalImpact: "Circular settings icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.circular.systemui": {
 		appID: "com.android.theme.icon_pack.circular.systemui",
@@ -2618,7 +2668,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Circular icon pack for system UI",
 		safetyRating: "caution",
 		removalImpact: "Circular system UI icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.circular.themepicker": {
 		appID: "com.android.theme.icon_pack.circular.themepicker",
@@ -2626,7 +2676,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Circular icon pack for theme picker",
 		safetyRating: "caution",
 		removalImpact: "Circular theme picker icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.filled.android": {
 		appID: "com.android.theme.icon_pack.filled.android",
@@ -2634,7 +2684,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Filled icon pack for Android system",
 		safetyRating: "caution",
 		removalImpact: "Filled Android icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.filled.launcher": {
 		appID: "com.android.theme.icon_pack.filled.launcher",
@@ -2642,7 +2692,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Filled icon pack for launcher",
 		safetyRating: "caution",
 		removalImpact: "Filled launcher icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.filled.settings": {
 		appID: "com.android.theme.icon_pack.filled.settings",
@@ -2650,7 +2700,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Filled icon pack for settings",
 		safetyRating: "caution",
 		removalImpact: "Filled settings icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.filled.systemui": {
 		appID: "com.android.theme.icon_pack.filled.systemui",
@@ -2658,7 +2708,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Filled icon pack for system UI",
 		safetyRating: "caution",
 		removalImpact: "Filled system UI icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.filled.themepicker": {
 		appID: "com.android.theme.icon_pack.filled.themepicker",
@@ -2666,7 +2716,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Filled icon pack for theme picker",
 		safetyRating: "caution",
 		removalImpact: "Filled theme picker icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.kai.android": {
 		appID: "com.android.theme.icon_pack.kai.android",
@@ -2674,7 +2724,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Kai style icon pack for Android system",
 		safetyRating: "caution",
 		removalImpact: "Kai Android icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.kai.launcher": {
 		appID: "com.android.theme.icon_pack.kai.launcher",
@@ -2682,7 +2732,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Kai style icon pack for launcher",
 		safetyRating: "caution",
 		removalImpact: "Kai launcher icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.kai.settings": {
 		appID: "com.android.theme.icon_pack.kai.settings",
@@ -2690,7 +2740,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Kai style icon pack for settings",
 		safetyRating: "caution",
 		removalImpact: "Kai settings icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.kai.systemui": {
 		appID: "com.android.theme.icon_pack.kai.systemui",
@@ -2698,7 +2748,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Kai style icon pack for system UI",
 		safetyRating: "caution",
 		removalImpact: "Kai system UI icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.kai.themepicker": {
 		appID: "com.android.theme.icon_pack.kai.themepicker",
@@ -2706,7 +2756,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Kai style icon pack for theme picker",
 		safetyRating: "caution",
 		removalImpact: "Kai theme picker icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.rounded.android": {
 		appID: "com.android.theme.icon_pack.rounded.android",
@@ -2714,7 +2764,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Rounded icon pack for Android system",
 		safetyRating: "caution",
 		removalImpact: "Rounded Android icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.rounded.launcher": {
 		appID: "com.android.theme.icon_pack.rounded.launcher",
@@ -2722,7 +2772,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Rounded icon pack for launcher",
 		safetyRating: "caution",
 		removalImpact: "Rounded launcher icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.rounded.settings": {
 		appID: "com.android.theme.icon_pack.rounded.settings",
@@ -2730,7 +2780,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Rounded icon pack for settings",
 		safetyRating: "caution",
 		removalImpact: "Rounded settings icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.rounded.systemui": {
 		appID: "com.android.theme.icon_pack.rounded.systemui",
@@ -2738,7 +2788,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Rounded icon pack for system UI",
 		safetyRating: "caution",
 		removalImpact: "Rounded system UI icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.rounded.themepicker": {
 		appID: "com.android.theme.icon_pack.rounded.themepicker",
@@ -2746,7 +2796,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Rounded icon pack for theme picker",
 		safetyRating: "caution",
 		removalImpact: "Rounded theme picker icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.sam.android": {
 		appID: "com.android.theme.icon_pack.sam.android",
@@ -2754,7 +2804,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Sam style icon pack for Android system",
 		safetyRating: "caution",
 		removalImpact: "Sam Android icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.sam.launcher": {
 		appID: "com.android.theme.icon_pack.sam.launcher",
@@ -2762,7 +2812,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Sam style icon pack for launcher",
 		safetyRating: "caution",
 		removalImpact: "Sam launcher icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.sam.settings": {
 		appID: "com.android.theme.icon_pack.sam.settings",
@@ -2770,7 +2820,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Sam style icon pack for settings",
 		safetyRating: "caution",
 		removalImpact: "Sam settings icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.sam.systemui": {
 		appID: "com.android.theme.icon_pack.sam.systemui",
@@ -2778,7 +2828,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Sam style icon pack for system UI",
 		safetyRating: "caution",
 		removalImpact: "Sam system UI icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.sam.themepicker": {
 		appID: "com.android.theme.icon_pack.sam.themepicker",
@@ -2786,7 +2836,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Sam style icon pack for theme picker",
 		safetyRating: "caution",
 		removalImpact: "Sam theme picker icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.victor.android": {
 		appID: "com.android.theme.icon_pack.victor.android",
@@ -2794,7 +2844,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Victor style icon pack for Android system",
 		safetyRating: "caution",
 		removalImpact: "Victor Android icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.victor.launcher": {
 		appID: "com.android.theme.icon_pack.victor.launcher",
@@ -2802,7 +2852,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Victor style icon pack for launcher",
 		safetyRating: "caution",
 		removalImpact: "Victor launcher icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.victor.settings": {
 		appID: "com.android.theme.icon_pack.victor.settings",
@@ -2810,7 +2860,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Victor style icon pack for settings",
 		safetyRating: "caution",
 		removalImpact: "Victor settings icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.victor.systemui": {
 		appID: "com.android.theme.icon_pack.victor.systemui",
@@ -2818,7 +2868,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Victor style icon pack for system UI",
 		safetyRating: "caution",
 		removalImpact: "Victor system UI icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.theme.icon_pack.victor.themepicker": {
 		appID: "com.android.theme.icon_pack.victor.themepicker",
@@ -2826,7 +2876,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Victor style icon pack for theme picker",
 		safetyRating: "caution",
 		removalImpact: "Victor theme picker icons removed. No system impact.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.android.thememanager": {
 		appID: "com.android.thememanager",
@@ -2834,7 +2884,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "MIUI theme management system",
 		safetyRating: "caution",
 		removalImpact: "Theme customisation removed. No system impact.",
-		category: "Personalisation",
+		category: "Customisation",
 	},
 	"com.android.thememanager.customizethemeconfig.config.overlay": {
 		appID: "com.android.thememanager.customizethemeconfig.config.overlay",
@@ -2850,7 +2900,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Theme manager modular component",
 		safetyRating: "caution",
 		removalImpact: "Theme features may not work.",
-		category: "Personalisation",
+		category: "Customisation",
 	},
 	"com.android.traceur": {
 		appID: "com.android.traceur",
@@ -2890,7 +2940,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Settings app for Android TV",
 		safetyRating: "risky",
 		removalImpact: "Cannot access TV settings. Android TV only.",
-		category: "TV",
+		category: "Entertainment",
 	},
 	"com.android.tv.settings.google.resoverlay": {
 		appID: "com.android.tv.settings.google.resoverlay",
@@ -2898,7 +2948,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Google-specific TV settings overlay",
 		safetyRating: "caution",
 		removalImpact: "Google TV features affected.",
-		category: "TV",
+		category: "Entertainment",
 	},
 	"com.android.tv.settings.mediatek.resoverlay": {
 		appID: "com.android.tv.settings.mediatek.resoverlay",
@@ -2906,7 +2956,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "MediaTek-specific TV settings overlay",
 		safetyRating: "caution",
 		removalImpact: "MediaTek TV features affected.",
-		category: "TV",
+		category: "Entertainment",
 	},
 	"com.android.tv.settings.vendor.resoverlay": {
 		appID: "com.android.tv.settings.vendor.resoverlay",
@@ -2914,7 +2964,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Vendor-specific TV settings overlay",
 		safetyRating: "caution",
 		removalImpact: "Vendor TV features affected.",
-		category: "TV",
+		category: "Entertainment",
 	},
 	"com.android.updater": {
 		appID: "com.android.updater",
@@ -2990,7 +3040,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Resources for Android Virtual Machine framework",
 		safetyRating: "safe",
 		removalImpact: "VM resources removed. Most devices don't use this.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.android.vpndialogs": {
 		appID: "com.android.vpndialogs",
@@ -3031,7 +3081,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact:
 			"Wear OS system UI overlay removed. Watch interface may break.",
-		category: "Wear OS",
+		category: "Wearables",
 	},
 	"com.android.wearable.resources": {
 		appID: "com.android.wearable.resources",
@@ -3160,7 +3210,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "ANZ bank mobile",
 		safetyRating: "safe",
 		removalImpact: "ANZ removed. No system impact.",
-		category: "Banking",
+		category: "Finance",
 	},
 	"com.app.dealfish.main": {
 		appID: "com.app.dealfish.main",
@@ -3224,7 +3274,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "AT&T cloud storage service",
 		safetyRating: "safe",
 		removalImpact: "AT&T cloud removed. No system impact.",
-		category: "Cloud Service",
+		category: "Cloud",
 	},
 	"com.att.tv": {
 		appID: "com.att.tv",
@@ -3249,6 +3299,15 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "Vodafone Adware removed. Stops ads data harvesting.",
 		category: "Carrier",
+	},
+	"com.aurora.store": {
+		appID: "com.aurora.store",
+		appName: "Aurora Store",
+		description:
+			"Open-source Google Play Store client for downloading apps without a Google account",
+		safetyRating: "safe",
+		removalImpact: "Aurora Store removed. No system impact.",
+		category: "App Store",
 	},
 	"com.authy.authy": {
 		appID: "com.authy.authy",
@@ -3377,7 +3436,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Bangkok Bank mobile banking (Thailand)",
 		safetyRating: "safe",
 		removalImpact: "Bangkok Bank removed. No system impact.",
-		category: "Banking",
+		category: "Finance",
 	},
 	"com.beci.thaitv3android": {
 		appID: "com.beci.thaitv3android",
@@ -3401,7 +3460,17 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Cryptocurrency trading platform",
 		safetyRating: "safe",
 		removalImpact: "Binance removed. No system impact.",
-		category: "Cryptocurrency",
+		category: "Finance",
+	},
+	"com.bjbyhd.screenreader_huawei": {
+		appID: "com.bjbyhd.screenreader_huawei",
+		appName: "Screen Reader (Huawei)",
+		description:
+			"Accessibility screen reader for Huawei devices, providing text-to-speech navigation assistance for visually impaired users",
+		safetyRating: "safe",
+		removalImpact:
+			"Screen reader removed. Accessibility features disabled. Keep if needed.",
+		category: "Accessibility",
 	},
 	"com.block.juggle": {
 		appID: "com.block.juggle",
@@ -3449,7 +3518,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Installs region-specific apps for Korean market",
 		safetyRating: "safe",
 		removalImpact: "Korean app preloading removed. No system impact.",
-		category: "Regional",
+		category: "Carrier",
 	},
 	"com.brave.browser": {
 		appID: "com.brave.browser",
@@ -3489,7 +3558,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Public transit tracking",
 		safetyRating: "safe",
 		removalImpact: "Ventura Transit removed. No system impact.",
-		category: "Transport",
+		category: "Travel",
 	},
 	"com.caf.fmradio": {
 		appID: "com.caf.fmradio",
@@ -3505,7 +3574,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "DDPai dashcam WiFi connection and video viewer",
 		safetyRating: "safe",
 		removalImpact: "DDPAI app removed. No system impact.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"com.canva.editor": {
 		appID: "com.canva.editor",
@@ -3513,7 +3582,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Graphic design and photo editing",
 		safetyRating: "safe",
 		removalImpact: "Canva removed. No system impact.",
-		category: "Creativity",
+		category: "Media",
 	},
 	"com.cimbthai.digital.mycimb": {
 		appID: "com.cimbthai.digital.mycimb",
@@ -3521,7 +3590,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "CIMB Thai bank mobile",
 		safetyRating: "safe",
 		removalImpact: "CIMB removed. No system impact.",
-		category: "Banking",
+		category: "Finance",
 	},
 	"com.cisco.connect.cloud": {
 		appID: "com.cisco.connect.cloud",
@@ -3561,7 +3630,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Cryptocurrency price tracking and portfolio management",
 		safetyRating: "safe",
 		removalImpact: "CoinMarketCap removed. No system impact.",
-		category: "Cryptocurrency",
+		category: "Finance",
 	},
 	"com.coles.android.flybuys.release": {
 		appID: "com.coles.android.flybuys.release",
@@ -3569,7 +3638,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Australian loyalty programme",
 		safetyRating: "safe",
 		removalImpact: "Flybuys removed. No system impact.",
-		category: "Loyalty",
+		category: "Shopping",
 	},
 	"com.commbank.netbank": {
 		appID: "com.commbank.netbank",
@@ -3577,7 +3646,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Commonwealth Bank of Australia mobile",
 		safetyRating: "safe",
 		removalImpact: "CommBank removed. No system impact.",
-		category: "Banking",
+		category: "Finance",
 	},
 	"com.commsource.beautyplus": {
 		appID: "com.commsource.beautyplus",
@@ -3657,7 +3726,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Daily Mail news",
 		safetyRating: "safe",
 		removalImpact: "Daily Mail removed. No system impact.",
-		category: "News",
+		category: "Media",
 	},
 	"com.d4viddf.hyperbridge": {
 		appID: "com.d4viddf.hyperbridge",
@@ -3682,7 +3751,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Food delivery service",
 		safetyRating: "safe",
 		removalImpact: "DoorDash removed. No system impact.",
-		category: "Food Delivery",
+		category: "Food",
 	},
 	"com.debug.loggerui": {
 		appID: "com.debug.loggerui",
@@ -3722,7 +3791,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Ride-hailing service",
 		safetyRating: "safe",
 		removalImpact: "DiDi removed. No system impact.",
-		category: "Transport",
+		category: "Travel",
 	},
 	"com.dimekkp.dimeapp": {
 		appID: "com.dimekkp.dimeapp",
@@ -3770,7 +3839,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Plugins for ANT+ fitness device connectivity",
 		safetyRating: "safe",
 		removalImpact: "ANT+ plugins removed. No system impact.",
-		category: "Fitness",
+		category: "Health",
 	},
 	"com.dsi.ant.sample.acquirechannels": {
 		appID: "com.dsi.ant.sample.acquirechannels",
@@ -3787,7 +3856,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"ANT+ fitness devices will not connect. Bluetooth devices unaffected.",
-		category: "Fitness",
+		category: "Health",
 	},
 	"com.dsi.ant.service.socket": {
 		appID: "com.dsi.ant.service.socket",
@@ -3851,7 +3920,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Alipay mobile payment platform",
 		safetyRating: "safe",
 		removalImpact: "Alipay removed. No system impact.",
-		category: "Payment",
+		category: "Finance",
 	},
 	"com.einnovation.temu": {
 		appID: "com.einnovation.temu",
@@ -3876,7 +3945,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "News aggregator app for India with 14 regional languages",
 		safetyRating: "safe",
 		removalImpact: "Dailyhunt removed. No system impact.",
-		category: "News",
+		category: "Media",
 	},
 	"com.eventbrite.attendee": {
 		appID: "com.eventbrite.attendee",
@@ -3884,7 +3953,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Event discovery and ticketing platform",
 		safetyRating: "safe",
 		removalImpact: "Eventbrite removed. No system impact.",
-		category: "Events",
+		category: "Lifestyle",
 	},
 	"com.facebook.appmanager": {
 		appID: "com.facebook.appmanager",
@@ -3992,6 +4061,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Flydigi Game Center removed. No system impact.",
 		category: "Gaming",
 	},
+	"com.gbox.android": {
+		appID: "com.gbox.android",
+		appName: "GBox",
+		description:
+			"Google Play services wrapper that enables Google apps and GMS-dependent applications on Huawei devices lacking native GMS",
+		safetyRating: "safe",
+		removalImpact:
+			"GBox removed. Google apps relying on GMS may stop working on Huawei.",
+		category: "Utility",
+	},
 	"com.goodix": {
 		appID: "com.goodix",
 		appName: "Goodix Fingerprint Service",
@@ -4072,7 +4151,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Core AI and machine learning services",
 		safetyRating: "risky",
 		removalImpact: "AI features disabled across apps.",
-		category: "AI/ML",
+		category: "AI",
 	},
 	"com.google.android.apps.accessibility.voiceaccess": {
 		appID: "com.google.android.apps.accessibility.voiceaccess",
@@ -4112,7 +4191,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Google's AI assistant (formerly Bard)",
 		safetyRating: "risky",
 		removalImpact: "Gemini AI removed. No system impact.",
-		category: "AI Assistant",
+		category: "AI",
 	},
 	"com.google.android.apps.books": {
 		appID: "com.google.android.apps.books",
@@ -4128,7 +4207,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Background services for Google Camera features",
 		safetyRating: "risky",
 		removalImpact: "Advanced camera features disabled.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.google.android.apps.carrier.carrierwifi": {
 		appID: "com.google.android.apps.carrier.carrierwifi",
@@ -4160,7 +4239,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Manage Chromecast, Google Home, and smart devices",
 		safetyRating: "risky",
 		removalImpact: "Cannot manage smart home devices. Only remove if unused.",
-		category: "IoT",
+		category: "Smart Home",
 	},
 	"com.google.android.apps.cloudprint": {
 		appID: "com.google.android.apps.cloudprint",
@@ -4168,7 +4247,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Cloud printing service (discontinued 2020)",
 		safetyRating: "safe",
 		removalImpact: "Cloud Print removed. Service no longer exists.",
-		category: "Printing",
+		category: "Utility",
 	},
 	"com.google.android.apps.customization.pixel": {
 		appID: "com.google.android.apps.customization.pixel",
@@ -4192,7 +4271,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Cloud storage and file management by Google",
 		safetyRating: "risky",
 		removalImpact: "Google Drive removed. Use browser or alternatives.",
-		category: "Cloud Service",
+		category: "Cloud",
 	},
 	"com.google.android.apps.docs.editors.docs": {
 		appID: "com.google.android.apps.docs.editors.docs",
@@ -4257,7 +4336,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact:
 			"Google Assistant removed. Voice commands removed. No system impact.",
-		category: "Voice Assistant",
+		category: "AI",
 	},
 	"com.google.android.apps.helprtc": {
 		appID: "com.google.android.apps.helprtc",
@@ -4289,7 +4368,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "News aggregation and magazine reading",
 		safetyRating: "risky",
 		removalImpact: "Google News removed. No system impact.",
-		category: "News",
+		category: "Media",
 	},
 	"com.google.android.apps.maps": {
 		appID: "com.google.android.apps.maps",
@@ -4299,6 +4378,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact:
 			"Google Maps removed. Navigation affected. Use alternatives.",
 		category: "Navigation",
+	},
+	"com.google.android.apps.meetings": {
+		appID: "com.google.android.apps.meetings",
+		appName: "Google Meet",
+		description: "Google's video conferencing and online meeting application",
+		safetyRating: "safe",
+		removalImpact: "Google Meet removed. No system impact.",
+		category: "Communication",
 	},
 	"com.google.android.apps.mediashell": {
 		appID: "com.google.android.apps.mediashell",
@@ -4323,7 +4410,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Gesture control using radar (Pixel 4/5 only)",
 		safetyRating: "safe",
 		removalImpact: "Motion Sense gestures disabled.",
-		category: "Gesture",
+		category: "Input",
 	},
 	"com.google.android.apps.nbu.files": {
 		appID: "com.google.android.apps.nbu.files",
@@ -4331,7 +4418,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "File manager and storage",
 		safetyRating: "risky",
 		removalImpact: "Google Files removed. No system impact.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"com.google.android.apps.nexuslauncher": {
 		appID: "com.google.android.apps.nexuslauncher",
@@ -4356,7 +4443,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Data transfer tool for new Pixel devices",
 		safetyRating: "safe",
 		removalImpact: "Migration tool removed. Only needed during setup.",
-		category: "Migration",
+		category: "Setup",
 	},
 	"com.google.android.apps.plus": {
 		appID: "com.google.android.apps.plus",
@@ -4438,7 +4525,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact:
 			"Google One removed. Cloud storage still accessible via browser.",
-		category: "Cloud Service",
+		category: "Cloud",
 	},
 	"com.google.android.apps.tachyon": {
 		appID: "com.google.android.apps.tachyon",
@@ -4454,7 +4541,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Tips for using Android and Google features",
 		safetyRating: "safe",
 		removalImpact: "Tips removed. No effect on functionality.",
-		category: "Tutorial",
+		category: "Setup",
 	},
 	"com.google.android.apps.translate": {
 		appID: "com.google.android.apps.translate",
@@ -4470,7 +4557,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Battery optimisation and device health monitoring",
 		safetyRating: "safe",
 		removalImpact: "May affect adaptive battery features.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.google.android.apps.tv.dreamx": {
 		appID: "com.google.android.apps.tv.dreamx",
@@ -4478,7 +4565,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "TV screensaver and ambient mode",
 		safetyRating: "risky",
 		removalImpact: "TV screensaver removed. TV only.",
-		category: "TV",
+		category: "Entertainment",
 	},
 	"com.google.android.apps.tv.launcherx": {
 		appID: "com.google.android.apps.tv.launcherx",
@@ -4486,7 +4573,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Next-gen Google TV launcher",
 		safetyRating: "risky",
 		removalImpact: "TV launcher affected. TV only.",
-		category: "TV",
+		category: "Entertainment",
 	},
 	"com.google.android.apps.walletnfcrel": {
 		appID: "com.google.android.apps.walletnfcrel",
@@ -4494,7 +4581,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "NFC payment for Google Wallet",
 		safetyRating: "risky",
 		removalImpact: "Google Wallet NFC payments removed. No system impact.",
-		category: "Payment",
+		category: "Finance",
 	},
 	"com.google.android.apps.wallpaper": {
 		appID: "com.google.android.apps.wallpaper",
@@ -4510,7 +4597,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Exclusive wallpapers for Pixel devices",
 		safetyRating: "risky",
 		removalImpact: "Pixel wallpapers removed. No system impact.",
-		category: "Personalisation",
+		category: "Customisation",
 	},
 	"com.google.android.apps.wallpaper.pixel": {
 		appID: "com.google.android.apps.wallpaper.pixel",
@@ -4560,7 +4647,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Usage statistics unavailable. No effect on device performance.",
-		category: "Wellness",
+		category: "Health",
 	},
 	"com.google.android.apps.work.clouddpc": {
 		appID: "com.google.android.apps.work.clouddpc",
@@ -4569,7 +4656,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Work profile management broken. Only remove on personal devices.",
-		category: "Enterprise",
+		category: "Productivity",
 	},
 	"com.google.android.apps.work.oobconfig": {
 		appID: "com.google.android.apps.work.oobconfig",
@@ -4577,7 +4664,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Out-of-box configuration for enterprise devices",
 		safetyRating: "safe",
 		removalImpact: "Enterprise setup removed. Personal devices unaffected.",
-		category: "Enterprise",
+		category: "Productivity",
 	},
 	"com.google.android.apps.youtube.music": {
 		appID: "com.google.android.apps.youtube.music",
@@ -4604,7 +4691,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"On-device AI for smart replies, predictions, and app suggestions",
 		safetyRating: "risky",
 		removalImpact: "Smart features disabled. Privacy may improve.",
-		category: "AI/ML",
+		category: "AI",
 	},
 	"com.google.android.as.oss": {
 		appID: "com.google.android.as.oss",
@@ -4613,7 +4700,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"On-device analysis for Now Playing, Live Caption, Smart Reply",
 		safetyRating: "risky",
 		removalImpact: "Private compute features disabled.",
-		category: "AI/ML",
+		category: "AI",
 	},
 	"com.google.android.backdrop": {
 		appID: "com.google.android.backdrop",
@@ -4693,7 +4780,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Receives emergency alerts and wireless emergency alerts",
 		safetyRating: "risky",
 		removalImpact: "Emergency alerts disabled. Keep for safety.",
-		category: "Emergency",
+		category: "Safety",
 	},
 	"com.google.android.cellbroadcastreceiver.overlay.miui": {
 		appID: "com.google.android.cellbroadcastreceiver.overlay.miui",
@@ -4709,7 +4796,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Background service for emergency cell broadcasts",
 		safetyRating: "risky",
 		removalImpact: "Emergency broadcasts disabled.",
-		category: "Emergency",
+		category: "Safety",
 	},
 	"com.google.android.cellbroadcastservice.overlay.miui": {
 		appID: "com.google.android.cellbroadcastservice.overlay.miui",
@@ -4725,7 +4812,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Font sandbox implementation for Wear OS",
 		safetyRating: "risky",
 		removalImpact: "Font rendering may be affected on watches.",
-		category: "Wear OS",
+		category: "Wearables",
 	},
 	"com.google.android.clockwork.oemsetup": {
 		appID: "com.google.android.clockwork.oemsetup",
@@ -4741,7 +4828,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Default reference system UI for Wear OS devices",
 		safetyRating: "risky",
 		removalImpact: "System UI may break on watches.",
-		category: "Wear OS",
+		category: "Wearables",
 	},
 	"com.google.android.clockworkicons": {
 		appID: "com.google.android.clockworkicons",
@@ -4757,7 +4844,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Updates device configuration from Google",
 		safetyRating: "risky",
 		removalImpact: "Configuration updates from Google disabled.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.google.android.connectivity.resources": {
 		appID: "com.google.android.connectivity.resources",
@@ -4829,7 +4916,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "File manager and document picker",
 		safetyRating: "risky",
 		removalImpact: "File browsing affected. Some apps may break.",
-		category: "File Manager",
+		category: "Utility",
 	},
 	"com.google.android.documentsui.theme.pixel": {
 		appID: "com.google.android.documentsui.theme.pixel",
@@ -4837,7 +4924,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Pixel theme for documents UI",
 		safetyRating: "caution",
 		removalImpact: "Documents UI appearance may change.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.google.android.dreamlinerupdater": {
 		appID: "com.google.android.dreamlinerupdater",
@@ -4861,7 +4948,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Provides extended services for Android features",
 		safetyRating: "risky",
 		removalImpact: "May break system features. Not recommended.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.google.android.ext.shared": {
 		appID: "com.google.android.ext.shared",
@@ -4877,7 +4964,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Factory over-the-air update service",
 		safetyRating: "risky",
 		removalImpact: "Factory OTA updates disabled.",
-		category: "System Updates",
+		category: "System Update",
 	},
 	"com.google.android.federatedcompute": {
 		appID: "com.google.android.federatedcompute",
@@ -4893,7 +4980,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Submit feedback to Google about Android",
 		safetyRating: "safe",
 		removalImpact: "Cannot submit feedback. Device unaffected.",
-		category: "Feedback",
+		category: "System",
 	},
 	"com.google.android.flipendo": {
 		appID: "com.google.android.flipendo",
@@ -4918,7 +5005,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact:
 			"Most Google and third-party apps will stop working. Only remove if degoogling device.",
-		category: "Google",
+		category: "System",
 	},
 	"com.google.android.gms.location.history": {
 		appID: "com.google.android.gms.location.history",
@@ -4934,7 +5021,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Parental controls and device supervision",
 		safetyRating: "safe",
 		removalImpact: "Family Link parental controls removed. No system impact.",
-		category: "Parental Controls",
+		category: "Parental Control",
 	},
 	"com.google.android.GoogleCamera": {
 		appID: "com.google.android.GoogleCamera",
@@ -4942,7 +5029,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Pixel camera app with advanced photography features",
 		safetyRating: "risky",
 		removalImpact: "Google Camera removed. Default camera app remains.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.google.android.googlequicksearchbox": {
 		appID: "com.google.android.googlequicksearchbox",
@@ -4958,7 +5045,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Next Generation Assistant resources",
 		safetyRating: "risky",
 		removalImpact: "Assistant features may be limited.",
-		category: "Voice Assistant",
+		category: "AI",
 	},
 	"com.google.android.grilservice": {
 		appID: "com.google.android.grilservice",
@@ -4974,7 +5061,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Core framework for Google services and Play Store",
 		safetyRating: "risky",
 		removalImpact: "Google services and Play Store will break. Do not remove.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.google.android.gsmediator": {
 		appID: "com.google.android.gsmediator",
@@ -4983,7 +5070,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact:
 			"Google services mediation disabled. Some Google features may not work.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.google.android.hardwareinfo": {
 		appID: "com.google.android.hardwareinfo",
@@ -4991,7 +5078,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Device hardware information provider",
 		safetyRating: "risky",
 		removalImpact: "Hardware info unavailable.",
-		category: "System Info",
+		category: "Diagnostics",
 	},
 	"com.google.android.health.connect.backuprestore": {
 		appID: "com.google.android.health.connect.backuprestore",
@@ -5023,7 +5110,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Hotspot 2.0 online sign-up provider login",
 		safetyRating: "risky",
 		removalImpact: "Hotspot 2.0 login removed. No system impact.",
-		category: "WiFi",
+		category: "Network",
 	},
 	"com.google.android.ims": {
 		appID: "com.google.android.ims",
@@ -5055,7 +5142,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Core services framework for Android TV",
 		safetyRating: "safe",
 		removalImpact: "Android TV may malfunction. Do not remove.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.google.android.keep": {
 		appID: "com.google.android.keep",
@@ -5079,7 +5166,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Screenshot annotation and markup tool",
 		safetyRating: "risky",
 		removalImpact: "Screenshot markup removed. No system impact.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"com.google.android.marvin.talkback": {
 		appID: "com.google.android.marvin.talkback",
@@ -5096,7 +5183,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Metadata for Google Play system modules",
 		safetyRating: "risky",
 		removalImpact: "System module updates may break.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.google.android.music": {
 		appID: "com.google.android.music",
@@ -5120,7 +5207,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "User interface for Nearby Share file sharing",
 		safetyRating: "safe",
 		removalImpact: "Nearby Share UI may be affected.",
-		category: "File Sharing",
+		category: "Connectivity",
 	},
 	"com.google.android.networkstack": {
 		appID: "com.google.android.networkstack",
@@ -5484,7 +5571,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Installs and manages app packages",
 		safetyRating: "risky",
 		removalImpact: "Cannot install new apps. Do not remove.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.google.android.packageinstaller.overlay": {
 		appID: "com.google.android.packageinstaller.overlay",
@@ -5509,7 +5596,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Manages app permissions and privacy controls",
 		safetyRating: "risky",
 		removalImpact: "Permission system breaks. Do not remove.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.google.android.photopicker": {
 		appID: "com.google.android.photopicker",
@@ -5566,7 +5653,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Pixel-specific NFC enhancements",
 		safetyRating: "risky",
 		removalImpact: "Pixel NFC features may be affected.",
-		category: "NFC",
+		category: "Connectivity",
 	},
 	"com.google.android.play.games": {
 		appID: "com.google.android.play.games",
@@ -5574,7 +5661,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Gaming platform with achievements and multiplayer",
 		safetyRating: "safe",
 		removalImpact: "Play Games removed. Game saves may be affected.",
-		category: "Game",
+		category: "Gaming",
 	},
 	"com.google.android.printservice.recommendation": {
 		appID: "com.google.android.printservice.recommendation",
@@ -5582,7 +5669,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Suggests print services from Play Store",
 		safetyRating: "safe",
 		removalImpact: "Print service recommendations removed. No system impact.",
-		category: "Printing",
+		category: "Utility",
 	},
 	"com.google.android.projection.gearhead": {
 		appID: "com.google.android.projection.gearhead",
@@ -5591,7 +5678,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Android Auto disabled. Only remove if you don't use it in car.",
-		category: "Automotive",
+		category: "Travel",
 	},
 	"com.google.android.providers.media.module": {
 		appID: "com.google.android.providers.media.module",
@@ -5648,7 +5735,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Smart settings suggestions and search",
 		safetyRating: "caution",
 		removalImpact: "Settings suggestions removed. No system impact.",
-		category: "Settings",
+		category: "System",
 	},
 	"com.google.android.setupwizard": {
 		appID: "com.google.android.setupwizard",
@@ -5681,7 +5768,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact:
 			"Storage management recommendations removed. No system impact.",
-		category: "Storage",
+		category: "System",
 	},
 	"com.google.android.syncadapters.calendar": {
 		appID: "com.google.android.syncadapters.calendar",
@@ -5689,7 +5776,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Synchronises calendar events with Google account",
 		safetyRating: "risky",
 		removalImpact: "Calendar sync with Google removed. No system impact.",
-		category: "Sync",
+		category: "Cloud",
 	},
 	"com.google.android.syncadapters.contacts": {
 		appID: "com.google.android.syncadapters.contacts",
@@ -5697,7 +5784,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Synchronises contacts with Google account",
 		safetyRating: "risky",
 		removalImpact: "Contact sync with Google disabled.",
-		category: "Sync",
+		category: "Cloud",
 	},
 	"com.google.android.systemui.gxoverlay": {
 		appID: "com.google.android.systemui.gxoverlay",
@@ -5713,7 +5800,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Read and write NFC tags for automation",
 		safetyRating: "safe",
 		removalImpact: "NFC tag programming removed. NFC payments still work.",
-		category: "NFC",
+		category: "Connectivity",
 	},
 	"com.google.android.talk": {
 		appID: "com.google.android.talk",
@@ -5753,7 +5840,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Adapter service for Device Health Services",
 		safetyRating: "safe",
 		removalImpact: "May affect battery optimisation.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.google.android.tv.frameworkpackagestubs": {
 		appID: "com.google.android.tv.frameworkpackagestubs",
@@ -5761,7 +5848,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Framework package stubs for Android TV",
 		safetyRating: "safe",
 		removalImpact: "TV framework may be affected.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.google.android.tv.remote.service": {
 		appID: "com.google.android.tv.remote.service",
@@ -5769,7 +5856,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Remote control service for Android TV",
 		safetyRating: "risky",
 		removalImpact: "Remote control features disabled. TV only.",
-		category: "TV",
+		category: "Entertainment",
 	},
 	"com.google.android.tvlauncher": {
 		appID: "com.google.android.tvlauncher",
@@ -5777,7 +5864,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Google TV home screen launcher",
 		safetyRating: "risky",
 		removalImpact: "Cannot access TV home screen. TV only.",
-		category: "TV",
+		category: "Entertainment",
 	},
 	"com.google.android.tvrecommendations": {
 		appID: "com.google.android.tvrecommendations",
@@ -5785,7 +5872,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Content recommendations for Android TV home screen",
 		safetyRating: "safe",
 		removalImpact: "TV recommendations removed. Privacy improves.",
-		category: "Recommendations",
+		category: "AI",
 	},
 	"com.google.android.uvexposurereporter": {
 		appID: "com.google.android.uvexposurereporter",
@@ -5858,7 +5945,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Device Watch Face receiver service for Wear OS",
 		safetyRating: "risky",
 		removalImpact: "Watch face receiver disabled. Watch faces may not update.",
-		category: "Wear OS",
+		category: "Wearables",
 	},
 	"com.google.android.wearable.frameworkpackagestubs": {
 		appID: "com.google.android.wearable.frameworkpackagestubs",
@@ -5891,7 +5978,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact:
 			"Pixel Watch services overlay removed. Watch services may break.",
-		category: "Wear OS",
+		category: "Wearables",
 	},
 	"com.google.android.wearable.protolayout.renderer": {
 		appID: "com.google.android.wearable.protolayout.renderer",
@@ -5899,7 +5986,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Renders ProtoLayout tiles for Wear OS",
 		safetyRating: "risky",
 		removalImpact: "ProtoLayout tiles may not render on watches.",
-		category: "Wear OS",
+		category: "Wearables",
 	},
 	"com.google.android.webview": {
 		appID: "com.google.android.webview",
@@ -5907,7 +5994,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Displays web content in apps without opening browser",
 		safetyRating: "risky",
 		removalImpact: "Apps with web content will break. Do not remove.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.google.android.wfcactivation": {
 		appID: "com.google.android.wfcactivation",
@@ -5923,7 +6010,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Wi-Fi dialogs and prompts",
 		safetyRating: "risky",
 		removalImpact: "Wi-Fi dialogs may not appear.",
-		category: "WiFi",
+		category: "Network",
 	},
 	"com.google.android.wifi.resources": {
 		appID: "com.google.android.wifi.resources",
@@ -5931,7 +6018,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Google Wi-Fi configuration resources",
 		safetyRating: "risky",
 		removalImpact: "Wi-Fi features may be affected.",
-		category: "WiFi",
+		category: "Network",
 	},
 	"com.google.android.wifi.resources.overlay.common": {
 		appID: "com.google.android.wifi.resources.overlay.common",
@@ -5972,7 +6059,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Pixel-specific Wi-Fi resources",
 		safetyRating: "risky",
 		removalImpact: "Pixel Wi-Fi features affected.",
-		category: "WiFi",
+		category: "Network",
 	},
 	"com.google.android.wifi.resources.xiaomi": {
 		appID: "com.google.android.wifi.resources.xiaomi",
@@ -5980,7 +6067,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Xiaomi device Wi-Fi resources",
 		safetyRating: "risky",
 		removalImpact: "Xiaomi Wi-Fi features affected.",
-		category: "WiFi",
+		category: "Network",
 	},
 	"com.google.android.youtube": {
 		appID: "com.google.android.youtube",
@@ -5996,7 +6083,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "YouTube app optimised for Android TV",
 		safetyRating: "risky",
 		removalImpact: "YouTube TV removed. TV only.",
-		category: "TV",
+		category: "Entertainment",
 	},
 	"com.google.android.youtube.tvmusic": {
 		appID: "com.google.android.youtube.tvmusic",
@@ -6012,7 +6099,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Google's augmented reality platform for apps",
 		safetyRating: "risky",
 		removalImpact: "AR apps and features disabled.",
-		category: "AR/Vision",
+		category: "AR",
 	},
 	"com.google.ar.lens": {
 		appID: "com.google.ar.lens",
@@ -6020,7 +6107,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Visual search and object recognition using camera",
 		safetyRating: "risky",
 		removalImpact: "Google Lens features disabled.",
-		category: "AR/Vision",
+		category: "AR",
 	},
 	"com.google.audio.hearing.visualization.accessibility.scribe": {
 		appID: "com.google.audio.hearing.visualization.accessibility.scribe",
@@ -6036,7 +6123,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Frameworks overlay for Wear OS Clockwork devices",
 		safetyRating: "risky",
 		removalImpact: "Wear OS frameworks overlay removed. System may break.",
-		category: "Wear OS",
+		category: "Wearables",
 	},
 	"com.google.euiccpixel": {
 		appID: "com.google.euiccpixel",
@@ -6068,7 +6155,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Now Playing music recognition and ambient features",
 		safetyRating: "risky",
 		removalImpact: "Now Playing and ambient features disabled.",
-		category: "AI/ML",
+		category: "AI",
 	},
 	"com.google.mainline.adservices": {
 		appID: "com.google.mainline.adservices",
@@ -6084,7 +6171,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Collects usage data and diagnostics for Google",
 		safetyRating: "safe",
 		removalImpact: "Telemetry removed. May improve privacy and battery life.",
-		category: "Analytics",
+		category: "Telemetry",
 	},
 	"com.google.omadm.trigger": {
 		appID: "com.google.omadm.trigger",
@@ -6108,7 +6195,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "GPU profiling layer for Pixel 4 (Coral)",
 		safetyRating: "risky",
 		removalImpact: "GPU profiling removed. No system impact.",
-		category: "Debugging",
+		category: "Developer",
 	},
 	"com.google.pixel.dynamicwallpapers": {
 		appID: "com.google.pixel.dynamicwallpapers",
@@ -6116,7 +6203,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Dynamic live wallpapers for Pixel",
 		safetyRating: "risky",
 		removalImpact: "Dynamic wallpapers removed. No system impact.",
-		category: "Personalisation",
+		category: "Customisation",
 	},
 	"com.google.pixel.livewallpaper": {
 		appID: "com.google.pixel.livewallpaper",
@@ -6124,7 +6211,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Exclusive live wallpapers for Pixel",
 		safetyRating: "risky",
 		removalImpact: "Live wallpapers removed. No system impact.",
-		category: "Personalisation",
+		category: "Customisation",
 	},
 	"com.google.RilConfigService": {
 		appID: "com.google.RilConfigService",
@@ -6148,7 +6235,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Virtual reality demonstration",
 		safetyRating: "safe",
 		removalImpact: "VR demo removed. No system impact.",
-		category: "VR",
+		category: "Entertainment",
 	},
 	"com.google.vr.vrcore": {
 		appID: "com.google.vr.vrcore",
@@ -6156,7 +6243,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Core services for Google VR experiences",
 		safetyRating: "safe",
 		removalImpact: "VR apps removed. Only remove if no VR usage.",
-		category: "VR",
+		category: "Entertainment",
 	},
 	"com.google.wear.services": {
 		appID: "com.google.wear.services",
@@ -6164,7 +6251,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Core services for Google Wear devices",
 		safetyRating: "risky",
 		removalImpact: "Google Wear services disabled. Watch features may break.",
-		category: "Wear OS",
+		category: "Wearables",
 	},
 	"com.grabtaxi.passenger": {
 		appID: "com.grabtaxi.passenger",
@@ -6172,7 +6259,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Southeast Asian ride-hailing and delivery platform",
 		safetyRating: "safe",
 		removalImpact: "Grab removed. No system impact.",
-		category: "Transportation",
+		category: "Travel",
 	},
 	"com.gsma.rcs": {
 		appID: "com.gsma.rcs",
@@ -6181,7 +6268,17 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"Rich Communication Services (RCS) by GSMA. Modern messaging protocol replacing SMS with features like read receipts, typing indicators, high-res media, and group chat.",
 		safetyRating: "safe",
 		removalImpact: "RCS messaging features disabled. Standard SMS still works.",
-		category: "Messaging",
+		category: "Communication",
+	},
+	"com.hicloud.android.clone": {
+		appID: "com.hicloud.android.clone",
+		appName: "Phone Clone",
+		description:
+			"Huawei Phone Clone app for migrating data, contacts, photos, and apps between devices via HiCloud",
+		safetyRating: "safe",
+		removalImpact:
+			"Phone Clone removed. Data migration feature lost. No system impact.",
+		category: "Utility",
 	},
 	"com.hihonor.aipluginengine": {
 		appID: "com.hihonor.aipluginengine",
@@ -6189,7 +6286,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Honor AI plugin framework for AI-powered features",
 		safetyRating: "caution",
 		removalImpact: "AI plugins disabled. AI features may not work across apps.",
-		category: "AI/ML",
+		category: "AI",
 	},
 	"com.hihonor.airlink": {
 		appID: "com.hihonor.airlink",
@@ -6206,7 +6303,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact:
 			"Hardware compatibility layer broken. System may be unstable.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.hihonor.android.clone": {
 		appID: "com.hihonor.android.clone",
@@ -6214,7 +6311,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Device data migration tool for transferring to new devices",
 		safetyRating: "safe",
 		removalImpact: "Phone Clone removed. Device already set up.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"com.hihonor.android.FloatTasks": {
 		appID: "com.hihonor.android.FloatTasks",
@@ -6230,7 +6327,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Honor Application Performance Service for app optimisation",
 		safetyRating: "caution",
 		removalImpact: "App performance optimisation disabled.",
-		category: "Performance",
+		category: "System",
 	},
 	"com.hihonor.android.instantshare": {
 		appID: "com.hihonor.android.instantshare",
@@ -6239,7 +6336,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"Quick file sharing between Honor devices and cross-platform devices",
 		safetyRating: "safe",
 		removalImpact: "Instant Share removed. Use alternatives.",
-		category: "File Sharing",
+		category: "Connectivity",
 	},
 	"com.hihonor.android.internal.app": {
 		appID: "com.hihonor.android.internal.app",
@@ -6289,7 +6386,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact:
 			"Honor app notifications broken. Third-party apps unaffected.",
-		category: "Notifications",
+		category: "System",
 	},
 	"com.hihonor.android.thememanager": {
 		appID: "com.hihonor.android.thememanager",
@@ -6305,7 +6402,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Weather forecast application",
 		safetyRating: "safe",
 		removalImpact: "Weather app removed. Use alternatives.",
-		category: "Weather",
+		category: "Utility",
 	},
 	"com.hihonor.android.wfdft": {
 		appID: "com.hihonor.android.wfdft",
@@ -6330,7 +6427,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Synchronises system assets and resources",
 		safetyRating: "risky",
 		removalImpact: "System resource sync broken. Updates may fail.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.hihonor.assetsyncservice": {
 		appID: "com.hihonor.assetsyncservice",
@@ -6338,7 +6435,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Background service for system asset synchronisation",
 		safetyRating: "risky",
 		removalImpact: "Asset sync service disabled. System updates affected.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.hihonor.assistant": {
 		appID: "com.hihonor.assistant",
@@ -6346,7 +6443,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Honor voice assistant and AI helper",
 		safetyRating: "safe",
 		removalImpact: "YOYO Assistant removed. Use Google Assistant.",
-		category: "AI Assistant",
+		category: "AI",
 	},
 	"com.hihonor.associateassistant": {
 		appID: "com.hihonor.associateassistant",
@@ -6354,7 +6451,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Contextual suggestions and smart recommendations",
 		safetyRating: "safe",
 		removalImpact: "Smart suggestions disabled. No system impact.",
-		category: "AI/ML",
+		category: "AI",
 	},
 	"com.hihonor.audioaccessorymanager": {
 		appID: "com.hihonor.audioaccessorymanager",
@@ -6371,7 +6468,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"Automatically installs carrier-specific apps based on SIM MCC",
 		safetyRating: "safe",
 		removalImpact: "Carrier app auto-install disabled. Recommended removal.",
-		category: "Bloatware",
+		category: "Carrier",
 	},
 	"com.hihonor.awareness": {
 		appID: "com.hihonor.awareness",
@@ -6404,7 +6501,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "AI decision-making framework for system intelligence",
 		safetyRating: "caution",
 		removalImpact: "AI system optimisations disabled. Device still works.",
-		category: "AI/ML",
+		category: "AI",
 	},
 	"com.hihonor.browserhomepage": {
 		appID: "com.hihonor.browserhomepage",
@@ -6420,7 +6517,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Basic calculator application",
 		safetyRating: "safe",
 		removalImpact: "Calculator removed. Use alternatives.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"com.hihonor.calendar": {
 		appID: "com.hihonor.calendar",
@@ -6436,7 +6533,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Default camera application with AI enhancements",
 		safetyRating: "risky",
 		removalImpact: "Camera removed. Install alternative camera app first.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.hihonor.cameraextension": {
 		appID: "com.hihonor.cameraextension",
@@ -6444,7 +6541,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Extended camera features and filters",
 		safetyRating: "caution",
 		removalImpact: "Advanced camera features disabled. Basic camera works.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.hihonor.carrierlocation": {
 		appID: "com.hihonor.carrierlocation",
@@ -6485,7 +6582,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Contact synchronisation with Honor Cloud",
 		safetyRating: "safe",
 		removalImpact: "Honor contact sync disabled. Google sync still works.",
-		category: "Sync",
+		category: "Cloud",
 	},
 	"com.hihonor.controlcenter": {
 		appID: "com.hihonor.controlcenter",
@@ -6493,7 +6590,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Quick settings and notification shade",
 		safetyRating: "risky",
 		removalImpact: "Quick settings broken. System UI affected.",
-		category: "System UI",
+		category: "System",
 	},
 	"com.hihonor.cooperatedconfig": {
 		appID: "com.hihonor.cooperatedconfig",
@@ -6501,7 +6598,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Coordinated configuration service for system components",
 		safetyRating: "risky",
 		removalImpact: "System component coordination broken.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.hihonor.credentialmanager.overlay": {
 		appID: "com.hihonor.credentialmanager.overlay",
@@ -6533,7 +6630,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Clock, alarm, timer, and stopwatch application",
 		safetyRating: "safe",
 		removalImpact: "Clock app removed. System time unaffected.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"com.hihonor.desktop.explorer": {
 		appID: "com.hihonor.desktop.explorer",
@@ -6597,7 +6694,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "File manager and storage browser",
 		safetyRating: "safe",
 		removalImpact: "File manager removed. Use alternatives.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"com.hihonor.fileservice": {
 		appID: "com.hihonor.fileservice",
@@ -6605,7 +6702,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Background file management service",
 		safetyRating: "caution",
 		removalImpact: "File operations may be affected.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.hihonor.fitness.healthservice": {
 		appID: "com.hihonor.fitness.healthservice",
@@ -6669,7 +6766,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "AI vision service for object recognition and AR features",
 		safetyRating: "safe",
 		removalImpact: "AI vision features disabled. Camera still works.",
-		category: "AI/ML",
+		category: "AI",
 	},
 	"com.hihonor.hiview": {
 		appID: "com.hihonor.hiview",
@@ -6718,7 +6815,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Advanced screenshot features disabled. Basic screenshot works.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"com.hihonor.hnmusicplayer": {
 		appID: "com.hihonor.hnmusicplayer",
@@ -6768,7 +6865,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "caution",
 		removalImpact:
 			"Intelligent resource management disabled. Performance may vary.",
-		category: "Performance",
+		category: "System",
 	},
 	"com.hihonor.iconnect": {
 		appID: "com.hihonor.iconnect",
@@ -6825,7 +6922,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"AI Lens for object recognition, translation, and shopping search",
 		safetyRating: "safe",
 		removalImpact: "AI Lens removed. Camera still works.",
-		category: "AI/ML",
+		category: "AI",
 	},
 	"com.hihonor.magazine": {
 		appID: "com.hihonor.magazine",
@@ -6905,7 +7002,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Motion and activity recognition service",
 		safetyRating: "caution",
 		removalImpact: "Motion gestures disabled. Health tracking affected.",
-		category: "Sensors",
+		category: "System",
 	},
 	"com.hihonor.msdp": {
 		appID: "com.hihonor.msdp",
@@ -6914,7 +7011,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"Motion Sensor Data Processing for activity and context recognition",
 		safetyRating: "caution",
 		removalImpact: "Sensor-based features limited. Basic sensors work.",
-		category: "Sensors",
+		category: "System",
 	},
 	"com.hihonor.nearby": {
 		appID: "com.hihonor.nearby",
@@ -6972,7 +7069,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"Honor device management, shopping, support, and community hub",
 		safetyRating: "safe",
 		removalImpact: "My Honor removed. Support access via website.",
-		category: "Services",
+		category: "System",
 	},
 	"com.hihonor.photos": {
 		appID: "com.hihonor.photos",
@@ -6988,7 +7085,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "App recommendations and promotional content",
 		safetyRating: "safe",
 		removalImpact: "App suggestions removed. Recommended removal.",
-		category: "Bloatware",
+		category: "App Store",
 	},
 	"com.hihonor.powergenie": {
 		appID: "com.hihonor.powergenie",
@@ -7004,7 +7101,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Printing framework for wireless printers",
 		safetyRating: "safe",
 		removalImpact: "Honor print service removed. Other print services work.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"com.hihonor.remotepassword": {
 		appID: "com.hihonor.remotepassword",
@@ -7036,7 +7133,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Screen recording utility",
 		safetyRating: "safe",
 		removalImpact: "Screen recorder removed. Use alternatives.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"com.hihonor.search": {
 		appID: "com.hihonor.search",
@@ -7076,7 +7173,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Intelligent screenshot with content recognition",
 		safetyRating: "safe",
 		removalImpact: "Smart screenshot disabled. Basic screenshot works.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"com.hihonor.soundrecorder": {
 		appID: "com.hihonor.soundrecorder",
@@ -7117,7 +7214,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"Device maintenance, cleanup, optimisation, and security centre",
 		safetyRating: "caution",
 		removalImpact: "System management tools disabled.",
-		category: "System Tools",
+		category: "System",
 	},
 	"com.hihonor.systemserver": {
 		appID: "com.hihonor.systemserver",
@@ -7133,7 +7230,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Device tips and feature tutorials",
 		safetyRating: "safe",
 		removalImpact: "Tips removed. No system impact.",
-		category: "Help",
+		category: "Support",
 	},
 	"com.hihonor.trustcircle": {
 		appID: "com.hihonor.trustcircle",
@@ -7157,7 +7254,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Computer vision processing for AI features",
 		safetyRating: "caution",
 		removalImpact: "AI vision features disabled.",
-		category: "AI/ML",
+		category: "AI",
 	},
 	"com.hihonor.voiceengine": {
 		appID: "com.hihonor.voiceengine",
@@ -7174,6 +7271,15 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "Wallpaper editor removed. Static wallpapers work.",
 		category: "Customisation",
+	},
+	"com.hisi.mapcon": {
+		appID: "com.hisi.mapcon",
+		appName: "MAPCON Mobile",
+		description:
+			"HiSilicon Kirin chipset IMS/MAPCON service enabling Wi-Fi Calling (VoWiFi) on Huawei and Honor devices",
+		safetyRating: "caution",
+		removalImpact: "Wi-Fi Calling (VoWiFi) permanently disabled",
+		category: "Telephony",
 	},
 	"com.hiya.star": {
 		appID: "com.hiya.star",
@@ -7205,7 +7311,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Updatable GPU drivers for graphics performance",
 		safetyRating: "risky",
 		removalImpact: "Graphics performance degraded. Games may not work.",
-		category: "Graphics",
+		category: "System",
 	},
 	"com.huaqin.btlogger": {
 		appID: "com.huaqin.btlogger",
@@ -7247,6 +7353,1711 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "SAR controller removed. Manufacturing use.",
 		category: "Factory",
 	},
+	"com.huawei.airlink": {
+		appID: "com.huawei.airlink",
+		appName: "Huawei AirLink",
+		description: "Wireless screen mirroring and device connectivity service",
+		safetyRating: "safe",
+		removalImpact: "Wireless screen sharing disabled. No system impact.",
+		category: "Connectivity",
+	},
+	"com.huawei.aml": {
+		appID: "com.huawei.aml",
+		appName: "Advanced Mobile Location",
+		description:
+			"Huawei implementation of Advanced Mobile Location (AML) — an emergency service that automatically sends precise GPS/Wi-Fi location to emergency responders when a user dials the local emergency number (e.g. 112 or 999)",
+		safetyRating: "caution",
+		removalImpact:
+			"Automatic location reporting to emergency services disabled. Emergency calls still work but responders won't receive your location automatically.",
+		category: "Safety",
+	},
+	"com.huawei.android.airsharing": {
+		appID: "com.huawei.android.airsharing",
+		appName: "Huawei Air Sharing",
+		description:
+			"Huawei air sharing feature for wirelessly mirroring device screen to compatible displays",
+		safetyRating: "safe",
+		removalImpact:
+			"Air Sharing removed. Screen mirroring to external displays lost.",
+		category: "Connectivity",
+	},
+	"com.huawei.android.chr": {
+		appID: "com.huawei.android.chr",
+		appName: "CHR Service",
+		description:
+			"Compatibility and hardware runtime service for Huawei devices",
+		safetyRating: "risky",
+		removalImpact:
+			"Hardware compatibility layer broken. System may be unstable.",
+		category: "System",
+	},
+	"com.huawei.android.findmyphone": {
+		appID: "com.huawei.android.findmyphone",
+		appName: "Find My Phone",
+		description:
+			"Huawei Find My Phone service for locating, locking, or wiping a lost device remotely via Huawei cloud",
+		safetyRating: "caution",
+		removalImpact:
+			"Remote device location and lock disabled. Keep if you use Huawei Find My Device.",
+		category: "Security",
+	},
+	"com.huawei.android.FloatTasks": {
+		appID: "com.huawei.android.FloatTasks",
+		appName: "Floating Dock",
+		description:
+			"Huawei floating dock providing quick access to recent apps and system shortcuts in a floating panel",
+		safetyRating: "safe",
+		removalImpact: "Floating dock removed. No system impact.",
+		category: "System",
+	},
+	"com.huawei.android.hsf": {
+		appID: "com.huawei.android.hsf",
+		appName: "Huawei Services Framework",
+		description:
+			"Huawei Services Framework (HSF) for HMS Core integration and Huawei cloud service connectivity",
+		safetyRating: "safe",
+		removalImpact:
+			"HMS integration disabled. Huawei cloud features stop working.",
+		category: "System",
+	},
+	"com.huawei.android.hwaps": {
+		appID: "com.huawei.android.hwaps",
+		appName: "Adaptive Performance System",
+		description:
+			"Huawei Adaptive Performance System controlling display refresh rate switching and power-performance balancing",
+		safetyRating: "risky",
+		removalImpact:
+			"Refresh rate switching broken. Display may stay locked at one frequency.",
+		category: "System",
+	},
+	"com.huawei.android.hwouc": {
+		appID: "com.huawei.android.hwouc",
+		appName: "Huawei OTA Update Client",
+		description:
+			"Huawei over-the-air firmware update client for receiving and installing system updates",
+		safetyRating: "risky",
+		removalImpact:
+			"OTA system updates permanently disabled. Device will never receive firmware or security updates.",
+		category: "System",
+	},
+	"com.huawei.android.instantonline": {
+		appID: "com.huawei.android.instantonline",
+		appName: "Instant Online",
+		description:
+			"Huawei Instant Online feature for quick web browsing previews without fully opening an app",
+		safetyRating: "safe",
+		removalImpact: "Instant Online removed. No system impact.",
+		category: "Browser",
+	},
+	"com.huawei.android.instantshare": {
+		appID: "com.huawei.android.instantshare",
+		appName: "Instant Share",
+		description:
+			"Huawei Instant Share for fast peer-to-peer file transfer using Wi-Fi Direct and Bluetooth",
+		safetyRating: "safe",
+		removalImpact:
+			"Instant Share removed. Use alternative file transfer methods.",
+		category: "Connectivity",
+	},
+	"com.huawei.android.internal.app": {
+		appID: "com.huawei.android.internal.app",
+		appName: "Huawei Internal App",
+		description:
+			"Internal Huawei sharing component providing inter-app communication and system sharing infrastructure",
+		safetyRating: "risky",
+		removalImpact:
+			"Huawei sharing infrastructure broken. System sharing may fail.",
+		category: "System",
+	},
+	"com.huawei.android.launcher": {
+		appID: "com.huawei.android.launcher",
+		appName: "EMUI Launcher",
+		description:
+			"Huawei EMUI home screen launcher providing the default home screen, app drawer, and recents functionality",
+		safetyRating: "caution",
+		removalImpact:
+			"Default home screen removed. Install a third-party launcher first. Recents button may stop working.",
+		category: "Launcher",
+	},
+	"com.huawei.android.pushagent": {
+		appID: "com.huawei.android.pushagent",
+		appName: "HMS Push Agent",
+		description:
+			"Huawei Mobile Services push notification agent delivering notifications from HMS-based applications",
+		safetyRating: "caution",
+		removalImpact:
+			"Push notifications for HMS apps disabled. Non-GMS notifications will stop.",
+		category: "System",
+	},
+	"com.huawei.android.remotecontroller": {
+		appID: "com.huawei.android.remotecontroller",
+		appName: "Smart Controller",
+		description:
+			"Huawei Smart Controller app for using the phone as a remote control for compatible Huawei devices",
+		safetyRating: "safe",
+		removalImpact: "Smart Controller removed. No system impact.",
+		category: "Connectivity",
+	},
+	"com.huawei.android.thememanager": {
+		appID: "com.huawei.android.thememanager",
+		appName: "Themes",
+		description:
+			"Huawei Theme Manager for applying system-wide themes, wallpapers, fonts, and icon packs",
+		safetyRating: "risky",
+		removalImpact:
+			"Theme system broken. System fonts and UI elements may revert or fail to load.",
+		category: "Customisation",
+	},
+	"com.huawei.android.totemweather": {
+		appID: "com.huawei.android.totemweather",
+		appName: "Totem Weather",
+		description:
+			"Huawei weather widget providing weather information on the lock screen and home screen",
+		safetyRating: "safe",
+		removalImpact: "Weather widget removed. No system impact.",
+		category: "Utility",
+	},
+	"com.huawei.aod": {
+		appID: "com.huawei.aod",
+		appName: "Always On Display",
+		description:
+			"Huawei Always On Display feature showing time, date, and notifications on a low-power screen",
+		safetyRating: "risky",
+		removalImpact:
+			"Always On Display removed. Screen may not wake correctly in some scenarios.",
+		category: "Display",
+	},
+	"com.huawei.appmarket": {
+		appID: "com.huawei.appmarket",
+		appName: "AppGallery",
+		description:
+			"Huawei AppGallery app store for discovering, downloading, and updating applications. On Huawei devices without GMS, this is the only official app distribution channel.",
+		safetyRating: "risky",
+		removalImpact:
+			"Primary app store removed. On GMS-less Huawei devices, app installation and updates will break entirely.",
+		category: "App Store",
+	},
+	"com.huawei.ar.measure": {
+		appID: "com.huawei.ar.measure",
+		appName: "AR Measure",
+		description:
+			"Huawei AR-based measurement app using the camera and AREngine to measure real-world objects",
+		safetyRating: "safe",
+		removalImpact: "AR Measure removed. No system impact.",
+		category: "Utility",
+	},
+	"com.huawei.arengine.service": {
+		appID: "com.huawei.arengine.service",
+		appName: "AR Engine",
+		description:
+			"Huawei AR Engine service providing augmented reality capabilities and motion tracking for AR applications",
+		safetyRating: "safe",
+		removalImpact: "AR features disabled. AR apps will not function.",
+		category: "AR",
+	},
+	"com.huawei.assetsync": {
+		appID: "com.huawei.assetsync",
+		appName: "Asset Sync",
+		description:
+			"Huawei asset synchronisation service for syncing themes, fonts, and wallpapers across devices via HiCloud",
+		safetyRating: "caution",
+		removalImpact:
+			"Asset syncing disabled. Themes and assets may not update across devices.",
+		category: "Cloud",
+	},
+	"com.huawei.assetsyncservice": {
+		appID: "com.huawei.assetsyncservice",
+		appName: "Asset Sync Service",
+		description:
+			"Background service component for Huawei asset synchronisation across multiple devices",
+		safetyRating: "caution",
+		removalImpact: "Asset sync service disabled. Cloud asset updates may stop.",
+		category: "Cloud",
+	},
+	"com.huawei.audioaccessorymanager": {
+		appID: "com.huawei.audioaccessorymanager",
+		appName: "Audio Accessory Manager",
+		description:
+			"Huawei audio accessory manager for detecting and configuring headsets, earbuds, and audio peripherals",
+		safetyRating: "caution",
+		removalImpact:
+			"Headset auto-detection and audio accessory configuration may stop.",
+		category: "Audio",
+	},
+	"com.huawei.autoinstallapkfrommcc": {
+		appID: "com.huawei.autoinstallapkfrommcc",
+		appName: "Auto-Install from MCC",
+		description:
+			"Automatically installs carrier-specific APKs based on the device's Mobile Country Code",
+		safetyRating: "caution",
+		removalImpact:
+			"Carrier-specific auto-installation disabled. Manual app install still works.",
+		category: "Carrier",
+	},
+	"com.huawei.behaviorauth": {
+		appID: "com.huawei.behaviorauth",
+		appName: "Behaviour Authentication",
+		description:
+			"Huawei behaviour-based authentication service analysing usage patterns for passive identity verification",
+		safetyRating: "caution",
+		removalImpact:
+			"Behaviour-based auth disabled. PIN/fingerprint/face unlock still work.",
+		category: "Security",
+	},
+	"com.huawei.bluetooth": {
+		appID: "com.huawei.bluetooth",
+		appName: "Huawei Bluetooth",
+		description:
+			"Huawei Bluetooth stack extension enabling contact import via Bluetooth and enhanced BT device management",
+		safetyRating: "caution",
+		removalImpact:
+			"Bluetooth contact import and advanced BT features may be affected.",
+		category: "Connectivity",
+	},
+	"com.huawei.browser": {
+		appID: "com.huawei.browser",
+		appName: "Huawei Browser",
+		description:
+			"Huawei's built-in web browser with ad blocking and privacy features",
+		safetyRating: "safe",
+		removalImpact: "Huawei Browser removed. Use an alternative browser.",
+		category: "Browser",
+	},
+	"com.huawei.browser.fa": {
+		appID: "com.huawei.browser.fa",
+		appName: "Browser Feature App",
+		description:
+			"Feature ability component for Huawei Browser providing quick-access cards and mini-program integration",
+		safetyRating: "safe",
+		removalImpact: "Browser feature cards removed. Core browsing unaffected.",
+		category: "Browser",
+	},
+	"com.huawei.browserhomepage": {
+		appID: "com.huawei.browserhomepage",
+		appName: "Browser Homepage",
+		description:
+			"Huawei Browser homepage service providing news feed and recommended content on the browser start page",
+		safetyRating: "safe",
+		removalImpact: "Browser homepage content removed. Browsing works normally.",
+		category: "Browser",
+	},
+	"com.huawei.calculator": {
+		appID: "com.huawei.calculator",
+		appName: "Calculator",
+		description:
+			"Huawei stock calculator app with standard, scientific, and conversion modes",
+		safetyRating: "safe",
+		removalImpact: "Calculator removed. Use a third-party alternative.",
+		category: "Utility",
+	},
+	"com.huawei.calendar": {
+		appID: "com.huawei.calendar",
+		appName: "Calendar",
+		description:
+			"Huawei stock calendar app supporting local and cloud-synced events, reminders, and scheduling",
+		safetyRating: "caution",
+		removalImpact:
+			"Calendar removed. Calendar data may be affected. Install an alternative first.",
+		category: "Productivity",
+	},
+	"com.huawei.camera": {
+		appID: "com.huawei.camera",
+		appName: "Camera",
+		description:
+			"Huawei stock camera application with AI photography, portrait modes, and computational imaging features",
+		safetyRating: "caution",
+		removalImpact:
+			"Default camera removed. Install a third-party camera app first.",
+		category: "Photography",
+	},
+	"com.huawei.camerakit.impl": {
+		appID: "com.huawei.camerakit.impl",
+		appName: "Camera Kit",
+		description:
+			"Huawei Camera Kit SDK implementation enabling third-party apps to access camera features via HMS",
+		safetyRating: "safe",
+		removalImpact:
+			"Third-party apps using Huawei Camera Kit may lose camera functionality.",
+		category: "System",
+	},
+	"com.huawei.coauthservice": {
+		appID: "com.huawei.coauthservice",
+		appName: "Co-Auth Service",
+		description:
+			"Huawei collaborative authentication service managing multi-factor and cross-device authentication",
+		safetyRating: "risky",
+		removalImpact:
+			"Cross-device authentication broken. Biometric unlock and related features may fail.",
+		category: "Security",
+	},
+	"com.huawei.commonwallpaper": {
+		appID: "com.huawei.commonwallpaper",
+		appName: "Common Wallpaper",
+		description:
+			"Huawei common wallpaper provider supplying default static wallpapers for the home and lock screens",
+		safetyRating: "safe",
+		removalImpact:
+			"Default wallpapers removed. Set a custom wallpaper beforehand.",
+		category: "Customisation",
+	},
+	"com.huawei.compass": {
+		appID: "com.huawei.compass",
+		appName: "Compass",
+		description:
+			"Huawei stock compass app using the magnetometer sensor for directional navigation",
+		safetyRating: "safe",
+		removalImpact: "Compass removed. Use a third-party compass app.",
+		category: "Utility",
+	},
+	"com.huawei.contacts": {
+		appID: "com.huawei.contacts",
+		appName: "Contacts",
+		description:
+			"Huawei stock contacts app for managing phone contacts, favourites, and account-synced address books",
+		safetyRating: "caution",
+		removalImpact:
+			"Contacts app removed. Contact data intact in provider. Install an alternative.",
+		category: "Communication",
+	},
+	"com.huawei.contacts.sync": {
+		appID: "com.huawei.contacts.sync",
+		appName: "Contacts Sync",
+		description:
+			"Huawei contacts synchronisation service for backing up and syncing contacts to Huawei cloud",
+		safetyRating: "caution",
+		removalImpact:
+			"Huawei cloud contacts sync disabled. Local contacts remain intact.",
+		category: "Cloud",
+	},
+	"com.huawei.contactscamcard": {
+		appID: "com.huawei.contactscamcard",
+		appName: "Business Card Scanner",
+		description:
+			"Huawei business card scanner that uses the camera to scan and import contact information from physical cards",
+		safetyRating: "safe",
+		removalImpact: "Business card scanner removed. No system impact.",
+		category: "Utility",
+	},
+	"com.huawei.contentsensor": {
+		appID: "com.huawei.contentsensor",
+		appName: "Content Sensor",
+		description:
+			"Huawei content sensor service analysing on-screen content to enable contextual features and smart suggestions",
+		safetyRating: "risky",
+		removalImpact:
+			"Content-aware features disabled. Smart suggestions and context menus may break.",
+		category: "System",
+	},
+	"com.huawei.controlcenter": {
+		appID: "com.huawei.controlcenter",
+		appName: "Control Centre",
+		description:
+			"Huawei Control Centre (quick settings panel) providing toggles for Wi-Fi, Bluetooth, brightness, and other shortcuts",
+		safetyRating: "caution",
+		removalImpact:
+			"Quick settings panel may malfunction. System control shortcuts affected.",
+		category: "System",
+	},
+	"com.huawei.def": {
+		appID: "com.huawei.def",
+		appName: "Device Enablement Framework",
+		description:
+			"HarmonyOS Device Enablement Framework providing core device capability services for EMUI and HarmonyOS",
+		safetyRating: "risky",
+		removalImpact:
+			"Core device features may crash. Contacts and dialler reported broken after removal.",
+		category: "System",
+	},
+	"com.huawei.deskclock": {
+		appID: "com.huawei.deskclock",
+		appName: "Clock",
+		description:
+			"Huawei stock clock app providing alarms, stopwatch, timer, and world clock functionality",
+		safetyRating: "caution",
+		removalImpact:
+			"Clock app removed. Alarms will stop. Install an alternative before removing.",
+		category: "Utility",
+	},
+	"com.huawei.desktop.explorer": {
+		appID: "com.huawei.desktop.explorer",
+		appName: "Desktop Explorer",
+		description:
+			"Huawei Desktop Explorer enabling the phone to function as a full desktop OS when connected to an external display",
+		safetyRating: "safe",
+		removalImpact: "Desktop PC mode removed. No impact on normal phone use.",
+		category: "Productivity",
+	},
+	"com.huawei.desktop.systemui": {
+		appID: "com.huawei.desktop.systemui",
+		appName: "Desktop System UI",
+		description:
+			"System UI component for Huawei desktop mode providing taskbar and windowed interface when using an external display",
+		safetyRating: "caution",
+		removalImpact: "Desktop mode UI broken. Normal phone System UI unaffected.",
+		category: "System",
+	},
+	"com.huawei.deviceauth": {
+		appID: "com.huawei.deviceauth",
+		appName: "Device Auth",
+		description: "Device authentication service for Huawei ecosystem",
+		safetyRating: "risky",
+		removalImpact: "Device authentication broken. Ecosystem features fail.",
+		category: "Security",
+	},
+	"com.huawei.devicegroupmanage": {
+		appID: "com.huawei.devicegroupmanage",
+		appName: "Device Group Management",
+		description:
+			"Manages groups of trusted Huawei devices enabling seamless collaboration and resource sharing in Super Device",
+		safetyRating: "caution",
+		removalImpact:
+			"Super Device grouping disabled. Multi-device collaboration features affected.",
+		category: "Connectivity",
+	},
+	"com.huawei.devicemanager": {
+		appID: "com.huawei.devicemanager",
+		appName: "Device Manager",
+		description:
+			"Huawei Device Manager for discovering and managing nearby Huawei/HarmonyOS devices in the Super Device ecosystem",
+		safetyRating: "caution",
+		removalImpact:
+			"Device discovery and management removed. Multi-device features affected.",
+		category: "Connectivity",
+	},
+	"com.huawei.distributed.kms": {
+		appID: "com.huawei.distributed.kms",
+		appName: "Distributed Key Management",
+		description:
+			"Distributed Key Management Service (KMS) securing encryption keys across Huawei distributed devices",
+		safetyRating: "risky",
+		removalImpact:
+			"Distributed encryption broken. Cross-device secure features may fail.",
+		category: "Security",
+	},
+	"com.huawei.distributedpasteboard": {
+		appID: "com.huawei.distributedpasteboard",
+		appName: "Distributed Clipboard",
+		description:
+			"Huawei distributed clipboard allowing copy-paste of content across multiple Huawei devices seamlessly",
+		safetyRating: "caution",
+		removalImpact:
+			"Cross-device clipboard disabled. Local clipboard still works.",
+		category: "Connectivity",
+	},
+	"com.huawei.dmsdp": {
+		appID: "com.huawei.dmsdp",
+		appName: "Multi-Device Management",
+		description:
+			"Huawei Distributed Multi-Screen Data Platform managing multi-device screen sharing and collaboration",
+		safetyRating: "caution",
+		removalImpact:
+			"Multi-device screen management disabled. Single-device use unaffected.",
+		category: "Connectivity",
+	},
+	"com.huawei.dsdscardmanager": {
+		appID: "com.huawei.dsdscardmanager",
+		appName: "Dual SIM Card Manager",
+		description:
+			"Huawei Dual SIM Dual Standby card manager for configuring and managing two SIM cards",
+		safetyRating: "caution",
+		removalImpact:
+			"Dual SIM management broken on dual-SIM devices. Single SIM devices unaffected.",
+		category: "Telephony",
+	},
+	"com.huawei.easygo": {
+		appID: "com.huawei.easygo",
+		appName: "EasyGo",
+		description:
+			"Huawei EasyGo providing simplified launcher mode and large-text interface for elderly users",
+		safetyRating: "safe",
+		removalImpact: "EasyGo accessibility launcher removed. No system impact.",
+		category: "Accessibility",
+	},
+	"com.huawei.email": {
+		appID: "com.huawei.email",
+		appName: "Email",
+		description:
+			"Huawei stock email client supporting IMAP, POP3, Exchange, and Huawei cloud mail accounts",
+		safetyRating: "caution",
+		removalImpact:
+			"Email app removed. Configure an alternative email client first.",
+		category: "Communication",
+	},
+	"com.huawei.fastapp": {
+		appID: "com.huawei.fastapp",
+		appName: "Quick Apps",
+		description:
+			"Huawei Quick Apps (Fast App) platform for running lightweight app experiences without installation",
+		safetyRating: "safe",
+		removalImpact:
+			"Quick Apps platform removed. Quick App shortcuts stop working.",
+		category: "System",
+	},
+	"com.huawei.featurelayer.featureframework": {
+		appID: "com.huawei.featurelayer.featureframework",
+		appName: "Feature Framework",
+		description:
+			"Core Huawei Feature Layer framework providing modular system capabilities for EMUI and HarmonyOS",
+		safetyRating: "risky",
+		removalImpact:
+			"Core feature framework removed. Multiple system features may fail or crash.",
+		category: "System",
+	},
+	"com.huawei.featurelayer.sharedfeature.stylus": {
+		appID: "com.huawei.featurelayer.sharedfeature.stylus",
+		appName: "Stylus Feature Layer",
+		description:
+			"Shared feature layer component providing stylus pen support and handwriting recognition capabilities",
+		safetyRating: "safe",
+		removalImpact:
+			"Stylus feature support removed. M-Pen handwriting features disabled.",
+		category: "Input",
+	},
+	"com.huawei.fido.uafclient": {
+		appID: "com.huawei.fido.uafclient",
+		appName: "FIDO UAF Client",
+		description:
+			"Fast Identity Online (FIDO) UAF client enabling passwordless authentication using biometrics on Huawei devices",
+		safetyRating: "caution",
+		removalImpact:
+			"FIDO authentication disabled. Apps using FIDO biometric login may fail.",
+		category: "Security",
+	},
+	"com.huawei.filemanager": {
+		appID: "com.huawei.filemanager",
+		appName: "Files",
+		description:
+			"Huawei stock file manager for browsing, managing, and sharing files on device and cloud storage",
+		safetyRating: "caution",
+		removalImpact:
+			"File manager removed. Install a third-party file manager first.",
+		category: "Utility",
+	},
+	"com.huawei.filemanager.fa": {
+		appID: "com.huawei.filemanager.fa",
+		appName: "Files Feature App",
+		description:
+			"Feature ability component of Huawei Files providing quick-access file cards and HarmonyOS FA integration",
+		safetyRating: "safe",
+		removalImpact:
+			"Files feature cards removed. Core file management unaffected.",
+		category: "Utility",
+	},
+	"com.huawei.frameworkhwext.honor": {
+		appID: "com.huawei.frameworkhwext.honor",
+		appName: "Honor Framework Extension",
+		description:
+			"Huawei framework extension package for Honor device variants providing Honor-specific system capabilities",
+		safetyRating: "safe",
+		removalImpact:
+			"Honor-specific extensions removed. No impact on non-Honor Huawei devices.",
+		category: "System",
+	},
+	"com.huawei.game.kitserver": {
+		appID: "com.huawei.game.kitserver",
+		appName: "Game Kit Server",
+		description:
+			"Huawei Game Kit server providing game platform services including achievements, leaderboards, and game acceleration",
+		safetyRating: "caution",
+		removalImpact:
+			"Huawei Game Kit services disabled. Games using HMS Game Kit affected.",
+		category: "Gaming",
+	},
+	"com.huawei.gameassistant": {
+		appID: "com.huawei.gameassistant",
+		appName: "Game Suite",
+		description:
+			"Huawei Game Suite (HiGame) providing a floating toolbar with performance tools, screen recording, and chat while gaming",
+		safetyRating: "safe",
+		removalImpact:
+			"Game Suite overlay removed. Games continue to work normally.",
+		category: "Gaming",
+	},
+	"com.huawei.gamebox": {
+		appID: "com.huawei.gamebox",
+		appName: "Game Space",
+		description:
+			"Huawei Game Space aggregating installed games and providing performance optimisation settings",
+		safetyRating: "safe",
+		removalImpact: "Game Space removed. Games still work normally.",
+		category: "Gaming",
+	},
+	"com.huawei.harmonyos.foundation": {
+		appID: "com.huawei.harmonyos.foundation",
+		appName: "HarmonyOS Foundation",
+		description:
+			"Core HarmonyOS foundation services layer providing fundamental distributed OS capabilities for Huawei devices",
+		safetyRating: "risky",
+		removalImpact:
+			"Critical system crash. Contacts, dialler, and app list may break. DO NOT REMOVE.",
+		category: "System",
+	},
+	"com.huawei.health": {
+		appID: "com.huawei.health",
+		appName: "Huawei Health",
+		description:
+			"Huawei Health app for fitness tracking, step counting, sleep analysis, and managing Huawei wearables",
+		safetyRating: "safe",
+		removalImpact:
+			"Huawei Health removed. Huawei watch pairing and health tracking lost.",
+		category: "Health",
+	},
+	"com.huawei.hff": {
+		appID: "com.huawei.hff",
+		appName: "HFF Service",
+		description: "Huawei HMS Libraries system service.",
+		safetyRating: "caution",
+		removalImpact:
+			"May affect HMS-dependent Huawei features.",
+		category: "System",
+	},
+	"com.huawei.hiai": {
+		appID: "com.huawei.hiai",
+		appName: "HiAI Engine",
+		description:
+			"Huawei on-device AI engine (HiAI) providing neural processing for camera scene detection, face recognition, and app intelligence",
+		safetyRating: "risky",
+		removalImpact:
+			"On-device AI disabled. Camera AI, face unlock, and AI-powered features break. DO NOT REMOVE.",
+		category: "AI",
+	},
+	"com.huawei.hiaction": {
+		appID: "com.huawei.hiaction",
+		appName: "HiAction",
+		description:
+			"Huawei HiAction service enabling app shortcut actions and quick-launch widgets from notifications",
+		safetyRating: "safe",
+		removalImpact: "HiAction shortcuts removed. No system impact.",
+		category: "System",
+	},
+	"com.huawei.hiassistantoversea": {
+		appID: "com.huawei.hiassistantoversea",
+		appName: "Celia AI Assistant",
+		description:
+			"Huawei AI voice assistant (Celia) for the international market providing voice commands and smart suggestions",
+		safetyRating: "safe",
+		removalImpact: "Celia AI assistant removed. No system impact.",
+		category: "AI",
+	},
+	"com.huawei.hicard": {
+		appID: "com.huawei.hicard",
+		appName: "HiCard",
+		description:
+			"Huawei HiCard service providing app information cards on the home screen for quick content previews",
+		safetyRating: "safe",
+		removalImpact: "HiCard app cards removed. Home screen widgets unaffected.",
+		category: "System",
+	},
+	"com.huawei.hicloud": {
+		appID: "com.huawei.hicloud",
+		appName: "HiCloud",
+		description:
+			"Huawei HiCloud service for cloud backup and synchronisation of contacts, photos, and app data",
+		safetyRating: "caution",
+		removalImpact:
+			"Huawei cloud backup and sync disabled. Local data remains intact.",
+		category: "Cloud",
+	},
+	"com.huawei.hidisk": {
+		appID: "com.huawei.hidisk",
+		appName: "Files (HiDisk)",
+		description:
+			"Huawei HiDisk cloud storage file manager with integrated cloud drive access and local file management",
+		safetyRating: "safe",
+		removalImpact: "HiDisk cloud file manager removed. Local files unaffected.",
+		category: "Cloud",
+	},
+	"com.huawei.hidisk.fa": {
+		appID: "com.huawei.hidisk.fa",
+		appName: "HiDisk Feature App",
+		description:
+			"Feature ability component of HiDisk providing quick-access cloud storage cards on the home screen",
+		safetyRating: "safe",
+		removalImpact: "HiDisk feature cards removed. No system impact.",
+		category: "Cloud",
+	},
+	"com.huawei.hifolder": {
+		appID: "com.huawei.hifolder",
+		appName: "HiFolder",
+		description:
+			"Huawei HiFolder online folder management service integrating cloud-based app organisation and smart suggestions",
+		safetyRating: "safe",
+		removalImpact: "HiFolder removed. App organisation unaffected.",
+		category: "Cloud",
+	},
+	"com.huawei.hilink.framework": {
+		appID: "com.huawei.hilink.framework",
+		appName: "HiLink Framework",
+		description:
+			"Huawei HiLink IoT framework for discovering and controlling smart home devices and Huawei router products",
+		safetyRating: "caution",
+		removalImpact:
+			"HiLink smart home control disabled. Huawei SmartHome app stops working.",
+		category: "Smart Home",
+	},
+	"com.huawei.himovie.overseas": {
+		appID: "com.huawei.himovie.overseas",
+		appName: "Huawei Video",
+		description:
+			"Huawei Video (Hi Movie) streaming app for the international market offering movies and TV shows",
+		safetyRating: "safe",
+		removalImpact: "Huawei Video removed. No system impact.",
+		category: "Media",
+	},
+	"com.huawei.hitouch": {
+		appID: "com.huawei.hitouch",
+		appName: "HiTouch",
+		description:
+			"Huawei HiTouch allowing users to long-press on images to visually search for products and information",
+		safetyRating: "safe",
+		removalImpact: "HiTouch visual search removed. No system impact.",
+		category: "AI",
+	},
+	"com.huawei.hiview": {
+		appID: "com.huawei.hiview",
+		appName: "HiView",
+		description:
+			"Huawei HiView diagnostic data collection service sending device telemetry and performance metrics to Huawei servers",
+		safetyRating: "safe",
+		removalImpact: "Telemetry collection stopped. No functional impact.",
+		category: "Telemetry",
+	},
+	"com.huawei.hiviewtunnel": {
+		appID: "com.huawei.hiviewtunnel",
+		appName: "HiView Tunnel",
+		description:
+			"Tunnel service for HiView telemetry, routing diagnostic data to Huawei collection endpoints",
+		safetyRating: "safe",
+		removalImpact: "HiView telemetry tunnel removed. No functional impact.",
+		category: "Telemetry",
+	},
+	"com.huawei.hmos.compass": {
+		appID: "com.huawei.hmos.compass",
+		appName: "Compass (HMOS)",
+		description:
+			"HarmonyOS compass application providing magnetic heading using the device magnetometer",
+		safetyRating: "safe",
+		removalImpact: "HMOS Compass removed. Use a third-party alternative.",
+		category: "Utility",
+	},
+	"com.huawei.hmos.projectmenu": {
+		appID: "com.huawei.hmos.projectmenu",
+		appName: "Project Menu",
+		description:
+			"HarmonyOS project menu providing developer and engineering mode shortcuts for screen projection and testing",
+		safetyRating: "safe",
+		removalImpact: "Project menu removed. No impact on normal device use.",
+		category: "Developer",
+	},
+	"com.huawei.hms5gkit.agentservice": {
+		appID: "com.huawei.hms5gkit.agentservice",
+		appName: "HMS 5G Kit Agent",
+		description:
+			"Huawei Mobile Services 5G Kit agent service enabling 5G-specific capabilities and network slice APIs for apps",
+		safetyRating: "safe",
+		removalImpact:
+			"HMS 5G Kit disabled. 5G-specific app features may stop on non-5G devices too.",
+		category: "Network",
+	},
+	"com.huawei.hwasm": {
+		appID: "com.huawei.hwasm",
+		appName: "FIDO ASM",
+		description:
+			"Huawei FIDO Authenticator Specific Module (ASM) acting as middleware between the FIDO client and biometric authenticators",
+		safetyRating: "caution",
+		removalImpact:
+			"FIDO biometric authentication middleware removed. Passwordless login may fail.",
+		category: "Security",
+	},
+	"com.huawei.hwbluetoothpencilmanager": {
+		appID: "com.huawei.hwbluetoothpencilmanager",
+		appName: "Bluetooth Pencil Manager",
+		description:
+			"Huawei Bluetooth stylus/M-Pencil manager for pairing, configuring, and tracking battery of Huawei stylus pens",
+		safetyRating: "safe",
+		removalImpact:
+			"Bluetooth stylus management removed. M-Pencil pairing may not work.",
+		category: "Input",
+	},
+	"com.huawei.hwddmp": {
+		appID: "com.huawei.hwddmp",
+		appName: "HW Data Manager Platform",
+		description:
+			"Huawei data manager platform service. Removing it causes Contacts, Calendar, and Clock apps to crash",
+		safetyRating: "risky",
+		removalImpact: "Contacts, Calendar, and Clock apps crash after removal.",
+		category: "System",
+	},
+	"com.huawei.hwdetectrepair": {
+		appID: "com.huawei.hwdetectrepair",
+		appName: "Hardware Detection",
+		description:
+			"Huawei hardware detection and repair tool for diagnosing screen, sensor, and component issues",
+		safetyRating: "safe",
+		removalImpact: "Hardware diagnosis tool removed. No functional impact.",
+		category: "Diagnostics",
+	},
+	"com.huawei.hwdiagnosis": {
+		appID: "com.huawei.hwdiagnosis",
+		appName: "Hardware Diagnosis",
+		description:
+			"Huawei hardware diagnosis application running tests on screen, sensors, speakers, and other hardware components",
+		safetyRating: "safe",
+		removalImpact: "Hardware diagnosis app removed. No functional impact.",
+		category: "Diagnostics",
+	},
+	"com.huawei.hwdockbar": {
+		appID: "com.huawei.hwdockbar",
+		appName: "Dock Bar",
+		description:
+			"Huawei home screen dock bar providing a persistent row of app shortcuts at the bottom of the screen",
+		safetyRating: "safe",
+		removalImpact: "Dock bar removed. App shortcuts unaffected.",
+		category: "System",
+	},
+	"com.huawei.hwid": {
+		appID: "com.huawei.hwid",
+		appName: "Huawei ID",
+		description:
+			"Huawei ID account service for signing in to Huawei cloud, AppGallery, themes, and Huawei services",
+		safetyRating: "caution",
+		removalImpact:
+			"Huawei ID disabled. Cloud sync, AppGallery login, and HMS services stop.",
+		category: "Account",
+	},
+	"com.huawei.HwMultiScreenShot": {
+		appID: "com.huawei.HwMultiScreenShot",
+		appName: "Multi-Screen Screenshot",
+		description:
+			"Huawei multi-screen screenshot feature for capturing scrolling or partial screenshots of long content",
+		safetyRating: "safe",
+		removalImpact:
+			"Scrolling screenshots removed. Standard screenshots still work.",
+		category: "Utility",
+	},
+	"com.huawei.hwpanpayservice": {
+		appID: "com.huawei.hwpanpayservice",
+		appName: "Pan Pay Service",
+		description:
+			"Huawei Pan Pay service handling NFC payment and Huawei Pay transaction processing",
+		safetyRating: "caution",
+		removalImpact: "Huawei Pay and NFC payments disabled.",
+		category: "Finance",
+	},
+	"com.huawei.hwquickaccessmenu": {
+		appID: "com.huawei.hwquickaccessmenu",
+		appName: "Quick Access Menu",
+		description:
+			"Huawei quick access floating menu providing shortcuts to common actions without leaving the current app",
+		safetyRating: "safe",
+		removalImpact: "Quick access floating menu removed. No system impact.",
+		category: "System",
+	},
+	"com.huawei.hwread.dz": {
+		appID: "com.huawei.hwread.dz",
+		appName: "Huawei Reader",
+		description:
+			"Huawei Reader e-book app providing access to digital books and publications",
+		safetyRating: "safe",
+		removalImpact: "Huawei Reader removed. No system impact.",
+		category: "Media",
+	},
+	"com.huawei.hwsearch": {
+		appID: "com.huawei.hwsearch",
+		appName: "Petal Search",
+		description:
+			"Huawei Petal Search app providing web and on-device search powered by Huawei's search engine, serving as the Google Search replacement on GMS-less devices",
+		safetyRating: "safe",
+		removalImpact:
+			"Petal Search removed. Use the browser's address bar or an alternative search app.",
+		category: "Search",
+	},
+	"com.huawei.hwstartupguide": {
+		appID: "com.huawei.hwstartupguide",
+		appName: "Setup Guide",
+		description:
+			"Huawei device setup guide displayed during initial device configuration and post-update orientation",
+		safetyRating: "safe",
+		removalImpact: "Setup guide removed. No impact after initial setup.",
+		category: "Setup",
+	},
+	"com.huawei.hwvoipservice": {
+		appID: "com.huawei.hwvoipservice",
+		appName: "MeeTime Service",
+		description:
+			"Backend service for Huawei MeeTime — Huawei's FaceTime equivalent",
+		safetyRating: "caution",
+		removalImpact:
+			"MeeTime video/voice calling service disabled. Regular cellular calls still work.",
+		category: "Communication",
+	},
+	"com.huawei.iaware": {
+		appID: "com.huawei.iaware",
+		appName: "iAware",
+		description:
+			"AI-powered system resource management and performance optimisation",
+		safetyRating: "caution",
+		removalImpact:
+			"Intelligent resource management disabled. Performance may vary.",
+		category: "System",
+	},
+	"com.huawei.iconnect": {
+		appID: "com.huawei.iconnect",
+		appName: "iConnect",
+		description: "Device connectivity framework for Huawei ecosystem",
+		safetyRating: "caution",
+		removalImpact: "Ecosystem connectivity limited.",
+		category: "Connectivity",
+	},
+	"com.huawei.iconnect.ui": {
+		appID: "com.huawei.iconnect.ui",
+		appName: "iConnect UI",
+		description:
+			"User interface component of Huawei iConnect for managing cross-device connections and shared resources",
+		safetyRating: "safe",
+		removalImpact:
+			"iConnect UI removed. Cross-device management interface lost.",
+		category: "Connectivity",
+	},
+	"com.huawei.imedia.sws": {
+		appID: "com.huawei.imedia.sws",
+		appName: "Smart Watermark",
+		description:
+			"Huawei iMedia smart watermark service automatically adding Huawei watermarks and metadata to photos",
+		safetyRating: "safe",
+		removalImpact:
+			"Smart watermark removed. Photos taken without Huawei branding.",
+		category: "Photography",
+	},
+	"com.huawei.ims": {
+		appID: "com.huawei.ims",
+		appName: "IMS Service",
+		description:
+			"Huawei IP Multimedia Subsystem (IMS) service enabling VoLTE, VoWiFi, and advanced telephony features",
+		safetyRating: "risky",
+		removalImpact:
+			"VoLTE and Wi-Fi calling disabled. Voice call quality may degrade on LTE networks.",
+		category: "Telephony",
+	},
+	"com.huawei.intelligent": {
+		appID: "com.huawei.intelligent",
+		appName: "Intelligent Assistant",
+		description:
+			"Huawei intelligent feature service providing AI-powered app suggestions, usage predictions, and smart recommendations",
+		safetyRating: "safe",
+		removalImpact:
+			"AI suggestions and smart recommendations disabled. No system impact.",
+		category: "AI",
+	},
+	"com.huawei.languagedownloader": {
+		appID: "com.huawei.languagedownloader",
+		appName: "Language Downloader",
+		description:
+			"Huawei language pack downloader used by the system for downloading additional language resources and IME dictionaries",
+		safetyRating: "risky",
+		removalImpact:
+			"Language pack downloads broken. System may fail to install new language packs.",
+		category: "System",
+	},
+	"com.huawei.lbs": {
+		appID: "com.huawei.lbs",
+		appName: "Location-Based Services",
+		description:
+			"Huawei Location-Based Services (LBS) providing GPS, Wi-Fi, and cell tower positioning for system and app use",
+		safetyRating: "risky",
+		removalImpact:
+			"Location services disabled system-wide. GPS and maps stop working.",
+		category: "Location",
+	},
+	"com.huawei.livewallpaper.paradise": {
+		appID: "com.huawei.livewallpaper.paradise",
+		appName: "Live Wallpaper",
+		description:
+			"Huawei Paradise live wallpaper service providing animated and interactive wallpapers",
+		safetyRating: "safe",
+		removalImpact:
+			"Live wallpaper service removed. Set a static wallpaper first.",
+		category: "Customisation",
+	},
+	"com.huawei.localBackup": {
+		appID: "com.huawei.localBackup",
+		appName: "Local Backup",
+		description:
+			"Huawei local device backup and restore tool for saving device data to internal storage or SD card",
+		safetyRating: "caution",
+		removalImpact:
+			"Local backup and restore disabled. Cloud backup via HiCloud unaffected.",
+		category: "Backup",
+	},
+	"com.huawei.magazine": {
+		appID: "com.huawei.magazine",
+		appName: "Magazine Unlock",
+		description:
+			"Huawei Magazine Unlock displaying curated editorial images as the lock screen wallpaper",
+		safetyRating: "safe",
+		removalImpact:
+			"Magazine lock screen removed. Static lock screen wallpaper used.",
+		category: "Customisation",
+	},
+	"com.huawei.maps.app": {
+		appID: "com.huawei.maps.app",
+		appName: "Petal Maps",
+		description: "Huawei Petal Maps — Huawei's own navigation app",
+		safetyRating: "caution",
+		removalImpact: "Petal Maps removed. Install an alternative navigation app.",
+		category: "Navigation",
+	},
+	"com.huawei.mediacontroller": {
+		appID: "com.huawei.mediacontroller",
+		appName: "Media Controller",
+		description:
+			"Huawei media controller managing playback controls across multiple media apps in the notification panel",
+		safetyRating: "safe",
+		removalImpact: "Media playback controls in notifications may be affected.",
+		category: "Media",
+	},
+	"com.huawei.meetime": {
+		appID: "com.huawei.meetime",
+		appName: "MeeTime",
+		description:
+			"Huawei MeeTime HD video calling app integrated with the phone dialler for device-to-device video calls",
+		safetyRating: "caution",
+		removalImpact:
+			"MeeTime video calling removed. Regular voice calls unaffected.",
+		category: "Communication",
+	},
+	"com.huawei.mirror": {
+		appID: "com.huawei.mirror",
+		appName: "Mirror",
+		description:
+			"Huawei Mirror app using the front camera as a virtual mirror with adjustable brightness",
+		safetyRating: "safe",
+		removalImpact: "Mirror app removed. No system impact.",
+		category: "Utility",
+	},
+	"com.huawei.mmitest": {
+		appID: "com.huawei.mmitest",
+		appName: "MMI Test",
+		description:
+			"Huawei Man-Machine Interface hardware test tool for factory testing of screen, sensors, buttons, and audio",
+		safetyRating: "safe",
+		removalImpact:
+			"Factory hardware test app removed. No impact on normal use.",
+		category: "Factory",
+	},
+	"com.huawei.motionservice": {
+		appID: "com.huawei.motionservice",
+		appName: "Motion Service",
+		description:
+			"Huawei Motion Service managing gesture-based interactions like shake-to-snooze, flip-to-mute, and knock gestures",
+		safetyRating: "caution",
+		removalImpact:
+			"Motion gestures disabled. Flip-to-mute and knock-to-wake may stop working.",
+		category: "System",
+	},
+	"com.huawei.msdp": {
+		appID: "com.huawei.msdp",
+		appName: "MSDP Service",
+		description:
+			"Motion Sensor Data Processing for activity and context recognition",
+		safetyRating: "caution",
+		removalImpact: "Sensor-based features limited. Basic sensors work.",
+		category: "System",
+	},
+	"com.huawei.multimedia.audioengine": {
+		appID: "com.huawei.multimedia.audioengine",
+		appName: "Audio Engine",
+		description:
+			"Huawei system-level audio processing engine providing audio enhancement, equalisation, and spatial audio on EMUI",
+		safetyRating: "risky",
+		removalImpact:
+			"System audio processing disabled. Sound quality and audio features may break.",
+		category: "Audio",
+	},
+	"com.huawei.multimedia.hivideoplayengine": {
+		appID: "com.huawei.multimedia.hivideoplayengine",
+		appName: "HiVideo Play Engine",
+		description:
+			"Huawei system-level video playback engine providing hardware-accelerated video decoding and HDR processing",
+		safetyRating: "risky",
+		removalImpact:
+			"Hardware video decoding disabled. Video playback may break or degrade.",
+		category: "Media",
+	},
+	"com.huawei.music": {
+		appID: "com.huawei.music",
+		appName: "Music",
+		description:
+			"Huawei stock music player for local and streaming audio with support for Huawei Music streaming service",
+		safetyRating: "caution",
+		removalImpact: "Huawei Music removed. Use a third-party music player.",
+		category: "Media",
+	},
+	"com.huawei.nb.service": {
+		appID: "com.huawei.nb.service",
+		appName: "Huawei Data Management Service",
+		description:
+			"Huawei Data Management Service used by HMS Core for app data management, local storage coordination, and Huawei service data synchronisation",
+		safetyRating: "risky",
+		removalImpact: "HMS Core data services may fail or become unstable.",
+		category: "System",
+	},
+	"com.huawei.nearby": {
+		appID: "com.huawei.nearby",
+		appName: "Nearby",
+		description:
+			"Huawei Nearby Service enabling device discovery and peer-to-peer data transfer for close-range connectivity",
+		safetyRating: "caution",
+		removalImpact: "Huawei Nearby file sharing and device discovery disabled.",
+		category: "Connectivity",
+	},
+	"com.huawei.notepad": {
+		appID: "com.huawei.notepad",
+		appName: "Notes",
+		description:
+			"Huawei Notes app for creating, organising, and syncing text and handwritten notes",
+		safetyRating: "safe",
+		removalImpact:
+			"Notes app removed. Export notes first, then install an alternative.",
+		category: "Productivity",
+	},
+	"com.huawei.numberidentity": {
+		appID: "com.huawei.numberidentity",
+		appName: "Number Identity",
+		description:
+			"Huawei Number Identity providing caller ID, spam detection, and unknown number identification for incoming calls",
+		safetyRating: "safe",
+		removalImpact:
+			"Caller ID and spam detection removed. Basic calling still works.",
+		category: "Communication",
+	},
+	"com.huawei.ohos.camera": {
+		appID: "com.huawei.ohos.camera",
+		appName: "Camera (OHOS)",
+		description:
+			"HarmonyOS native camera application component providing camera access for OHOS feature abilities",
+		safetyRating: "caution",
+		removalImpact:
+			"OHOS camera component removed. Camera apps may lose some functionality.",
+		category: "Photography",
+	},
+	"com.huawei.ohos.collaborationcenter": {
+		appID: "com.huawei.ohos.collaborationcenter",
+		appName: "Collaboration Centre",
+		description:
+			"HarmonyOS Collaboration Centre enabling multi-device task handoff, screen sharing, and Super Device features",
+		safetyRating: "caution",
+		removalImpact:
+			"Multi-device collaboration and Super Device features disabled.",
+		category: "Connectivity",
+	},
+	"com.huawei.ohos.famanager": {
+		appID: "com.huawei.ohos.famanager",
+		appName: "FA Manager",
+		description:
+			"HarmonyOS Feature Ability Manager managing the lifecycle of OHOS mini-programs and feature ability apps",
+		safetyRating: "safe",
+		removalImpact:
+			"OHOS mini-programs and FA cards removed. No impact on regular apps.",
+		category: "System",
+	},
+	"com.huawei.ohos.health": {
+		appID: "com.huawei.ohos.health",
+		appName: "Health (OHOS)",
+		description:
+			"HarmonyOS health service framework managing health data APIs and sensor data for fitness applications",
+		safetyRating: "caution",
+		removalImpact:
+			"OHOS health framework removed. Health and fitness apps may lose data access.",
+		category: "Health",
+	},
+	"com.huawei.ohos.hiwindow": {
+		appID: "com.huawei.ohos.hiwindow",
+		appName: "HiWindow",
+		description:
+			"HarmonyOS HiWindow window management service controlling app window states, floating windows, and multi-window",
+		safetyRating: "risky",
+		removalImpact:
+			"Window management broken. App display and multi-window features may fail.",
+		category: "System",
+	},
+	"com.huawei.ohos.inputmethod": {
+		appID: "com.huawei.ohos.inputmethod",
+		appName: "Huawei Keyboard",
+		description:
+			"Huawei OHOS input method (keyboard) with swipe typing, voice input, and emoji support",
+		safetyRating: "caution",
+		removalImpact:
+			"Default keyboard removed. Set another IME as default before removing.",
+		category: "Input",
+	},
+	"com.huawei.ohos.mms": {
+		appID: "com.huawei.ohos.mms",
+		appName: "Messages (OHOS)",
+		description:
+			"HarmonyOS native messaging application for SMS and MMS communication",
+		safetyRating: "caution",
+		removalImpact:
+			"Default messaging app removed. Install an alternative SMS app first.",
+		category: "Communication",
+	},
+	"com.huawei.ohos.photos": {
+		appID: "com.huawei.ohos.photos",
+		appName: "Gallery (OHOS)",
+		description:
+			"HarmonyOS native photos and gallery application for viewing and managing media files",
+		safetyRating: "caution",
+		removalImpact:
+			"OHOS Gallery removed. Photos data intact. Install an alternative gallery app.",
+		category: "Photography",
+	},
+	"com.huawei.ohos.security.privacycenter": {
+		appID: "com.huawei.ohos.security.privacycenter",
+		appName: "Privacy Centre (OHOS)",
+		description:
+			"HarmonyOS privacy centre managing app permission history, data access logs, and privacy settings",
+		safetyRating: "caution",
+		removalImpact:
+			"OHOS privacy dashboard removed. System permissions still enforced.",
+		category: "Security",
+	},
+	"com.huawei.ohos.soundrecorder": {
+		appID: "com.huawei.ohos.soundrecorder",
+		appName: "Recorder (OHOS)",
+		description:
+			"HarmonyOS native sound recorder application for recording audio memos and lectures",
+		safetyRating: "safe",
+		removalImpact: "OHOS Recorder removed. Use a third-party recording app.",
+		category: "Utility",
+	},
+	"com.huawei.ohos.systemmanager": {
+		appID: "com.huawei.ohos.systemmanager",
+		appName: "System Manager (OHOS)",
+		description:
+			"HarmonyOS System Manager providing device optimisation, storage cleanup, and app management services",
+		safetyRating: "risky",
+		removalImpact:
+			"OHOS system management services broken. Storage and optimisation features fail.",
+		category: "System",
+	},
+	"com.huawei.omacp": {
+		appID: "com.huawei.omacp",
+		appName: "OMA CP Client",
+		description:
+			"Open Mobile Alliance Client Provisioning (OMA CP) client for receiving and applying carrier network configuration",
+		safetyRating: "risky",
+		removalImpact:
+			"Carrier network auto-provisioning disabled. Manual APN configuration required.",
+		category: "Carrier",
+	},
+	"com.huawei.onehopsvcclient": {
+		appID: "com.huawei.onehopsvcclient",
+		appName: "One Hop Client",
+		description:
+			"Huawei One Hop service client enabling one-tap file transfer from phone to PC by touching the NFC area",
+		safetyRating: "safe",
+		removalImpact:
+			"One Hop phone-to-PC transfer disabled. No other system impact.",
+		category: "Connectivity",
+	},
+	"com.huawei.onehopsvchost": {
+		appID: "com.huawei.onehopsvchost",
+		appName: "One Hop Host",
+		description:
+			"Huawei One Hop service host managing the NFC-triggered file transfer connection between phone and PC",
+		safetyRating: "safe",
+		removalImpact: "One Hop host service disabled. No other system impact.",
+		category: "Connectivity",
+	},
+	"com.huawei.onekeylock.hmservice": {
+		appID: "com.huawei.onekeylock.hmservice",
+		appName: "One Key Lock",
+		description:
+			"Huawei One Key Lock HM service providing instant screen lock via a home screen shortcut or gesture",
+		safetyRating: "safe",
+		removalImpact:
+			"One Key Lock shortcut removed. Power button lock still works.",
+		category: "System",
+	},
+	"com.huawei.parentcontrol": {
+		appID: "com.huawei.parentcontrol",
+		appName: "Parental Controls",
+		description:
+			"Huawei Parental Controls providing app time limits, content filtering, and usage monitoring for child accounts",
+		safetyRating: "safe",
+		removalImpact:
+			"Parental control features removed. Only relevant if child accounts are in use.",
+		category: "Parental Control",
+	},
+	"com.huawei.pcassistant": {
+		appID: "com.huawei.pcassistant",
+		appName: "HiSuite Service",
+		description:
+			"Huawei HiSuite PC connectivity service enabling device management, backup, and file transfer from a Windows PC",
+		safetyRating: "safe",
+		removalImpact:
+			"HiSuite PC connection disabled. Remove only if you do not use HiSuite.",
+		category: "Connectivity",
+	},
+	"com.huawei.permissioncontroller.overlay": {
+		appID: "com.huawei.permissioncontroller.overlay",
+		appName: "Permission Controller Overlay",
+		description:
+			"Huawei overlay for the Android Permission Controller providing EMUI-specific permission UI customisation",
+		safetyRating: "risky",
+		removalImpact: "Permission dialogs may break or display incorrectly.",
+		category: "System",
+	},
+	"com.huawei.phone.recorder": {
+		appID: "com.huawei.phone.recorder",
+		appName: "Call Recorder",
+		description:
+			"Huawei phone call recorder for automatically or manually recording incoming and outgoing calls",
+		safetyRating: "safe",
+		removalImpact: "Call recording feature removed. Calls function normally.",
+		category: "Communication",
+	},
+	"com.huawei.phoneservice": {
+		appID: "com.huawei.phoneservice",
+		appName: "HiCare",
+		description:
+			"Huawei HiCare customer support app providing device health reports, troubleshooting guides, and service requests",
+		safetyRating: "safe",
+		removalImpact: "HiCare support app removed. No system impact.",
+		category: "Support",
+	},
+	"com.huawei.photos": {
+		appID: "com.huawei.photos",
+		appName: "Gallery",
+		description:
+			"Huawei Gallery app for viewing, editing, and managing photos and videos with AI scene recognition",
+		safetyRating: "caution",
+		removalImpact:
+			"Gallery removed. Photos data intact. Install an alternative gallery app.",
+		category: "Photography",
+	},
+	"com.huawei.powergenie": {
+		appID: "com.huawei.powergenie",
+		appName: "Power Genie",
+		description:
+			"Huawei Power Genie battery management daemon controlling background process termination and power optimisation",
+		safetyRating: "risky",
+		removalImpact:
+			"Battery management broken. Background apps may drain battery faster. DO NOT REMOVE.",
+		category: "System",
+	},
+	"com.huawei.printservice": {
+		appID: "com.huawei.printservice",
+		appName: "Print Service",
+		description:
+			"Huawei print service enabling wireless document printing to compatible Wi-Fi printers",
+		safetyRating: "caution",
+		removalImpact:
+			"Wireless printing disabled. Only relevant if you use a printer.",
+		category: "Utility",
+	},
+	"com.huawei.privatespace": {
+		appID: "com.huawei.privatespace",
+		appName: "PrivateSpace",
+		description:
+			"Huawei PrivateSpace creating a separate encrypted user profile for hiding sensitive apps and data",
+		safetyRating: "caution",
+		removalImpact:
+			"PrivateSpace disabled. Data inside PrivateSpace will be inaccessible.",
+		category: "Privacy",
+	},
+	"com.huawei.profile": {
+		appID: "com.huawei.profile",
+		appName: "User Profile",
+		description:
+			"Huawei user profile management handling account information, avatars, and personal data",
+		safetyRating: "safe",
+		removalImpact:
+			"User profile management removed. Account data stored elsewhere.",
+		category: "Account",
+	},
+	"com.huawei.rcsserviceapplication": {
+		appID: "com.huawei.rcsserviceapplication",
+		appName: "RCS Service",
+		description:
+			"Huawei Rich Communication Services (RCS) application enabling enhanced messaging with read receipts and group chat",
+		safetyRating: "caution",
+		removalImpact:
+			"RCS enhanced messaging disabled. Basic SMS/MMS still works.",
+		category: "Communication",
+	},
+	"com.huawei.recsys": {
+		appID: "com.huawei.recsys",
+		appName: "Recommendation Engine",
+		description:
+			"Huawei on-device recommendation system analysing usage patterns to suggest apps, content, and shortcuts",
+		safetyRating: "safe",
+		removalImpact: "AI recommendations removed. No system impact.",
+		category: "AI",
+	},
+	"com.huawei.remotepassword": {
+		appID: "com.huawei.remotepassword",
+		appName: "Remote Unlock",
+		description:
+			"Huawei Remote Password service enabling device unlock via Huawei cloud when the local password is forgotten",
+		safetyRating: "caution",
+		removalImpact:
+			"Remote device unlock disabled. Only relevant as a forgotten password recovery option.",
+		category: "Security",
+	},
+	"com.huawei.scanner": {
+		appID: "com.huawei.scanner",
+		appName: "Scanner",
+		description:
+			"Huawei document and QR code scanner integrated into the camera providing scanning across multiple apps",
+		safetyRating: "risky",
+		removalImpact:
+			"System-wide QR code and document scanning broken. Camera scanning may fail.",
+		category: "Utility",
+	},
+	"com.huawei.screenrecorder": {
+		appID: "com.huawei.screenrecorder",
+		appName: "Screen Recorder",
+		description:
+			"Huawei built-in screen recorder for capturing device screen activity as video with optional audio",
+		safetyRating: "safe",
+		removalImpact: "Screen recorder removed. Use a third-party alternative.",
+		category: "Utility",
+	},
+	"com.huawei.search": {
+		appID: "com.huawei.search",
+		appName: "HiSearch",
+		description:
+			"Huawei's on-device universal search, similar to Android App Search or iOS Spotlight",
+		safetyRating: "safe",
+		removalImpact:
+			"HiSearch removed. Individual app searches still work; swipe-down home screen search will be unavailable.",
+		category: "Search",
+	},
+	"com.huawei.searchservice": {
+		appID: "com.huawei.searchservice",
+		appName: "Fusion Search Service",
+		description:
+			"Huawei Fusion Search Service providing index management and search APIs across the system for applications",
+		safetyRating: "caution",
+		removalImpact:
+			"System search indexing disabled. Some apps may lose search functionality.",
+		category: "System",
+	},
+	"com.huawei.securitymgr": {
+		appID: "com.huawei.securitymgr",
+		appName: "Security Manager",
+		description:
+			"Huawei Security Manager coordinating device security policies, malware scanning, and security auditing",
+		safetyRating: "caution",
+		removalImpact:
+			"Security management features reduced. Core OS security enforced by Android.",
+		category: "Security",
+	},
+	"com.huawei.securitypluginbase": {
+		appID: "com.huawei.securitypluginbase",
+		appName: "Security Plugin Base",
+		description:
+			"Base framework for Huawei security plugins providing extensible security service architecture",
+		safetyRating: "risky",
+		removalImpact:
+			"Security plugin framework removed. Huawei security services may fail.",
+		category: "Security",
+	},
+	"com.huawei.securityserver": {
+		appID: "com.huawei.securityserver",
+		appName: "Security Server",
+		description:
+			"Huawei Security Server providing system-level security enforcement, key management, and trusted execution coordination",
+		safetyRating: "risky",
+		removalImpact:
+			"System security services disrupted. Authentication and encryption may break.",
+		category: "Security",
+	},
+	"com.huawei.security.privacycenter": {
+		appID: "com.huawei.security.privacycenter",
+		appName: "Privacy Centre",
+		description:
+			"Huawei Privacy Centre dashboard for reviewing app permission usage, location history, and data access logs",
+		safetyRating: "caution",
+		removalImpact:
+			"Privacy dashboard removed. System permissions still enforced by Android.",
+		category: "Security",
+	},
+	"com.huawei.sle": {
+		appID: "com.huawei.sle",
+		appName: "Huawei SLE Service",
+		description:
+			"Huawei internal system service. Public documentation is limited",
+		safetyRating: "risky",
+		removalImpact:
+			"Huawei framework-dependent features may fail or become unstable",
+		category: "System",
+	},
+	"com.huawei.smartshot": {
+		appID: "com.huawei.smartshot",
+		appName: "Smart Screenshot",
+		description:
+			"Huawei Smart Screenshot feature providing partial, scrolling, and shape-based screenshot capture modes",
+		safetyRating: "safe",
+		removalImpact: "Smart Screenshot removed. Standard screenshots still work.",
+		category: "Utility",
+	},
+	"com.huawei.soundrecorder": {
+		appID: "com.huawei.soundrecorder",
+		appName: "Sound Recorder",
+		description:
+			"Huawei stock sound recorder application for recording voice memos and audio",
+		safetyRating: "safe",
+		removalImpact: "Sound Recorder removed. Use a third-party recorder.",
+		category: "Utility",
+	},
+	"com.huawei.stylus.floatmenu": {
+		appID: "com.huawei.stylus.floatmenu",
+		appName: "Stylus Float Menu",
+		description:
+			"Huawei M-Pen stylus floating menu appearing when the stylus is removed, providing quick shortcuts",
+		safetyRating: "safe",
+		removalImpact: "Stylus float menu removed. M-Pen writing still works.",
+		category: "Input",
+	},
+	"com.huawei.synergy": {
+		appID: "com.huawei.synergy",
+		appName: "Huawei Synergy",
+		description:
+			"Huawei Cloud Synergy service coordinating data and settings synchronisation across Huawei devices and services",
+		safetyRating: "caution",
+		removalImpact:
+			"Cloud synergy disabled. Data sync across Huawei devices may stop.",
+		category: "Cloud",
+	},
+	"com.huawei.systemmanager": {
+		appID: "com.huawei.systemmanager",
+		appName: "Optimiser",
+		description:
+			"Huawei System Optimiser (Phone Manager) providing startup management, background app control, and storage cleanup",
+		safetyRating: "risky",
+		removalImpact:
+			"System management broken. Startup control and optimisation features fail. DO NOT REMOVE.",
+		category: "System",
+	},
+	"com.huawei.systemserver": {
+		appID: "com.huawei.systemserver",
+		appName: "Huawei System Server",
+		description:
+			"Huawei System Server hosting critical EMUI system services including jank detection and data saving",
+		safetyRating: "risky",
+		removalImpact:
+			"Critical system services crash. Device instability or bootloop risk.",
+		category: "System",
+	},
+	"com.huawei.tips": {
+		appID: "com.huawei.tips",
+		appName: "Tips",
+		description:
+			"Huawei Tips app offering guidance on EMUI features, gestures, and device capabilities",
+		safetyRating: "safe",
+		removalImpact: "Tips app removed. No system impact.",
+		category: "Utility",
+	},
+	"com.huawei.tipsove": {
+		appID: "com.huawei.tipsove",
+		appName: "Tips Overlay",
+		description:
+			"Huawei Tips overlay service displaying onboarding hints and feature introduction overlays after updates",
+		safetyRating: "safe",
+		removalImpact: "Feature introduction overlays removed. No system impact.",
+		category: "Utility",
+	},
+	"com.huawei.trustagent": {
+		appID: "com.huawei.trustagent",
+		appName: "Trust Agent",
+		description:
+			"Huawei Trust Agent enabling intelligent unlock that keeps the device unlocked near trusted Bluetooth devices",
+		safetyRating: "caution",
+		removalImpact:
+			"Trusted Bluetooth unlock disabled. PIN/fingerprint unlock still works.",
+		category: "Security",
+	},
+	"com.huawei.trustcircle": {
+		appID: "com.huawei.trustcircle",
+		appName: "Trust Circle",
+		description:
+			"Huawei Trust Circle managing trusted device groups for seamless authentication sharing across paired devices",
+		safetyRating: "safe",
+		removalImpact:
+			"Trusted device circle removed. Individual device auth still works.",
+		category: "Security",
+	},
+	"com.huawei.trustedthingsauth": {
+		appID: "com.huawei.trustedthingsauth",
+		appName: "Trusted Things Auth",
+		description:
+			"Huawei Trusted Things authentication service verifying IoT and peripheral device identity in the HarmonyOS ecosystem",
+		safetyRating: "risky",
+		removalImpact:
+			"IoT device authentication broken. Trusted Huawei accessories may not connect.",
+		category: "Security",
+	},
+	"com.huawei.videoeditor": {
+		appID: "com.huawei.videoeditor",
+		appName: "Video Editor",
+		description:
+			"Huawei stock video editing app with trimming, filters, transitions, and AI-powered editing features",
+		safetyRating: "safe",
+		removalImpact: "Video editor removed. Use a third-party alternative.",
+		category: "Media",
+	},
+	"com.huawei.wallet": {
+		appID: "com.huawei.wallet",
+		appName: "Huawei Wallet",
+		description:
+			"Huawei Wallet app for storing payment cards, boarding passes, loyalty cards, and NFC transit tickets",
+		safetyRating: "caution",
+		removalImpact:
+			"Huawei Wallet and NFC payments disabled. Remove only if unused.",
+		category: "Finance",
+	},
+	"com.huawei.wallet.sdk.walletsdk": {
+		appID: "com.huawei.wallet.sdk.walletsdk",
+		appName: "Wallet SDK",
+		description:
+			"Huawei Wallet SDK enabling third-party apps to integrate wallet passes, tickets, and loyalty cards",
+		safetyRating: "safe",
+		removalImpact:
+			"Wallet SDK removed. Third-party wallet integration disabled.",
+		category: "Finance",
+	},
+	"com.huawei.waudio": {
+		appID: "com.huawei.waudio",
+		appName: "Wireless Audio",
+		description:
+			"Huawei wireless audio management service for enhanced Bluetooth audio quality and device-specific audio profiles",
+		safetyRating: "safe",
+		removalImpact:
+			"Wireless audio enhancements removed. Basic Bluetooth audio still works.",
+		category: "Audio",
+	},
+	"com.huawei.webview": {
+		appID: "com.huawei.webview",
+		appName: "Huawei WebView",
+		description:
+			"Huawei system WebView component providing web rendering for in-app browsers and web-based content across EMUI",
+		safetyRating: "risky",
+		removalImpact:
+			"In-app web rendering broken. Many apps displaying web content will fail.",
+		category: "System",
+	},
+	"com.huawei.wifiprobqeservice": {
+		appID: "com.huawei.wifiprobqeservice",
+		appName: "Wi-Fi Probe Service",
+		description:
+			"Huawei Wi-Fi probe and quality evaluation service monitoring network performance and triggering diagnostics",
+		safetyRating: "safe",
+		removalImpact:
+			"Wi-Fi quality monitoring disabled. Wi-Fi connectivity unaffected.",
+		category: "Network",
+	},
 	"com.ilekprofile.easymobile": {
 		appID: "com.ilekprofile.easymobile",
 		appName: "Easy Mobile",
@@ -7271,7 +9082,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Job search platform",
 		safetyRating: "safe",
 		removalImpact: "Indeed removed. No system impact.",
-		category: "Employment",
+		category: "Productivity",
 	},
 	"com.instagram.android": {
 		appID: "com.instagram.android",
@@ -7359,7 +9170,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Job search platform",
 		safetyRating: "safe",
 		removalImpact: "Jora removed. No system impact.",
-		category: "Employment",
+		category: "Productivity",
 	},
 	"com.jorlek.queqcustomer": {
 		appID: "com.jorlek.queqcustomer",
@@ -7375,7 +9186,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Kasikorn Bank mobile banking (Thailand)",
 		safetyRating: "safe",
 		removalImpact: "K PLUS banking removed. No system impact.",
-		category: "Banking",
+		category: "Finance",
 	},
 	"com.knox.vpn.proxyhandler": {
 		appID: "com.knox.vpn.proxyhandler",
@@ -7383,7 +9194,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Knox VPN proxy handler for enterprise connections",
 		safetyRating: "safe",
 		removalImpact: "Knox VPN removed. Personal devices unaffected.",
-		category: "Enterprise",
+		category: "Productivity",
 	},
 	"com.ktb.customer.qr": {
 		appID: "com.ktb.customer.qr",
@@ -7391,7 +9202,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Krungthai Bank QR payment app (Thailand)",
 		safetyRating: "safe",
 		removalImpact: "KTB QR removed. No system impact.",
-		category: "Banking",
+		category: "Finance",
 	},
 	"com.ktb.merchant.tungngern": {
 		appID: "com.ktb.merchant.tungngern",
@@ -7450,7 +9261,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Thai food delivery and services platform",
 		safetyRating: "safe",
 		removalImpact: "LINE MAN removed. No system impact.",
-		category: "Food Delivery",
+		category: "Food",
 	},
 	"com.linkedin.android": {
 		appID: "com.linkedin.android",
@@ -7538,7 +9349,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "AT Command Interface service",
 		safetyRating: "caution",
 		removalImpact: "AT command testing removed. No system impact.",
-		category: "Debugging",
+		category: "Developer",
 	},
 	"com.mediatek.atmwifimeta": {
 		appID: "com.mediatek.atmwifimeta",
@@ -7546,7 +9357,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Wi-Fi meta testing tool",
 		safetyRating: "safe",
 		removalImpact: "Wi-Fi testing removed. No system impact.",
-		category: "Debugging",
+		category: "Developer",
 	},
 	"com.mediatek.batterywarning": {
 		appID: "com.mediatek.batterywarning",
@@ -7602,7 +9413,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Performance optimisation for low-RAM devices",
 		safetyRating: "caution",
 		removalImpact: "Performance optimisation removed. No system impact.",
-		category: "Performance",
+		category: "System",
 	},
 	"com.mediatek.engineermode": {
 		appID: "com.mediatek.engineermode",
@@ -7610,7 +9421,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "MediaTek engineering menu for advanced settings",
 		safetyRating: "safe",
 		removalImpact: "Engineering menu removed. No system impact.",
-		category: "Chipset",
+		category: "System",
 	},
 	"com.mediatek.frameworkresoverlay": {
 		appID: "com.mediatek.frameworkresoverlay",
@@ -7666,7 +9477,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "MediaTek location-based services engineering mode",
 		safetyRating: "safe",
 		removalImpact: "May affect GPS on MediaTek chipsets.",
-		category: "Chipset",
+		category: "System",
 	},
 	"com.mediatek.location.lppe.main": {
 		appID: "com.mediatek.location.lppe.main",
@@ -7682,7 +9493,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "MediaTek magnetometer testing",
 		safetyRating: "safe",
 		removalImpact: "Sensor testing removed. No system impact.",
-		category: "Chipset",
+		category: "System",
 	},
 	"com.mediatek.mdmconfig": {
 		appID: "com.mediatek.mdmconfig",
@@ -7690,7 +9501,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "MediaTek modem configuration tool",
 		safetyRating: "risky",
 		removalImpact: "May affect cellular connectivity on MediaTek devices.",
-		category: "Chipset",
+		category: "System",
 	},
 	"com.mediatek.mdmlsample": {
 		appID: "com.mediatek.mdmlsample",
@@ -7698,7 +9509,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "MediaTek modem diagnostic sample",
 		safetyRating: "safe",
 		removalImpact: "Diagnostic sample removed.",
-		category: "Chipset",
+		category: "System",
 	},
 	"com.mediatek.miravision.ui": {
 		appID: "com.mediatek.miravision.ui",
@@ -7714,7 +9525,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "GPU driver for gaming on MT6989 chipset",
 		safetyRating: "risky",
 		removalImpact: "Gaming performance may degrade.",
-		category: "GPU",
+		category: "System",
 	},
 	"com.mediatek.mt6993.gamedriver": {
 		appID: "com.mediatek.mt6993.gamedriver",
@@ -7853,7 +9664,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Core TV service framework for MediaTek chipsets",
 		safetyRating: "safe",
 		removalImpact: "TV functions may break. Do not remove.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.mediatek.tvinput": {
 		appID: "com.mediatek.tvinput",
@@ -7861,7 +9672,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "TV input source manager",
 		safetyRating: "caution",
 		removalImpact: "TV input selection removed. TV only.",
-		category: "TV",
+		category: "Entertainment",
 	},
 	"com.mediatek.voicecommand": {
 		appID: "com.mediatek.voicecommand",
@@ -7869,7 +9680,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Voice command recognition",
 		safetyRating: "caution",
 		removalImpact: "Voice commands removed. No system impact.",
-		category: "Voice Assistant",
+		category: "AI",
 	},
 	"com.mediatek.voiceunlock": {
 		appID: "com.mediatek.voiceunlock",
@@ -7925,7 +9736,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "TV control centre for MediaTek devices",
 		safetyRating: "safe",
 		removalImpact: "TV centre removed. May affect TV features.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.mediatek.wwtv.webview": {
 		appID: "com.mediatek.wwtv.webview",
@@ -7933,7 +9744,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "WebView for TV browsers",
 		safetyRating: "caution",
 		removalImpact: "TV browser may not work. TV only.",
-		category: "TV",
+		category: "Entertainment",
 	},
 	"com.mediatek.ygps": {
 		appID: "com.mediatek.ygps",
@@ -7941,7 +9752,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "GPS testing and debugging tool",
 		safetyRating: "safe",
 		removalImpact: "GPS testing removed. No system impact.",
-		category: "Debugging",
+		category: "Developer",
 	},
 	"com.mi.android.globalFileexplorer": {
 		appID: "com.mi.android.globalFileexplorer",
@@ -7949,7 +9760,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Xiaomi file manager",
 		safetyRating: "risky",
 		removalImpact: "Mi File Manager removed. No system impact.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"com.mi.android.globallauncher": {
 		appID: "com.mi.android.globallauncher",
@@ -7965,7 +9776,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Xiaomi app recommendation and discovery service",
 		safetyRating: "safe",
 		removalImpact: "App recommendations stopped.",
-		category: "Marketing",
+		category: "Advertising",
 	},
 	"com.mi.AutoTest": {
 		appID: "com.mi.AutoTest",
@@ -7981,7 +9792,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Xiaomi Bluetooth enhancements",
 		safetyRating: "risky",
 		removalImpact: "Xiaomi Bluetooth features disabled.",
-		category: "Bluetooth",
+		category: "Connectivity",
 	},
 	"com.mi.earphone": {
 		appID: "com.mi.earphone",
@@ -8046,7 +9857,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Cannot manage Mi Band/Watch. Only remove if you don't have them.",
-		category: "Fitness",
+		category: "Health",
 	},
 	"com.micredit.in": {
 		appID: "com.micredit.in",
@@ -8062,7 +9873,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Manages Microsoft apps on Samsung devices",
 		safetyRating: "safe",
 		removalImpact: "Microsoft app integration removed. No system impact.",
-		category: "Integration",
+		category: "System",
 	},
 	"com.microsoft.bing": {
 		appID: "com.microsoft.bing",
@@ -8078,7 +9889,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Integrates device with Microsoft services",
 		safetyRating: "safe",
 		removalImpact: "Microsoft integration removed. No system impact.",
-		category: "Integration",
+		category: "System",
 	},
 	"com.microsoft.office.excel": {
 		appID: "com.microsoft.office.excel",
@@ -8142,7 +9953,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Microsoft cloud storage service",
 		safetyRating: "safe",
 		removalImpact: "OneDrive removed. No system impact.",
-		category: "Cloud Service",
+		category: "Cloud",
 	},
 	"com.microsoft.teams": {
 		appID: "com.microsoft.teams",
@@ -8150,7 +9961,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Business communication and collaboration platform",
 		safetyRating: "safe",
 		removalImpact: "Teams removed. No system impact.",
-		category: "Business",
+		category: "Productivity",
 	},
 	"com.microsoft.translator": {
 		appID: "com.microsoft.translator",
@@ -8166,7 +9977,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Cross-device synchronisation for Microsoft apps",
 		safetyRating: "safe",
 		removalImpact: "Microsoft cross-device sync removed. No system impact.",
-		category: "Integration",
+		category: "System",
 	},
 	"com.milink.service": {
 		appID: "com.milink.service",
@@ -8182,7 +9993,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Thai food delivery service",
 		safetyRating: "safe",
 		removalImpact: "1112 Delivery removed. No system impact.",
-		category: "Food Delivery",
+		category: "Food",
 	},
 	"com.mintgames.triplecrush.tile.fun": {
 		appID: "com.mintgames.triplecrush.tile.fun",
@@ -8206,7 +10017,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Xiaomi mobile payment service for India",
 		safetyRating: "safe",
 		removalImpact: "Mi Pay removed. India only.",
-		category: "Payment",
+		category: "Finance",
 	},
 	"com.mitv.ABUpdateStatus": {
 		appID: "com.mitv.ABUpdateStatus",
@@ -8214,7 +10025,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "A/B partition update status for Mi TV",
 		safetyRating: "risky",
 		removalImpact: "Update status removed. TV only.",
-		category: "TV",
+		category: "Entertainment",
 	},
 	"com.mitv.gallery": {
 		appID: "com.mitv.gallery",
@@ -8246,7 +10057,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Overseas content and services for Mi TV (global version)",
 		safetyRating: "safe",
 		removalImpact: "Overseas services removed. No system impact.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.mitv.toolhouse": {
 		appID: "com.mitv.toolhouse",
@@ -8270,7 +10081,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Content channel integration for Mi TV home",
 		safetyRating: "safe",
 		removalImpact: "Mi Channel removed. No system impact.",
-		category: "Recommendations",
+		category: "AI",
 	},
 	"com.mitv.tvhome.mitvplus": {
 		appID: "com.mitv.tvhome.mitvplus",
@@ -8294,7 +10105,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "System updater for Mi TV",
 		safetyRating: "risky",
 		removalImpact: "TV updates disabled. TV only.",
-		category: "TV",
+		category: "Entertainment",
 	},
 	"com.mitv.videoplayer": {
 		appID: "com.mitv.videoplayer",
@@ -8318,7 +10129,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Collects usage data and analytics for Xiaomi",
 		safetyRating: "safe",
 		removalImpact: "Analytics removed. Privacy and battery may improve.",
-		category: "Analytics",
+		category: "Telemetry",
 	},
 	"com.miui.android.fashiongallery": {
 		appID: "com.miui.android.fashiongallery",
@@ -8350,7 +10161,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Extension for MIUI automotive UI",
 		safetyRating: "risky",
 		removalImpact: "Auto UI features disabled.",
-		category: "Automotive",
+		category: "Travel",
 	},
 	"com.miui.backup": {
 		appID: "com.miui.backup",
@@ -8366,7 +10177,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "System for reporting bugs to Xiaomi",
 		safetyRating: "safe",
 		removalImpact: "Cannot report bugs. Device functionality unchanged.",
-		category: "Feedback",
+		category: "System",
 	},
 	"com.miui.calculator": {
 		appID: "com.miui.calculator",
@@ -8382,7 +10193,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Comprehensive Integration Test tool",
 		safetyRating: "risky",
 		removalImpact: "Hardware testing removed. No system impact.",
-		category: "Debugging",
+		category: "Developer",
 	},
 	"com.miui.cleaner": {
 		appID: "com.miui.cleaner",
@@ -8390,7 +10201,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Storage cleaner and optimiser",
 		safetyRating: "risky",
 		removalImpact: "Storage cleaner removed. No system impact.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"com.miui.cleanmaster": {
 		appID: "com.miui.cleanmaster",
@@ -8406,7 +10217,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Backs up device data to Mi Cloud",
 		safetyRating: "safe",
 		removalImpact: "Cloud backup disabled.",
-		category: "Cloud Service",
+		category: "Cloud",
 	},
 	"com.miui.cloudservice": {
 		appID: "com.miui.cloudservice",
@@ -8423,7 +10234,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "System base for Mi Cloud services",
 		safetyRating: "safe",
 		removalImpact: "Mi Cloud system features affected.",
-		category: "Cloud Service",
+		category: "Cloud",
 	},
 	"com.miui.compass": {
 		appID: "com.miui.compass",
@@ -8457,7 +10268,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "caution",
 		removalImpact:
 			"Over-the-air configuration updates disabled. Carrier settings may not apply.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.miui.creation": {
 		appID: "com.miui.creation",
@@ -8473,7 +10284,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Background service for MIUI system functions",
 		safetyRating: "safe",
 		removalImpact: "May affect MIUI system stability.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.miui.easygo": {
 		appID: "com.miui.easygo",
@@ -8481,7 +10292,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Quick access to transportation and services in China",
 		safetyRating: "safe",
 		removalImpact: "Easy Go removed. China only.",
-		category: "Transportation",
+		category: "Travel",
 	},
 	"com.miui.euicc": {
 		appID: "com.miui.euicc",
@@ -8497,7 +10308,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Additional photo editing features",
 		safetyRating: "risky",
 		removalImpact: "Extra photo features disabled.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.miui.face": {
 		appID: "com.miui.face",
@@ -8573,7 +10384,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Data transfer tool for migrating to new Xiaomi devices",
 		safetyRating: "safe",
 		removalImpact: "Phone Clone removed. Only needed during migration.",
-		category: "Migration",
+		category: "Setup",
 	},
 	"com.miui.hybrid": {
 		appID: "com.miui.hybrid",
@@ -8581,7 +10392,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Framework for mini-apps within MIUI",
 		safetyRating: "safe",
 		removalImpact: "Quick Apps removed. Regular apps unaffected.",
-		category: "Framework",
+		category: "System",
 	},
 	"com.miui.hybrid.accessory": {
 		appID: "com.miui.hybrid.accessory",
@@ -8589,7 +10400,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Accessory service for Quick Apps framework",
 		safetyRating: "safe",
 		removalImpact: "Quick Apps accessories removed. No system impact.",
-		category: "Framework",
+		category: "System",
 	},
 	"com.miui.klo.bugreport": {
 		appID: "com.miui.klo.bugreport",
@@ -8621,7 +10432,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Synchronises data with Mi Cloud",
 		safetyRating: "safe",
 		removalImpact: "Cloud synchronisation disabled.",
-		category: "Cloud Service",
+		category: "Cloud",
 	},
 	"com.miui.miservice": {
 		appID: "com.miui.miservice",
@@ -8637,7 +10448,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "File sharing between Xiaomi devices",
 		safetyRating: "safe",
 		removalImpact: "Mi Share removed. Use alternatives.",
-		category: "File Sharing",
+		category: "Connectivity",
 	},
 	"com.miui.misightservice": {
 		appID: "com.miui.misightservice",
@@ -8646,7 +10457,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Advanced Textures disabled. Reverts to Android's blur engine.",
-		category: "Graphics",
+		category: "System",
 	},
 	"com.miui.misound": {
 		appID: "com.miui.misound",
@@ -8784,7 +10595,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "QR code and barcode scanner",
 		safetyRating: "risky",
 		removalImpact: "QR scanner removed. No system impact.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"com.miui.rom": {
 		appID: "com.miui.rom",
@@ -8824,7 +10635,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Screenshot capture and editing",
 		safetyRating: "risky",
 		removalImpact: "MIUI screenshot features disabled.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"com.miui.securityadd": {
 		appID: "com.miui.securityadd",
@@ -8904,7 +10715,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Additional SMS features like message templates",
 		safetyRating: "safe",
 		removalImpact: "Extra SMS features disabled.",
-		category: "Messaging",
+		category: "Communication",
 	},
 	"com.miui.system": {
 		appID: "com.miui.system",
@@ -8912,7 +10723,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Core MIUI system component",
 		safetyRating: "risky",
 		removalImpact: "May break MIUI features. Not recommended.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.miui.system.overlay": {
 		appID: "com.miui.system.overlay",
@@ -8960,7 +10771,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Assistant for third-party app integration",
 		safetyRating: "safe",
 		removalImpact: "Some app integrations may be affected.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.miui.touchassistant": {
 		appID: "com.miui.touchassistant",
@@ -8992,7 +10803,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Trusted Service Manager for mobile payments",
 		safetyRating: "safe",
 		removalImpact: "May affect Mi Pay and NFC payments.",
-		category: "Payment",
+		category: "Finance",
 	},
 	"com.miui.tv.analytics": {
 		appID: "com.miui.tv.analytics",
@@ -9033,7 +10844,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Xiaomi's voice assistant for hands-free control",
 		safetyRating: "safe",
 		removalImpact: "Voice assistant removed. No system impact.",
-		category: "Voice Assistant",
+		category: "AI",
 	},
 	"com.miui.vsimcore": {
 		appID: "com.miui.vsimcore",
@@ -9066,7 +10877,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"Xiaomi weather app with forecasts and weather alerts. Called HyperOS Weather on newer devices",
 		safetyRating: "risky",
 		removalImpact: "Xiaomi Weather removed. Use alternative weather app.",
-		category: "Weather",
+		category: "Utility",
 	},
 	"com.miui.wmsvc": {
 		appID: "com.miui.wmsvc",
@@ -9091,7 +10902,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Background task and process manager",
 		safetyRating: "caution",
 		removalImpact: "Background task management affected.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.miuix.editor": {
 		appID: "com.miuix.editor",
@@ -9107,7 +10918,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Government Savings Bank Thailand mobile banking app",
 		safetyRating: "safe",
 		removalImpact: "MyMo removed. No system impact.",
-		category: "Banking",
+		category: "Finance",
 	},
 	"com.mobisystems.msdict.embedded.wireless.oxford.dictionaryofenglish": {
 		appID:
@@ -9156,7 +10967,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Font management system",
 		safetyRating: "caution",
 		removalImpact: "Font system may be affected.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.monotype.android.font.roboto": {
 		appID: "com.monotype.android.font.roboto",
@@ -9164,7 +10975,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Roboto font package",
 		safetyRating: "caution",
 		removalImpact: "Font system may be affected.",
-		category: "Theme",
+		category: "Customisation",
 	},
 	"com.monotype.android.font.rosemary": {
 		appID: "com.monotype.android.font.rosemary",
@@ -9204,7 +11015,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Disclaimer customisation for MStar-powered TVs",
 		safetyRating: "safe",
 		removalImpact: "Disclaimer customisation removed. No system impact.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.mygalaxy": {
 		appID: "com.mygalaxy",
@@ -9293,7 +11104,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "VPN service for secure internet access",
 		safetyRating: "safe",
 		removalImpact: "NordVPN removed. No system impact.",
-		category: "VPN",
+		category: "Security",
 	},
 	"com.novatek.novavis": {
 		appID: "com.novatek.novavis",
@@ -9400,7 +11211,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "PTT OR electric vehicle charging station network app",
 		safetyRating: "safe",
 		removalImpact: "EV Station PluZ removed. No system impact.",
-		category: "Transportation",
+		category: "Travel",
 	},
 	"com.pttor.xplore": {
 		appID: "com.pttor.xplore",
@@ -9432,7 +11243,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "DRM Content Format handler",
 		safetyRating: "caution",
 		removalImpact: "DRM content playback removed. No system impact.",
-		category: "DRM",
+		category: "System",
 	},
 	"com.qti.diagservices": {
 		appID: "com.qti.diagservices",
@@ -9456,7 +11267,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "LTE broadcast messaging",
 		safetyRating: "caution",
 		removalImpact: "LTE broadcast removed. No system impact.",
-		category: "Messaging",
+		category: "Communication",
 	},
 	"com.qti.phone": {
 		appID: "com.qti.phone",
@@ -9488,7 +11299,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Device information provider",
 		safetyRating: "caution",
 		removalImpact: "Device info unavailable.",
-		category: "System Info",
+		category: "Diagnostics",
 	},
 	"com.qti.service.colorservice": {
 		appID: "com.qti.service.colorservice",
@@ -9528,7 +11339,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "AT command forwarder for Qualcomm modems",
 		safetyRating: "risky",
 		removalImpact: "AT command forwarding disabled. Modem works normally.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.qualcomm.atfwd2": {
 		appID: "com.qualcomm.atfwd2",
@@ -9536,7 +11347,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Alternative AT command forwarder for Qualcomm",
 		safetyRating: "safe",
 		removalImpact: "AT forwarding disabled.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.qualcomm.embms": {
 		appID: "com.qualcomm.embms",
@@ -9544,7 +11355,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Enhanced Multimedia Broadcast Multicast Service",
 		safetyRating: "caution",
 		removalImpact: "Broadcast services removed. No system impact.",
-		category: "Messaging",
+		category: "Communication",
 	},
 	"com.qualcomm.location": {
 		appID: "com.qualcomm.location",
@@ -9601,7 +11412,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Device usage statistics service",
 		safetyRating: "caution",
 		removalImpact: "Statistics collection removed. No system impact.",
-		category: "Analytics",
+		category: "Telemetry",
 	},
 	"com.qualcomm.qti.dynamicddsservice": {
 		appID: "com.qualcomm.qti.dynamicddsservice",
@@ -9617,7 +11428,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Adreno GPU driver for Qualcomm Canoe platform (Android 16)",
 		safetyRating: "risky",
 		removalImpact: "Graphics may not work.",
-		category: "GPU",
+		category: "System",
 	},
 	"com.qualcomm.qti.gpudrivers.lahaina.api30": {
 		appID: "com.qualcomm.qti.gpudrivers.lahaina.api30",
@@ -9625,7 +11436,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "GPU driver for Snapdragon 888",
 		safetyRating: "risky",
 		removalImpact: "Graphics may not work.",
-		category: "GPU",
+		category: "System",
 	},
 	"com.qualcomm.qti.gpudrivers.msmnile.api30": {
 		appID: "com.qualcomm.qti.gpudrivers.msmnile.api30",
@@ -9633,7 +11444,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "GPU driver for Snapdragon 855",
 		safetyRating: "risky",
 		removalImpact: "Graphics may not work.",
-		category: "GPU",
+		category: "System",
 	},
 	"com.qualcomm.qti.gpudrivers.pineapple.api34": {
 		appID: "com.qualcomm.qti.gpudrivers.pineapple.api34",
@@ -9641,7 +11452,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "GPU driver for Snapdragon 8 Gen 3",
 		safetyRating: "risky",
 		removalImpact: "Graphics may not work.",
-		category: "GPU",
+		category: "System",
 	},
 	"com.qualcomm.qti.gpudrivers.sun.api35": {
 		appID: "com.qualcomm.qti.gpudrivers.sun.api35",
@@ -9649,7 +11460,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "GPU driver for latest Snapdragon",
 		safetyRating: "risky",
 		removalImpact: "Graphics may not work.",
-		category: "GPU",
+		category: "System",
 	},
 	"com.qualcomm.qti.gpudrivers.taro.api31": {
 		appID: "com.qualcomm.qti.gpudrivers.taro.api31",
@@ -9657,7 +11468,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "GPU driver for Snapdragon 8 Gen 1",
 		safetyRating: "risky",
 		removalImpact: "Graphics may not work.",
-		category: "GPU",
+		category: "System",
 	},
 	"com.qualcomm.qti.ims": {
 		appID: "com.qualcomm.qti.ims",
@@ -9681,7 +11492,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Performance mode control",
 		safetyRating: "caution",
 		removalImpact: "Performance modes disabled.",
-		category: "Performance",
+		category: "System",
 	},
 	"com.qualcomm.qti.poweroffalarm": {
 		appID: "com.qualcomm.qti.poweroffalarm",
@@ -9689,7 +11500,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Alarm when device is powered off",
 		safetyRating: "caution",
 		removalImpact: "Power-off alarms removed. No system impact.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"com.qualcomm.qti.powersavemode": {
 		appID: "com.qualcomm.qti.powersavemode",
@@ -9745,7 +11556,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Secure camera operations",
 		safetyRating: "caution",
 		removalImpact: "Secure camera features disabled.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.qualcomm.qti.server.qtiwifi": {
 		appID: "com.qualcomm.qti.server.qtiwifi",
@@ -9753,7 +11564,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Qualcomm Wi-Fi management server",
 		safetyRating: "risky",
 		removalImpact: "Wi-Fi may be affected.",
-		category: "WiFi",
+		category: "Network",
 	},
 	"com.qualcomm.qti.server.wigig.tethering.rro": {
 		appID: "com.qualcomm.qti.server.wigig.tethering.rro",
@@ -9777,7 +11588,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Background helper service for Qualcomm chipset",
 		safetyRating: "risky",
 		removalImpact: "Some chipset optimisations disabled.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.qualcomm.qti.simcontacts": {
 		appID: "com.qualcomm.qti.simcontacts",
@@ -9785,7 +11596,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "SIM card contacts manager",
 		safetyRating: "caution",
 		removalImpact: "SIM contacts removed. No system impact.",
-		category: "Contacts",
+		category: "Communication",
 	},
 	"com.qualcomm.qti.smq": {
 		appID: "com.qualcomm.qti.smq",
@@ -9793,7 +11604,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Qualcomm system monitoring service",
 		safetyRating: "risky",
 		removalImpact: "System monitoring disabled.",
-		category: "Chipset",
+		category: "System",
 	},
 	"com.qualcomm.qti.telephonyservice": {
 		appID: "com.qualcomm.qti.telephonyservice",
@@ -9833,7 +11644,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Workload classification for performance",
 		safetyRating: "caution",
 		removalImpact: "Performance optimisation removed. No system impact.",
-		category: "Performance",
+		category: "System",
 	},
 	"com.qualcomm.qti.xrcb": {
 		appID: "com.qualcomm.qti.xrcb",
@@ -9841,7 +11652,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Extended Reality Content Broadcast",
 		safetyRating: "caution",
 		removalImpact: "XR features disabled.",
-		category: "XR",
+		category: "Entertainment",
 	},
 	"com.qualcomm.qti.xrvd.service": {
 		appID: "com.qualcomm.qti.xrvd.service",
@@ -9849,7 +11660,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Extended Reality Video Distribution",
 		safetyRating: "caution",
 		removalImpact: "XR video removed. No system impact.",
-		category: "XR",
+		category: "Entertainment",
 	},
 	"com.qualcomm.qti.xrwifi": {
 		appID: "com.qualcomm.qti.xrwifi",
@@ -9857,7 +11668,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "WiFi connectivity service for XR (Extended Reality) devices",
 		safetyRating: "caution",
 		removalImpact: "XR WiFi features disabled. Standard WiFi unaffected.",
-		category: "WiFi",
+		category: "Network",
 	},
 	"com.qualcomm.qtil.aptxacu": {
 		appID: "com.qualcomm.qtil.aptxacu",
@@ -9931,7 +11742,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"NFC-based electronic identity card reader application (China)",
 		safetyRating: "safe",
 		removalImpact: "eID card reading removed. China only.",
-		category: "Identity",
+		category: "Security",
 	},
 	"com.rongcard.eidapi": {
 		appID: "com.rongcard.eidapi",
@@ -9939,7 +11750,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Electronic ID card API service (China)",
 		safetyRating: "safe",
 		removalImpact: "EID API removed. China only.",
-		category: "Identity",
+		category: "Security",
 	},
 	"com.samsung.aasaservice": {
 		appID: "com.samsung.aasaservice",
@@ -9963,7 +11774,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Archived accessory manager",
 		safetyRating: "risky",
 		removalImpact: "Accessory archive removed. No system impact.",
-		category: "Accessories",
+		category: "Accessory",
 	},
 	"com.samsung.advancedcallservice": {
 		appID: "com.samsung.advancedcallservice",
@@ -9995,7 +11806,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Manages Air Command S Pen features",
 		safetyRating: "risky",
 		removalImpact: "Air Command management affected.",
-		category: "S Pen",
+		category: "Input",
 	},
 	"com.samsung.android.airtel.stubapp": {
 		appID: "com.samsung.android.airtel.stubapp",
@@ -10011,7 +11822,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "File sharing service for Samsung devices",
 		safetyRating: "safe",
 		removalImpact: "AllShare file sharing removed. No system impact.",
-		category: "File Sharing",
+		category: "Connectivity",
 	},
 	"com.samsung.android.allshare.service.mediashare": {
 		appID: "com.samsung.android.allshare.service.mediashare",
@@ -10035,7 +11846,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Edge panel for quick app access",
 		safetyRating: "risky",
 		removalImpact: "Apps edge panel removed. No system impact.",
-		category: "UI Feature",
+		category: "Input",
 	},
 	"com.samsung.android.app.camera.sticker.facearavatar.preload": {
 		appID: "com.samsung.android.app.camera.sticker.facearavatar.preload",
@@ -10043,7 +11854,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Pre-loaded AR avatar sticker pack",
 		safetyRating: "safe",
 		removalImpact: "AR stickers removed. No system impact.",
-		category: "AR/Vision",
+		category: "AR",
 	},
 	"com.samsung.android.app.camera.sticker.stamp.preload": {
 		appID: "com.samsung.android.app.camera.sticker.stamp.preload",
@@ -10051,7 +11862,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Pre-loaded stamp stickers for camera",
 		safetyRating: "safe",
 		removalImpact: "Camera stamps removed. No system impact.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.samsung.android.app.clipboardedge": {
 		appID: "com.samsung.android.app.clipboardedge",
@@ -10059,7 +11870,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Edge panel for clipboard management",
 		safetyRating: "safe",
 		removalImpact: "Clipboard edge panel removed. No system impact.",
-		category: "UI Feature",
+		category: "Input",
 	},
 	"com.samsung.android.app.clockpack": {
 		appID: "com.samsung.android.app.clockpack",
@@ -10075,7 +11886,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Edge screen panel service for quick access to apps and tools",
 		safetyRating: "risky",
 		removalImpact: "Edge panels removed. Edge lighting may be affected.",
-		category: "UI Feature",
+		category: "Input",
 	},
 	"com.samsung.android.app.contacts": {
 		appID: "com.samsung.android.app.contacts",
@@ -10091,7 +11902,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Viewer for photos with depth effect (Live Focus)",
 		safetyRating: "risky",
 		removalImpact: "Cannot adjust focus blur after taking Live Focus photos.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.samsung.android.app.dressroom": {
 		appID: "com.samsung.android.app.dressroom",
@@ -10099,7 +11910,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "AR feature for trying on virtual clothes and accessories",
 		safetyRating: "risky",
 		removalImpact: "Virtual try-on features disabled.",
-		category: "AR/Vision",
+		category: "AR",
 	},
 	"com.samsung.android.app.earphonetypec": {
 		appID: "com.samsung.android.app.earphonetypec",
@@ -10147,7 +11958,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Samsung knowledge framework",
 		safetyRating: "safe",
 		removalImpact: "Framework service disabled.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.samsung.android.app.ledbackcover": {
 		appID: "com.samsung.android.app.ledbackcover",
@@ -10163,7 +11974,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Car integration protocol for compatible vehicles",
 		safetyRating: "safe",
 		removalImpact: "MirrorLink car integration removed. No system impact.",
-		category: "Automotive",
+		category: "Travel",
 	},
 	"com.samsung.android.app.motionpanoramaviewer": {
 		appID: "com.samsung.android.app.motionpanoramaviewer",
@@ -10171,7 +11982,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Viewer for 360-degree motion panorama photos",
 		safetyRating: "safe",
 		removalImpact: "Motion panorama viewing affected.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.samsung.android.app.music": {
 		appID: "com.samsung.android.app.music",
@@ -10187,7 +11998,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Manages network storage connections",
 		safetyRating: "risky",
 		removalImpact: "Network storage features disabled.",
-		category: "Storage",
+		category: "System",
 	},
 	"com.samsung.android.app.notes": {
 		appID: "com.samsung.android.app.notes",
@@ -10245,7 +12056,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"Samsung automation app for creating custom device behaviours based on triggers (formerly Bixby Routines)",
 		safetyRating: "safe",
 		removalImpact: "Automation features and preset modes disabled.",
-		category: "Automation",
+		category: "Smart Home",
 	},
 	"com.samsung.android.app.sbrowseredge": {
 		appID: "com.samsung.android.app.sbrowseredge",
@@ -10261,7 +12072,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Settings panel for Bixby configuration",
 		safetyRating: "safe",
 		removalImpact: "Cannot configure Bixby settings.",
-		category: "Voice Assistant",
+		category: "AI",
 	},
 	"com.samsung.android.app.sharelive": {
 		appID: "com.samsung.android.app.sharelive",
@@ -10269,7 +12080,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Fast file sharing between Samsung and nearby devices",
 		safetyRating: "safe",
 		removalImpact: "Quick Share removed. Use alternatives like Nearby Share.",
-		category: "File Sharing",
+		category: "Connectivity",
 	},
 	"com.samsung.android.app.simplesharing": {
 		appID: "com.samsung.android.app.simplesharing",
@@ -10277,7 +12088,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Samsung's file sharing service for nearby devices",
 		safetyRating: "safe",
 		removalImpact: "Quick Share disabled. Nearby Share (Google) still works.",
-		category: "File Sharing",
+		category: "Connectivity",
 	},
 	"com.samsung.android.app.smartcapture": {
 		appID: "com.samsung.android.app.smartcapture",
@@ -10294,7 +12105,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Some Samsung widgets may stop working. Home screen unaffected.",
-		category: "Home Screen",
+		category: "Launcher",
 	},
 	"com.samsung.android.app.social": {
 		appID: "com.samsung.android.app.social",
@@ -10328,7 +12139,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"Samsung's news aggregator and content discovery panel (formerly Samsung Free, Samsung Daily, Bixby Home)",
 		safetyRating: "safe",
 		removalImpact: "Samsung News panel removed. Home screen otherwise normal.",
-		category: "Content",
+		category: "Media",
 	},
 	"com.samsung.android.app.taskedge": {
 		appID: "com.samsung.android.app.taskedge",
@@ -10336,7 +12147,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Edge panel for quick access to tasks and reminders",
 		safetyRating: "safe",
 		removalImpact: "Tasks edge panel removed. No system impact.",
-		category: "UI Feature",
+		category: "Input",
 	},
 	"com.samsung.android.app.telephonyui": {
 		appID: "com.samsung.android.app.telephonyui",
@@ -10360,7 +12171,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Tips and tutorials for using Samsung features",
 		safetyRating: "safe",
 		removalImpact: "Tips notifications stop. No effect on functionality.",
-		category: "Tutorial",
+		category: "Setup",
 	},
 	"com.samsung.android.app.updatecenter": {
 		appID: "com.samsung.android.app.updatecenter",
@@ -10376,7 +12187,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Visual scanning features",
 		safetyRating: "risky",
 		removalImpact: "Visual scanning removed. No system impact.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.samsung.android.app.vrsetupwizardstub": {
 		appID: "com.samsung.android.app.vrsetupwizardstub",
@@ -10384,7 +12195,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Setup wizard for Samsung Gear VR",
 		safetyRating: "safe",
 		removalImpact: "VR setup removed. Only needed for Gear VR.",
-		category: "VR",
+		category: "Entertainment",
 	},
 	"com.samsung.android.app.watchmanager": {
 		appID: "com.samsung.android.app.watchmanager",
@@ -10417,7 +12228,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Optimises app launch speed",
 		safetyRating: "risky",
 		removalImpact: "App launch optimisation removed. Apps still work.",
-		category: "Performance",
+		category: "System",
 	},
 	"com.samsung.android.apps.wearable.recent": {
 		appID: "com.samsung.android.apps.wearable.recent",
@@ -10441,7 +12252,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Augmented reality drawing feature in camera",
 		safetyRating: "safe",
 		removalImpact: "AR drawing feature disabled. Camera works normally.",
-		category: "AR/Vision",
+		category: "AR",
 	},
 	"com.samsung.android.aremoji": {
 		appID: "com.samsung.android.aremoji",
@@ -10449,7 +12260,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Create and use personalised AR avatars",
 		safetyRating: "safe",
 		removalImpact: "AR Emoji removed. Standard emojis still available.",
-		category: "AR/Vision",
+		category: "AR",
 	},
 	"com.samsung.android.aremojieditor": {
 		appID: "com.samsung.android.aremojieditor",
@@ -10457,7 +12268,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Create and edit personalised AR emoji characters",
 		safetyRating: "safe",
 		removalImpact: "Cannot create new AR emojis. Existing ones may still work.",
-		category: "AR/Vision",
+		category: "AR",
 	},
 	"com.samsung.android.arzone": {
 		appID: "com.samsung.android.arzone",
@@ -10466,7 +12277,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"AR experiences and filters removed. Standard camera unaffected.",
-		category: "AR/Vision",
+		category: "AR",
 	},
 	"com.samsung.android.audiomirroring": {
 		appID: "com.samsung.android.audiomirroring",
@@ -10491,7 +12302,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Context awareness service for smart features",
 		safetyRating: "safe",
 		removalImpact: "Context-aware features disabled.",
-		category: "AI/ML",
+		category: "AI",
 	},
 	"com.samsung.android.batterysavingsettings": {
 		appID: "com.samsung.android.batterysavingsettings",
@@ -10533,7 +12344,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"All Bixby features disabled. Bixby button may stop functioning.",
-		category: "Voice Assistant",
+		category: "AI",
 	},
 	"com.samsung.android.bixby.agent.dummy": {
 		appID: "com.samsung.android.bixby.agent.dummy",
@@ -10541,7 +12352,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Placeholder for Bixby on devices without full Bixby support",
 		safetyRating: "safe",
 		removalImpact: "Bixby stub removed. No functional impact.",
-		category: "Voice Assistant",
+		category: "AI",
 	},
 	"com.samsung.android.bixby.ondevice.engb": {
 		appID: "com.samsung.android.bixby.ondevice.engb",
@@ -10549,7 +12360,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Offline Bixby English UK language pack",
 		safetyRating: "risky",
 		removalImpact: "Offline Bixby English UK removed. No system impact.",
-		category: "Voice Assistant",
+		category: "AI",
 	},
 	"com.samsung.android.bixby.ondevice.enus": {
 		appID: "com.samsung.android.bixby.ondevice.enus",
@@ -10557,7 +12368,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Offline Bixby English US language pack",
 		safetyRating: "risky",
 		removalImpact: "Offline Bixby English US removed. No system impact.",
-		category: "Voice Assistant",
+		category: "AI",
 	},
 	"com.samsung.android.bixby.ondevice.thth": {
 		appID: "com.samsung.android.bixby.ondevice.thth",
@@ -10565,7 +12376,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Offline Bixby Thai language pack",
 		safetyRating: "risky",
 		removalImpact: "Offline Bixby Thai removed. No system impact.",
-		category: "Voice Assistant",
+		category: "AI",
 	},
 	"com.samsung.android.bixby.ondevice.zhcn": {
 		appID: "com.samsung.android.bixby.ondevice.zhcn",
@@ -10573,7 +12384,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Offline Bixby Chinese language pack",
 		safetyRating: "risky",
 		removalImpact: "Offline Bixby Chinese removed. No system impact.",
-		category: "Voice Assistant",
+		category: "AI",
 	},
 	"com.samsung.android.bixby.service": {
 		appID: "com.samsung.android.bixby.service",
@@ -10583,7 +12394,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Bixby voice wake-up and voice commands will stop working. Other device functions unaffected.",
-		category: "Voice Assistant",
+		category: "AI",
 	},
 	"com.samsung.android.bixby.wakeup": {
 		appID: "com.samsung.android.bixby.wakeup",
@@ -10591,7 +12402,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Bixby voice wake-up service for 'Hi Bixby' command",
 		safetyRating: "safe",
 		removalImpact: "Voice wake-up removed. Slight battery improvement.",
-		category: "Voice Assistant",
+		category: "AI",
 	},
 	"com.samsung.android.bixbyvision.framework": {
 		appID: "com.samsung.android.bixbyvision.framework",
@@ -10599,7 +12410,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Framework for Bixby Vision AR and image recognition",
 		safetyRating: "safe",
 		removalImpact: "Bixby Vision disabled in camera and other apps.",
-		category: "AR/Vision",
+		category: "AR",
 	},
 	"com.samsung.android.bluelightfilter": {
 		appID: "com.samsung.android.bluelightfilter",
@@ -10649,7 +12460,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"SDK service allowing third-party apps to access camera features",
 		safetyRating: "risky",
 		removalImpact: "Some camera features in third-party apps may break.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.samsung.android.cameraxservice": {
 		appID: "com.samsung.android.cameraxservice",
@@ -10657,7 +12468,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "CameraX API service for camera functionality",
 		safetyRating: "risky",
 		removalImpact: "May affect camera features in apps.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.samsung.android.carkey": {
 		appID: "com.samsung.android.carkey",
@@ -10721,7 +12532,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Knox secure container framework",
 		safetyRating: "safe",
 		removalImpact: "Knox container disabled. Enterprise feature.",
-		category: "Enterprise",
+		category: "Productivity",
 	},
 	"com.samsung.android.da.daagent": {
 		appID: "com.samsung.android.da.daagent",
@@ -10729,7 +12540,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Allows using two accounts on messaging apps simultaneously",
 		safetyRating: "safe",
 		removalImpact: "Dual Messenger feature disabled.",
-		category: "Messaging",
+		category: "Communication",
 	},
 	"com.samsung.android.dbsc": {
 		appID: "com.samsung.android.dbsc",
@@ -10745,7 +12556,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Synchronises time in Samsung DeX mode",
 		safetyRating: "risky",
 		removalImpact: "DeX time sync removed. No system impact.",
-		category: "DeX",
+		category: "Productivity",
 	},
 	"com.samsung.android.dialer": {
 		appID: "com.samsung.android.dialer",
@@ -10819,7 +12630,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Emergency SOS and information features",
 		safetyRating: "risky",
 		removalImpact: "Samsung emergency features disabled.",
-		category: "Emergency",
+		category: "Safety",
 	},
 	"com.samsung.android.emojiupdater": {
 		appID: "com.samsung.android.emojiupdater",
@@ -10827,7 +12638,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Updates emoji font pack",
 		safetyRating: "safe",
 		removalImpact: "Emoji updates disabled. Existing emojis work.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.samsung.android.ese": {
 		appID: "com.samsung.android.ese",
@@ -10852,7 +12663,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Screen time monitoring and parental controls removed. No system impact.",
-		category: "Wellness",
+		category: "Health",
 	},
 	"com.samsung.android.galaxy": {
 		appID: "com.samsung.android.galaxy",
@@ -10860,7 +12671,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Widget for discovering Samsung apps and services",
 		safetyRating: "safe",
 		removalImpact: "App discovery widget removed. No system impact.",
-		category: "Marketing",
+		category: "Advertising",
 	},
 	"com.samsung.android.gallery.watch": {
 		appID: "com.samsung.android.gallery.watch",
@@ -10894,7 +12705,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Game performance optimisation service",
 		safetyRating: "risky",
 		removalImpact: "Game optimisation removed. May improve performance.",
-		category: "Game",
+		category: "Gaming",
 	},
 	"com.samsung.android.geargplugin": {
 		appID: "com.samsung.android.geargplugin",
@@ -10910,7 +12721,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Image post-processing manager for camera",
 		safetyRating: "safe",
 		removalImpact: "May affect camera image processing.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.samsung.android.gru": {
 		appID: "com.samsung.android.gru",
@@ -10927,7 +12738,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact:
 			"Sensor permission management disabled. Sensors may not work properly.",
-		category: "Hardware",
+		category: "Diagnostics",
 	},
 	"com.samsung.android.hdmapp": {
 		appID: "com.samsung.android.hdmapp",
@@ -10943,7 +12754,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "VR environment shell for Gear VR",
 		safetyRating: "safe",
 		removalImpact: "VR shell removed. No system impact.",
-		category: "VR",
+		category: "Entertainment",
 	},
 	"com.samsung.android.hmt.vrsvc": {
 		appID: "com.samsung.android.hmt.vrsvc",
@@ -10951,7 +12762,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Background service for Gear VR functionality",
 		safetyRating: "safe",
 		removalImpact: "VR services disabled. Only remove if no Gear VR.",
-		category: "VR",
+		category: "Entertainment",
 	},
 	"com.samsung.android.honeyboard": {
 		appID: "com.samsung.android.honeyboard",
@@ -11017,7 +12828,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "AI-powered voice recognition and processing service",
 		safetyRating: "risky",
 		removalImpact: "Intelligent voice removed. No system impact.",
-		category: "Voice Assistant",
+		category: "AI",
 	},
 	"com.samsung.android.internal.overlay.config.default_contextual_search": {
 		appID:
@@ -11069,7 +12880,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"KMX service removed. Enterprise feature. Personal devices unaffected.",
-		category: "Enterprise",
+		category: "Productivity",
 	},
 	"com.samsung.android.knox.analytics.uploader": {
 		appID: "com.samsung.android.knox.analytics.uploader",
@@ -11077,7 +12888,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Uploads Knox security analytics data",
 		safetyRating: "safe",
 		removalImpact: "Knox analytics removed. Privacy may improve.",
-		category: "Analytics",
+		category: "Telemetry",
 	},
 	"com.samsung.android.knox.app.networkfilter": {
 		appID: "com.samsung.android.knox.app.networkfilter",
@@ -11086,7 +12897,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Knox network filter removed. Enterprise feature. Personal devices unaffected.",
-		category: "Enterprise",
+		category: "Productivity",
 	},
 	"com.samsung.android.knox.attestation": {
 		appID: "com.samsung.android.knox.attestation",
@@ -11103,7 +12914,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Knox agent removed. Enterprise feature. Personal devices unaffected.",
-		category: "Enterprise",
+		category: "Productivity",
 	},
 	"com.samsung.android.knox.containercore": {
 		appID: "com.samsung.android.knox.containercore",
@@ -11121,7 +12932,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Enterprise enrolment disabled. Personal devices unaffected.",
-		category: "Enterprise",
+		category: "Productivity",
 	},
 	"com.samsung.android.knox.kfbp": {
 		appID: "com.samsung.android.knox.kfbp",
@@ -11153,7 +12964,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Mobile point-of-sale Knox security",
 		safetyRating: "safe",
 		removalImpact: "Only affects business POS devices.",
-		category: "Enterprise",
+		category: "Productivity",
 	},
 	"com.samsung.android.knox.pushmanager": {
 		appID: "com.samsung.android.knox.pushmanager",
@@ -11162,7 +12973,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Knox push notifications removed. Personal devices unaffected.",
-		category: "Enterprise",
+		category: "Productivity",
 	},
 	"com.samsung.android.knox.sandbox": {
 		appID: "com.samsung.android.knox.sandbox",
@@ -11187,7 +12998,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Zero Trust removed. Enterprise feature. Personal devices unaffected.",
-		category: "Enterprise",
+		category: "Productivity",
 	},
 	"com.samsung.android.liveeffectservice": {
 		appID: "com.samsung.android.liveeffectservice",
@@ -11195,7 +13006,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Live focus and portrait effects service",
 		safetyRating: "safe",
 		removalImpact: "Portrait mode effects may be affected.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.samsung.android.livestickers": {
 		appID: "com.samsung.android.livestickers",
@@ -11203,7 +13014,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Animated stickers for messaging apps",
 		safetyRating: "safe",
 		removalImpact: "Live sticker features disabled.",
-		category: "Messaging",
+		category: "Communication",
 	},
 	"com.samsung.android.localeoverlaymanager": {
 		appID: "com.samsung.android.localeoverlaymanager",
@@ -11211,7 +13022,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Manages language-specific UI overlays",
 		safetyRating: "risky",
 		removalImpact: "Language switching may break. Do not remove.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.samsung.android.location": {
 		appID: "com.samsung.android.location",
@@ -11296,7 +13107,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"MDM removed. Enterprise feature. Personal devices unaffected.",
-		category: "Enterprise",
+		category: "Productivity",
 	},
 	"com.samsung.android.mdx": {
 		appID: "com.samsung.android.mdx",
@@ -11312,7 +13123,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Multi-device Experience development kit",
 		safetyRating: "safe",
 		removalImpact: "MDX kit removed. No system impact.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.samsung.android.mdx.quickboard": {
 		appID: "com.samsung.android.mdx.quickboard",
@@ -11378,7 +13189,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Marketing notifications stopped. No effect on core features.",
-		category: "Marketing",
+		category: "Advertising",
 	},
 	"com.samsung.android.motionphoto.app": {
 		appID: "com.samsung.android.motionphoto.app",
@@ -11386,7 +13197,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Manages motion photo features",
 		safetyRating: "risky",
 		removalImpact: "Motion photos may not play properly.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.samsung.android.motionphoto.viewer": {
 		appID: "com.samsung.android.motionphoto.viewer",
@@ -11410,7 +13221,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Media Transfer Protocol for file transfers to PC",
 		safetyRating: "risky",
 		removalImpact: "USB file transfer may be affected.",
-		category: "File Transfer",
+		category: "Connectivity",
 	},
 	"com.samsung.android.mydevice": {
 		appID: "com.samsung.android.mydevice",
@@ -11419,7 +13230,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"Device information and diagnostics app showing hardware specs and status",
 		safetyRating: "safe",
 		removalImpact: "Device info viewer removed. No effect on functionality.",
-		category: "Information",
+		category: "Utility",
 	},
 	"com.samsung.android.net.wifi.wifiguider": {
 		appID: "com.samsung.android.net.wifi.wifiguider",
@@ -11476,7 +13287,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "English to Thai translation language pack",
 		safetyRating: "risky",
 		removalImpact: "English-Thai translation removed. No system impact.",
-		category: "Translation",
+		category: "Utility",
 	},
 	"com.samsung.android.nmt.apps.t2t.languagepack.enzh": {
 		appID: "com.samsung.android.nmt.apps.t2t.languagepack.enzh",
@@ -11484,7 +13295,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "English to Chinese translation language pack",
 		safetyRating: "risky",
 		removalImpact: "English-Chinese translation removed. No system impact.",
-		category: "Translation",
+		category: "Utility",
 	},
 	"com.samsung.android.nmt.apps.t2t.languagepack.kozh": {
 		appID: "com.samsung.android.nmt.apps.t2t.languagepack.kozh",
@@ -11492,7 +13303,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Korean to Chinese translation language pack",
 		safetyRating: "risky",
 		removalImpact: "Korean-Chinese translation removed. No system impact.",
-		category: "Translation",
+		category: "Utility",
 	},
 	"com.samsung.android.oneconnect": {
 		appID: "com.samsung.android.oneconnect",
@@ -11516,7 +13327,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "AI photo enhancement service",
 		safetyRating: "risky",
 		removalImpact: "Photo remastering removed. Photos still viewable.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.samsung.android.privacydashboard": {
 		appID: "com.samsung.android.privacydashboard",
@@ -11540,7 +13351,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Secure file sharing with expiration and access control",
 		safetyRating: "safe",
 		removalImpact: "Private Share removed. No system impact.",
-		category: "Sharing",
+		category: "Connectivity",
 	},
 	"com.samsung.android.provider.filterprovider": {
 		appID: "com.samsung.android.provider.filterprovider",
@@ -11548,7 +13359,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Provides image filters for camera and gallery",
 		safetyRating: "risky",
 		removalImpact: "Camera filters may be limited.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.samsung.android.providers.carrier": {
 		appID: "com.samsung.android.providers.carrier",
@@ -11564,7 +13375,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Database storage for contacts",
 		safetyRating: "risky",
 		removalImpact: "Contacts storage removed. Do not remove.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.samsung.android.providers.factory": {
 		appID: "com.samsung.android.providers.factory",
@@ -11580,7 +13391,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Database storage for media files",
 		safetyRating: "risky",
 		removalImpact: "Media storage removed. Gallery and media apps will break.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.samsung.android.providers.trash": {
 		appID: "com.samsung.android.providers.trash",
@@ -11588,7 +13399,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Manages deleted files in trash/recycle bin",
 		safetyRating: "caution",
 		removalImpact: "Trash bin features disabled. Files delete permanently.",
-		category: "Storage",
+		category: "System",
 	},
 	"com.samsung.android.rampart": {
 		appID: "com.samsung.android.rampart",
@@ -11645,7 +13456,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "NFC payment service for Galaxy Watch",
 		safetyRating: "safe",
 		removalImpact: "Samsung Pay on watch will not function.",
-		category: "Samsung",
+		category: "System",
 	},
 	"com.samsung.android.samsungpositioning": {
 		appID: "com.samsung.android.samsungpositioning",
@@ -11662,7 +13473,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Cloud storage and backup service for Samsung devices",
 		safetyRating: "risky",
 		removalImpact: "Cloud backup disabled. Local data unaffected.",
-		category: "Cloud Service",
+		category: "Cloud",
 	},
 	"com.samsung.android.scpm": {
 		appID: "com.samsung.android.scpm",
@@ -11670,7 +13481,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Manages cloud-based device policies and configurations",
 		safetyRating: "risky",
 		removalImpact: "May affect Samsung Cloud features and policy updates.",
-		category: "Cloud Service",
+		category: "Cloud",
 	},
 	"com.samsung.android.scs": {
 		appID: "com.samsung.android.scs",
@@ -11678,7 +13489,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Samsung Cloud Service backend",
 		safetyRating: "risky",
 		removalImpact: "Samsung Cloud features may be affected.",
-		category: "Cloud Service",
+		category: "Cloud",
 	},
 	"com.samsung.android.sdk.handwriting": {
 		appID: "com.samsung.android.sdk.handwriting",
@@ -11686,7 +13497,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "SDK for handwriting recognition with S Pen",
 		safetyRating: "risky",
 		removalImpact: "Handwriting recognition may be affected.",
-		category: "S Pen",
+		category: "Input",
 	},
 	"com.samsung.android.sdk.handwriting.watch": {
 		appID: "com.samsung.android.sdk.handwriting.watch",
@@ -11710,7 +13521,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Samsung Device Management configuration",
 		safetyRating: "risky",
 		removalImpact: "Device management features affected.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.samsung.android.secondconnection": {
 		appID: "com.samsung.android.secondconnection",
@@ -11752,7 +13563,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact:
 			"Air Command menu disabled. S Pen still works but features limited.",
-		category: "S Pen",
+		category: "Input",
 	},
 	"com.samsung.android.service.airviewdictionary": {
 		appID: "com.samsung.android.service.airviewdictionary",
@@ -11776,7 +13587,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Enables live drawing and AR doodle features",
 		safetyRating: "safe",
 		removalImpact: "AR drawing features disabled.",
-		category: "AR/Vision",
+		category: "AR",
 	},
 	"com.samsung.android.service.pentastic": {
 		appID: "com.samsung.android.service.pentastic",
@@ -11784,7 +13595,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "S Pen productivity features service",
 		safetyRating: "risky",
 		removalImpact: "S Pen productivity features disabled.",
-		category: "S Pen",
+		category: "Input",
 	},
 	"com.samsung.android.service.peoplestripe": {
 		appID: "com.samsung.android.service.peoplestripe",
@@ -11792,7 +13603,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Quick access to favourite contacts on edge screen",
 		safetyRating: "safe",
 		removalImpact: "People edge panel removed. No system impact.",
-		category: "UI Feature",
+		category: "Input",
 	},
 	"com.samsung.android.service.stplatform": {
 		appID: "com.samsung.android.service.stplatform",
@@ -11800,7 +13611,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Framework for SmartThings IoT platform integration",
 		safetyRating: "safe",
 		removalImpact: "SmartThings features may be affected.",
-		category: "IoT",
+		category: "Smart Home",
 	},
 	"com.samsung.android.service.tagservice": {
 		appID: "com.samsung.android.service.tagservice",
@@ -11832,7 +13643,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Receives and applies settings from external sources",
 		safetyRating: "risky",
 		removalImpact: "Settings synchronisation may be affected.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.samsung.android.shealthmonitor": {
 		appID: "com.samsung.android.shealthmonitor",
@@ -11857,7 +13668,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"AI-powered feature capturing multiple photo/video formats at once",
 		safetyRating: "risky",
 		removalImpact: "Single Take camera mode disabled.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.samsung.android.six.webtrans": {
 		appID: "com.samsung.android.six.webtrans",
@@ -11881,7 +13692,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Policy service for Smart Manager (Device Care)",
 		safetyRating: "risky",
 		removalImpact: "Device Care policies affected.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.samsung.android.smartcallprovider": {
 		appID: "com.samsung.android.smartcallprovider",
@@ -11897,7 +13708,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Face recognition for gallery and camera features",
 		safetyRating: "risky",
 		removalImpact: "Face recognition in gallery removed. No system impact.",
-		category: "AI/ML",
+		category: "AI",
 	},
 	"com.samsung.android.smartface.overlay": {
 		appID: "com.samsung.android.smartface.overlay",
@@ -11905,7 +13716,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Face detection overlay resources",
 		safetyRating: "risky",
 		removalImpact: "Face detection features may be affected.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.samsung.android.smartfitting": {
 		appID: "com.samsung.android.smartfitting",
@@ -11937,7 +13748,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "AI-powered suggestions based on usage patterns",
 		safetyRating: "risky",
 		removalImpact: "Smart suggestions removed. Battery may improve slightly.",
-		category: "AI/ML",
+		category: "AI",
 	},
 	"com.samsung.android.smartswitchassistant": {
 		appID: "com.samsung.android.smartswitchassistant",
@@ -11946,7 +13757,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Data transfer tool removed. Only needed during device migration.",
-		category: "Migration",
+		category: "Setup",
 	},
 	"com.samsung.android.spay": {
 		appID: "com.samsung.android.spay",
@@ -11955,7 +13766,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Samsung Pay disabled. Cannot make mobile payments via Samsung Pay.",
-		category: "Payment",
+		category: "Finance",
 	},
 	"com.samsung.android.spayfw": {
 		appID: "com.samsung.android.spayfw",
@@ -11963,7 +13774,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Framework supporting Samsung Pay functionality",
 		safetyRating: "safe",
 		removalImpact: "Samsung Pay framework removed. Payment features disabled.",
-		category: "Payment",
+		category: "Finance",
 	},
 	"com.samsung.android.spaymini": {
 		appID: "com.samsung.android.spaymini",
@@ -11971,7 +13782,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Lightweight version of Samsung Pay for quick transactions",
 		safetyRating: "safe",
 		removalImpact: "Samsung Pay Mini removed. No system impact.",
-		category: "Payment",
+		category: "Finance",
 	},
 	"com.samsung.android.stextclassifier": {
 		appID: "com.samsung.android.stextclassifier",
@@ -11979,7 +13790,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Text classification and smart recognition",
 		safetyRating: "risky",
 		removalImpact: "Smart text features disabled.",
-		category: "AI/ML",
+		category: "AI",
 	},
 	"com.samsung.android.stickercenter": {
 		appID: "com.samsung.android.stickercenter",
@@ -11987,7 +13798,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Hub for downloading and managing stickers for Samsung apps",
 		safetyRating: "safe",
 		removalImpact: "Cannot download new stickers.",
-		category: "Messaging",
+		category: "Communication",
 	},
 	"com.samsung.android.storage.watchstoragemanager": {
 		appID: "com.samsung.android.storage.watchstoragemanager",
@@ -12011,7 +13822,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Samsung service communication agent",
 		safetyRating: "safe",
 		removalImpact: "Service agent removed. No system impact.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.samsung.android.svoiceime": {
 		appID: "com.samsung.android.svoiceime",
@@ -12061,7 +13872,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact:
 			"Timezone data removed. Time display may be incorrect on watches.",
-		category: "Wear OS",
+		category: "Wearables",
 	},
 	"com.samsung.android.timezone.updater": {
 		appID: "com.samsung.android.timezone.updater",
@@ -12103,7 +13914,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"Provides video call effects like background blur and face smoothing",
 		safetyRating: "risky",
 		removalImpact: "Video call effects disabled in calling apps.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.samsung.android.video": {
 		appID: "com.samsung.android.video",
@@ -12144,7 +13955,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Bixby Vision features in camera disabled. Camera still functions normally.",
-		category: "AR/Vision",
+		category: "AR",
 	},
 	"com.samsung.android.visual.cloudcore": {
 		appID: "com.samsung.android.visual.cloudcore",
@@ -12202,7 +14013,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "App shortcut tile for Galaxy Watch",
 		safetyRating: "risky",
 		removalImpact: "App shortcut tile removed. Watches only.",
-		category: "Wear OS",
+		category: "Wearables",
 	},
 	"com.samsung.android.watch.batterytile": {
 		appID: "com.samsung.android.watch.batterytile",
@@ -12210,7 +14021,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Battery tile for Galaxy Watch",
 		safetyRating: "risky",
 		removalImpact: "Battery tile removed. Watches only.",
-		category: "Wear OS",
+		category: "Wearables",
 	},
 	"com.samsung.android.watch.budscontroller": {
 		appID: "com.samsung.android.watch.budscontroller",
@@ -12322,7 +14133,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Fitness-focused digital watch face",
 		safetyRating: "safe",
 		removalImpact: "Activity Number face removed.",
-		category: "Watch Face",
+		category: "Wearables",
 	},
 	"com.samsung.android.watch.watchface.analogmodular": {
 		appID: "com.samsung.android.watch.watchface.analogmodular",
@@ -12394,7 +14205,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Minimalist bold analog watch face",
 		safetyRating: "safe",
 		removalImpact: "Bold Index face removed.",
-		category: "Watch Face",
+		category: "Wearables",
 	},
 	"com.samsung.android.watch.watchface.companionhelper": {
 		appID: "com.samsung.android.watch.watchface.companionhelper",
@@ -12410,7 +14221,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Helper service for watch face complications",
 		safetyRating: "risky",
 		removalImpact: "Watch face complications may not work properly.",
-		category: "Wear OS",
+		category: "Wearables",
 	},
 	"com.samsung.android.watch.watchface.digitalfont": {
 		appID: "com.samsung.android.watch.watchface.digitalfont",
@@ -12442,7 +14253,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Animated typography watch face",
 		safetyRating: "safe",
 		removalImpact: "Dynamic Font face removed.",
-		category: "Watch Face",
+		category: "Wearables",
 	},
 	"com.samsung.android.watch.watchface.emergency": {
 		appID: "com.samsung.android.watch.watchface.emergency",
@@ -12474,7 +14285,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Animated floral watch face",
 		safetyRating: "safe",
 		removalImpact: "Flower Garden face removed.",
-		category: "Watch Face",
+		category: "Wearables",
 	},
 	"com.samsung.android.watch.watchface.gradientfont": {
 		appID: "com.samsung.android.watch.watchface.gradientfont",
@@ -12482,7 +14293,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Typography-focused watch face with gradients",
 		safetyRating: "safe",
 		removalImpact: "Gradient Font face removed.",
-		category: "Watch Face",
+		category: "Wearables",
 	},
 	"com.samsung.android.watch.watchface.healthmodular": {
 		appID: "com.samsung.android.watch.watchface.healthmodular",
@@ -12498,7 +14309,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Highly customizable modular watch face",
 		safetyRating: "safe",
 		removalImpact: "Info Modular face removed.",
-		category: "Watch Face",
+		category: "Wearables",
 	},
 	"com.samsung.android.watch.watchface.large": {
 		appID: "com.samsung.android.watch.watchface.large",
@@ -12522,7 +14333,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Pebble-style artistic watch face",
 		safetyRating: "safe",
 		removalImpact: "My Pebble face removed.",
-		category: "Watch Face",
+		category: "Wearables",
 	},
 	"com.samsung.android.watch.watchface.myphoto": {
 		appID: "com.samsung.android.watch.watchface.myphoto",
@@ -12546,7 +14357,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Classic mechanical style watch face",
 		safetyRating: "safe",
 		removalImpact: "Perpetual watch face removed.",
-		category: "Watch Face",
+		category: "Wearables",
 	},
 	"com.samsung.android.watch.watchface.photosticker": {
 		appID: "com.samsung.android.watch.watchface.photosticker",
@@ -12554,7 +14365,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Customizable photo gallery watch face",
 		safetyRating: "safe",
 		removalImpact: "Photo Sticker face removed.",
-		category: "Watch Face",
+		category: "Wearables",
 	},
 	"com.samsung.android.watch.watchface.premiumanalog": {
 		appID: "com.samsung.android.watch.watchface.premiumanalog",
@@ -12570,7 +14381,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Simplified face for 'School Time' mode",
 		safetyRating: "safe",
 		removalImpact: "School Time face removed.",
-		category: "Watch Face",
+		category: "Wearables",
 	},
 	"com.samsung.android.watch.watchface.simpleanalogue": {
 		appID: "com.samsung.android.watch.watchface.simpleanalogue",
@@ -12602,7 +14413,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Basic digital watch face style",
 		safetyRating: "safe",
 		removalImpact: "Simple Digital face removed.",
-		category: "Watch Face",
+		category: "Wearables",
 	},
 	"com.samsung.android.watch.watchface.sleepcoaching": {
 		appID: "com.samsung.android.watch.watchface.sleepcoaching",
@@ -12610,7 +14421,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Sleep tracking visualization watch face",
 		safetyRating: "safe",
 		removalImpact: "Sleep Coaching face removed.",
-		category: "Watch Face",
+		category: "Wearables",
 	},
 	"com.samsung.android.watch.watchface.spatialnumber": {
 		appID: "com.samsung.android.watch.watchface.spatialnumber",
@@ -12626,7 +14437,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "3D sphere number style watch face",
 		safetyRating: "safe",
 		removalImpact: "Sphere Number face removed.",
-		category: "Watch Face",
+		category: "Wearables",
 	},
 	"com.samsung.android.watch.watchface.stretchindex": {
 		appID: "com.samsung.android.watch.watchface.stretchindex",
@@ -12634,7 +14445,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Elastic numeral style watch face",
 		safetyRating: "safe",
 		removalImpact: "Stretch Index face removed.",
-		category: "Watch Face",
+		category: "Wearables",
 	},
 	"com.samsung.android.watch.watchface.superfiction": {
 		appID: "com.samsung.android.watch.watchface.superfiction",
@@ -12674,7 +14485,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Data-rich dashboard watch face",
 		safetyRating: "safe",
 		removalImpact: "Ultra Info Board face removed.",
-		category: "Watch Face",
+		category: "Wearables",
 	},
 	"com.samsung.android.watch.watchface.weather": {
 		appID: "com.samsung.android.watch.watchface.weather",
@@ -12770,7 +14581,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Helper for data transfer and device backup",
 		safetyRating: "safe",
 		removalImpact: "Watch backup and transfer features may break.",
-		category: "Samsung",
+		category: "System",
 	},
 	"com.samsung.android.wear.voicerecorder": {
 		appID: "com.samsung.android.wear.voicerecorder",
@@ -12795,7 +14606,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact:
 			"Media session management disabled. Media controls may not work on watches.",
-		category: "Wear OS",
+		category: "Wearables",
 	},
 	"com.samsung.android.wearable.music": {
 		appID: "com.samsung.android.wearable.music",
@@ -12843,7 +14654,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Weather forecast app with detailed information",
 		safetyRating: "safe",
 		removalImpact: "Samsung Weather removed. Use other weather apps.",
-		category: "Weather",
+		category: "Utility",
 	},
 	"com.samsung.android.wellbeing": {
 		appID: "com.samsung.android.wellbeing",
@@ -12851,7 +14662,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Digital wellbeing and screen time management",
 		safetyRating: "safe",
 		removalImpact: "Wellbeing features disabled.",
-		category: "Wellbeing",
+		category: "Health",
 	},
 	"com.samsung.android.widget.pictureframe": {
 		appID: "com.samsung.android.widget.pictureframe",
@@ -12859,7 +14670,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Photo frame widget for home screen",
 		safetyRating: "safe",
 		removalImpact: "Picture frame widget removed. No system impact.",
-		category: "Widget",
+		category: "Display",
 	},
 	"com.samsung.android.wifi.ai": {
 		appID: "com.samsung.android.wifi.ai",
@@ -12987,7 +14798,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: 'The enhanced "Call+" features in the Samsung Phone app',
 		safetyRating: "caution",
 		removalImpact: "May affect some Samsung features.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.samsung.desktopsystemui": {
 		appID: "com.samsung.desktopsystemui",
@@ -13035,7 +14846,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Graphics driver for Snapdragon 8 Gen 1",
 		safetyRating: "risky",
 		removalImpact: "Game graphics performance may degrade.",
-		category: "Graphics",
+		category: "System",
 	},
 	"com.samsung.gpuwatchapp": {
 		appID: "com.samsung.gpuwatchapp",
@@ -13140,7 +14951,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Secure credential storage for Knox",
 		safetyRating: "safe",
 		removalImpact: "Knox keychain disabled. Enterprise feature.",
-		category: "Enterprise",
+		category: "Productivity",
 	},
 	"com.samsung.knox.securefolder": {
 		appID: "com.samsung.knox.securefolder",
@@ -13172,7 +14983,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Multi-Language Print service",
 		safetyRating: "safe",
 		removalImpact: "Multi-language print removed. No system impact.",
-		category: "Printing",
+		category: "Utility",
 	},
 	"com.samsung.oda.service": {
 		appID: "com.samsung.oda.service",
@@ -13180,7 +14991,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "On-Device AI service for Samsung features",
 		safetyRating: "caution",
 		removalImpact: "On-device AI features disabled.",
-		category: "AI/ML",
+		category: "AI",
 	},
 	"com.samsung.packageinstalleroverlay": {
 		appID: "com.samsung.packageinstalleroverlay",
@@ -13197,7 +15008,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Regional service features disabled. No impact for most users.",
-		category: "Regional",
+		category: "Carrier",
 	},
 	"com.samsung.phone.overlay.common": {
 		appID: "com.samsung.phone.overlay.common",
@@ -13213,7 +15024,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Pre-installed GPU driver for Exynos 2100",
 		safetyRating: "risky",
 		removalImpact: "Graphics may be affected.",
-		category: "GPU",
+		category: "System",
 	},
 	"com.samsung.privilege": {
 		appID: "com.samsung.privilege",
@@ -13237,7 +15048,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Device safety and regulatory information",
 		safetyRating: "safe",
 		removalImpact: "Safety info removed. No system impact.",
-		category: "Information",
+		category: "Utility",
 	},
 	"com.samsung.sait.bsdservice": {
 		appID: "com.samsung.sait.bsdservice",
@@ -13309,7 +15120,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Text-to-speech language pack for German",
 		safetyRating: "safe",
 		removalImpact: "German TTS removed. No system impact.",
-		category: "Language",
+		category: "System",
 	},
 	"com.samsung.SMT.lang_en_gb_g02": {
 		appID: "com.samsung.SMT.lang_en_gb_g02",
@@ -13357,7 +15168,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Text-to-speech language pack for Mexican Spanish",
 		safetyRating: "safe",
 		removalImpact: "Mexican Spanish TTS removed. No system impact.",
-		category: "Language",
+		category: "System",
 	},
 	"com.samsung.SMT.lang_es_us_f00": {
 		appID: "com.samsung.SMT.lang_es_us_f00",
@@ -13365,7 +15176,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Text-to-speech language pack for US Spanish",
 		safetyRating: "safe",
 		removalImpact: "US Spanish TTS removed. No system impact.",
-		category: "Language",
+		category: "System",
 	},
 	"com.samsung.SMT.lang_fr_fr_f00": {
 		appID: "com.samsung.SMT.lang_fr_fr_f00",
@@ -13373,7 +15184,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Text-to-speech language pack for French",
 		safetyRating: "safe",
 		removalImpact: "French TTS removed. No system impact.",
-		category: "Language",
+		category: "System",
 	},
 	"com.samsung.SMT.lang_it_it_f00": {
 		appID: "com.samsung.SMT.lang_it_it_f00",
@@ -13381,7 +15192,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Text-to-speech language pack for Italian",
 		safetyRating: "safe",
 		removalImpact: "Italian TTS removed. No system impact.",
-		category: "Language",
+		category: "System",
 	},
 	"com.samsung.SMT.lang_pt_br_f00": {
 		appID: "com.samsung.SMT.lang_pt_br_f00",
@@ -13389,7 +15200,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Text-to-speech language pack for Brazilian Portuguese",
 		safetyRating: "safe",
 		removalImpact: "Brazilian Portuguese TTS removed. No system impact.",
-		category: "Language",
+		category: "System",
 	},
 	"com.samsung.SMT.lang_th_th_f00": {
 		appID: "com.samsung.SMT.lang_th_th_f00",
@@ -13421,7 +15232,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "English to Chinese translation language pack",
 		safetyRating: "risky",
 		removalImpact: "EN-ZH translation removed. No system impact.",
-		category: "Translation",
+		category: "Utility",
 	},
 	"com.samsung.sree": {
 		appID: "com.samsung.sree",
@@ -13429,7 +15240,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Promotes UN Global Goals with wallpapers and donations",
 		safetyRating: "safe",
 		removalImpact: "Global Goals content removed. No system impact.",
-		category: "Samsung",
+		category: "System",
 	},
 	"com.samsung.sree.classic": {
 		appID: "com.samsung.sree.classic",
@@ -13437,7 +15248,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Classic watch face for Samsung Global Goals",
 		safetyRating: "safe",
 		removalImpact: "Global Goals watch face removed.",
-		category: "Watch Face",
+		category: "Wearables",
 	},
 	"com.samsung.sree.countdown": {
 		appID: "com.samsung.sree.countdown",
@@ -13445,7 +15256,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Countdown watch face for Samsung Global Goals",
 		safetyRating: "safe",
 		removalImpact: "Global Goals countdown face removed.",
-		category: "Watch Face",
+		category: "Wearables",
 	},
 	"com.samsung.sree.digital": {
 		appID: "com.samsung.sree.digital",
@@ -13453,7 +15264,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Digital watch face for Samsung Global Goals",
 		safetyRating: "safe",
 		removalImpact: "Global Goals digital face removed.",
-		category: "Watch Face",
+		category: "Wearables",
 	},
 	"com.samsung.sree.spin": {
 		appID: "com.samsung.sree.spin",
@@ -13461,7 +15272,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Spinning watch face for Samsung Global Goals",
 		safetyRating: "safe",
 		removalImpact: "Global Goals spin face removed.",
-		category: "Watch Face",
+		category: "Wearables",
 	},
 	"com.samsung.ssu": {
 		appID: "com.samsung.ssu",
@@ -13485,7 +15296,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "SystemUI integration for Bixby features",
 		safetyRating: "safe",
 		removalImpact: "Bixby UI elements removed from system.",
-		category: "Voice Assistant",
+		category: "AI",
 	},
 	"com.samsung.ucs.agent.ese": {
 		appID: "com.samsung.ucs.agent.ese",
@@ -13493,7 +15304,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Embedded Secure Element agent for payments",
 		safetyRating: "safe",
 		removalImpact: "Secure element disabled. May affect Samsung Pay.",
-		category: "Payment",
+		category: "Finance",
 	},
 	"com.samsung.visionprovider": {
 		appID: "com.samsung.visionprovider",
@@ -13517,7 +15328,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Runtime service for watch face execution on Wear OS",
 		safetyRating: "risky",
 		removalImpact: "Watch face runtime disabled. Watch faces may not work.",
-		category: "Wear OS",
+		category: "Wearables",
 	},
 	"com.samsung.wearable.watch7plugin": {
 		appID: "com.samsung.wearable.watch7plugin",
@@ -13533,7 +15344,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Siam Commercial Bank mobile banking (Thailand)",
 		safetyRating: "safe",
 		removalImpact: "SCB Easy removed. No system impact.",
-		category: "Banking",
+		category: "Finance",
 	},
 	"com.sds.emm.cloud.knox.samsung": {
 		appID: "com.sds.emm.cloud.knox.samsung",
@@ -13543,7 +15354,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "caution",
 		removalImpact:
 			"Knox EMM cloud services disabled. Enterprise device management may not work.",
-		category: "Enterprise",
+		category: "Productivity",
 	},
 	"com.sec.android.app.apex": {
 		appID: "com.sec.android.app.apex",
@@ -13568,7 +15379,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Cannot make purchases in Samsung apps. Play Store unaffected.",
-		category: "Commerce",
+		category: "Shopping",
 	},
 	"com.sec.android.app.bluetoothagent": {
 		appID: "com.sec.android.app.bluetoothagent",
@@ -13594,7 +15405,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact:
 			"Samsung Camera disabled. Camera functionality lost unless alternative installed.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.sec.android.app.chromecustomizations": {
 		appID: "com.sec.android.app.chromecustomizations",
@@ -13628,7 +15439,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Samsung DeX desktop mode launcher",
 		safetyRating: "safe",
 		removalImpact: "DeX launcher removed. Only affects DeX users.",
-		category: "DeX",
+		category: "Productivity",
 	},
 	"com.sec.android.app.dexonpc": {
 		appID: "com.sec.android.app.dexonpc",
@@ -13694,7 +15505,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Samsung file manager",
 		safetyRating: "risky",
 		removalImpact: "My Files removed. No system impact.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"com.sec.android.app.parser": {
 		appID: "com.sec.android.app.parser",
@@ -13718,7 +15529,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Samsung calculator",
 		safetyRating: "risky",
 		removalImpact: "Calculator removed. No system impact.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"com.sec.android.app.qsfastpairoverlay": {
 		appID: "com.sec.android.app.qsfastpairoverlay",
@@ -13726,7 +15537,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Quick settings Fast Pair overlay",
 		safetyRating: "risky",
 		removalImpact: "Fast Pair UI overlay removed. No system impact.",
-		category: "Bluetooth",
+		category: "Connectivity",
 	},
 	"com.sec.android.app.quicktool": {
 		appID: "com.sec.android.app.quicktool",
@@ -13750,7 +15561,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Emergency location sharing and safety alerts",
 		safetyRating: "safe",
 		removalImpact: "Safety features disabled. Keep for emergencies.",
-		category: "Emergency",
+		category: "Safety",
 	},
 	"com.sec.android.app.samsungapps": {
 		appID: "com.sec.android.app.samsungapps",
@@ -13782,7 +15593,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Service mode diagnostic tool",
 		safetyRating: "risky",
 		removalImpact: "Service mode disabled.",
-		category: "Debugging",
+		category: "Developer",
 	},
 	"com.sec.android.app.setupwizard": {
 		appID: "com.sec.android.app.setupwizard",
@@ -13847,7 +15658,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Voice recording",
 		safetyRating: "risky",
 		removalImpact: "Voice recorder removed. No system impact.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"com.sec.android.app.volumemonitorprovider": {
 		appID: "com.sec.android.app.volumemonitorprovider",
@@ -13871,7 +15682,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Background service for AR doodle functionality",
 		safetyRating: "safe",
 		removalImpact: "AR doodle features disabled.",
-		category: "AR/Vision",
+		category: "AR",
 	},
 	"com.sec.android.CcInfo": {
 		appID: "com.sec.android.CcInfo",
@@ -13929,7 +15740,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Samsung Smart Switch for data transfer",
 		safetyRating: "safe",
 		removalImpact: "Data transfer tool removed. No system impact.",
-		category: "Migration",
+		category: "Setup",
 	},
 	"com.sec.android.easyMover.Agent": {
 		appID: "com.sec.android.easyMover.Agent",
@@ -13937,7 +15748,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Agent service for Smart Switch",
 		safetyRating: "safe",
 		removalImpact: "Smart Switch agent removed. No system impact.",
-		category: "Migration",
+		category: "Setup",
 	},
 	"com.sec.android.easyonehand": {
 		appID: "com.sec.android.easyonehand",
@@ -13953,7 +15764,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Emergency mode launcher interface",
 		safetyRating: "safe",
 		removalImpact: "Emergency launcher removed. Keep for emergencies.",
-		category: "Emergency",
+		category: "Safety",
 	},
 	"com.sec.android.emergencymode.service": {
 		appID: "com.sec.android.emergencymode.service",
@@ -13961,7 +15772,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Battery-saving emergency mode service",
 		safetyRating: "safe",
 		removalImpact: "Emergency mode disabled. Keep for emergencies.",
-		category: "Emergency",
+		category: "Safety",
 	},
 	"com.sec.android.gallery3d": {
 		appID: "com.sec.android.gallery3d",
@@ -13977,7 +15788,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Intelligent Automatic Fault Tolerance",
 		safetyRating: "safe",
 		removalImpact: "Automatic error recovery may be affected.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.sec.android.mimage.avatarstickers": {
 		appID: "com.sec.android.mimage.avatarstickers",
@@ -13985,7 +15796,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Sticker packs created from AR emoji",
 		safetyRating: "safe",
 		removalImpact: "AR emoji stickers removed. No system impact.",
-		category: "AR/Vision",
+		category: "AR",
 	},
 	"com.sec.android.mimage.photoretouching": {
 		appID: "com.sec.android.mimage.photoretouching",
@@ -13993,7 +15804,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Photo editing and retouching tool",
 		safetyRating: "risky",
 		removalImpact: "Photo retouch removed. No system impact.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.sec.android.preloadinstaller": {
 		appID: "com.sec.android.preloadinstaller",
@@ -14003,7 +15814,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Prevents auto-installation of bloatware after factory reset.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.sec.android.provider.badge": {
 		appID: "com.sec.android.provider.badge",
@@ -14019,7 +15830,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Data provider for emergency mode",
 		safetyRating: "safe",
 		removalImpact: "Emergency mode provider removed. No system impact.",
-		category: "Emergency",
+		category: "Safety",
 	},
 	"com.sec.android.RilServiceModeApp": {
 		appID: "com.sec.android.RilServiceModeApp",
@@ -14027,7 +15838,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "RIL service mode diagnostics",
 		safetyRating: "risky",
 		removalImpact: "RIL diagnostics removed. No system impact.",
-		category: "Debugging",
+		category: "Developer",
 	},
 	"com.sec.android.sdhms": {
 		appID: "com.sec.android.sdhms",
@@ -14059,7 +15870,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Samsung Over-the-Air update agent",
 		safetyRating: "caution",
 		removalImpact: "OTA agent removed. No system impact.",
-		category: "Update",
+		category: "System Update",
 	},
 	"com.sec.android.systemupdate": {
 		appID: "com.sec.android.systemupdate",
@@ -14067,7 +15878,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "System update manager",
 		safetyRating: "risky",
 		removalImpact: "System updates disabled.",
-		category: "System Updates",
+		category: "System Update",
 	},
 	"com.sec.android.usermanual": {
 		appID: "com.sec.android.usermanual",
@@ -14075,7 +15886,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Device user manual and help documentation",
 		safetyRating: "safe",
 		removalImpact: "User manual removed. No system impact.",
-		category: "Information",
+		category: "Utility",
 	},
 	"com.sec.android.widgetapp.easymodecontactswidget": {
 		appID: "com.sec.android.widgetapp.easymodecontactswidget",
@@ -14083,7 +15894,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Contacts widget for Easy Mode",
 		safetyRating: "safe",
 		removalImpact: "Easy Mode widget removed. No system impact.",
-		category: "Widget",
+		category: "Display",
 	},
 	"com.sec.android.widgetapp.samsungapps": {
 		appID: "com.sec.android.widgetapp.samsungapps",
@@ -14091,7 +15902,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Widget for Galaxy Store app recommendations",
 		safetyRating: "safe",
 		removalImpact: "Store widget removed. No system impact.",
-		category: "Widget",
+		category: "Display",
 	},
 	"com.sec.android.widgetapp.webmanual": {
 		appID: "com.sec.android.widgetapp.webmanual",
@@ -14099,7 +15910,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Widget for accessing web-based user manual",
 		safetyRating: "safe",
 		removalImpact: "Web manual widget removed. No system impact.",
-		category: "Widget",
+		category: "Display",
 	},
 	"com.sec.app.RilErrorNotifier": {
 		appID: "com.sec.app.RilErrorNotifier",
@@ -14134,7 +15945,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Knox attestation removed. Enterprise feature. Personal devices unaffected.",
-		category: "Enterprise",
+		category: "Productivity",
 	},
 	"com.sec.enterprise.knox.cloudmdm.smdms": {
 		appID: "com.sec.enterprise.knox.cloudmdm.smdms",
@@ -14143,7 +15954,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Cloud MDM removed. Enterprise feature. Personal devices unaffected.",
-		category: "Enterprise",
+		category: "Productivity",
 	},
 	"com.sec.enterprise.mdm.services.simpin": {
 		appID: "com.sec.enterprise.mdm.services.simpin",
@@ -14152,7 +15963,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"SIM PIN management removed. Enterprise feature. Personal devices unaffected.",
-		category: "Enterprise",
+		category: "Productivity",
 	},
 	"com.sec.epdg": {
 		appID: "com.sec.epdg",
@@ -14280,7 +16091,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Digital art community and drawing app for S Pen users",
 		safetyRating: "safe",
 		removalImpact: "PENUP art community removed. S Pen still works.",
-		category: "Creative",
+		category: "Media",
 	},
 	"com.sec.phone": {
 		appID: "com.sec.phone",
@@ -14296,7 +16107,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Samsung Push Protocol",
 		safetyRating: "safe",
 		removalImpact: "Samsung push notifications disabled.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.sec.sve": {
 		appID: "com.sec.sve",
@@ -14360,7 +16171,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "RCS messaging for Shannon modem",
 		safetyRating: "risky",
 		removalImpact: "RCS messaging removed. No system impact.",
-		category: "Messaging",
+		category: "Communication",
 	},
 	"com.shazam.android": {
 		appID: "com.shazam.android",
@@ -14408,7 +16219,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Package tracking and delivery",
 		safetyRating: "safe",
 		removalImpact: "SF Express removed. No system impact.",
-		category: "Logistics",
+		category: "Shopping",
 	},
 	"com.siamnorthsolution.thaifastdictionary": {
 		appID: "com.siamnorthsolution.thaifastdictionary",
@@ -14465,7 +16276,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Channel bonding VPN for faster internet",
 		safetyRating: "safe",
 		removalImpact: "Speedify VPN removed. No system impact.",
-		category: "VPN",
+		category: "Security",
 	},
 	"com.spotify.music": {
 		appID: "com.spotify.music",
@@ -14489,7 +16300,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Toutiao news aggregation platform",
 		safetyRating: "safe",
 		removalImpact: "Toutiao removed. No system impact.",
-		category: "News",
+		category: "Media",
 	},
 	"com.ss.android.ugc.aweme": {
 		appID: "com.ss.android.ugc.aweme",
@@ -14513,7 +16324,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "STMicroelectronics NFC vendor extensions for Android",
 		safetyRating: "safe",
 		removalImpact: "ST NFC extensions removed. Standard NFC may still work.",
-		category: "NFC",
+		category: "Connectivity",
 	},
 	"com.strikersoft.lfi.widget": {
 		appID: "com.strikersoft.lfi.widget",
@@ -14522,7 +16333,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"Third-party home screen widget by StrikerSoft, pre-loaded on select devices",
 		safetyRating: "safe",
 		removalImpact: "Widget removed. No system impact.",
-		category: "Widget",
+		category: "Display",
 	},
 	"com.studentbeans.studentbeans": {
 		appID: "com.studentbeans.studentbeans",
@@ -14530,7 +16341,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Student discount verification platform",
 		safetyRating: "safe",
 		removalImpact: "Student Beans removed. No system impact.",
-		category: "Student",
+		category: "Education",
 	},
 	"com.sukhavati.gotoplaying.bubble.BubbleShooter.mint": {
 		appID: "com.sukhavati.gotoplaying.bubble.BubbleShooter.mint",
@@ -14570,7 +16381,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "WireGuard-based mesh VPN for secure device connectivity",
 		safetyRating: "safe",
 		removalImpact: "Tailscale VPN removed. No system impact.",
-		category: "VPN",
+		category: "Security",
 	},
 	"com.taobao.taobao": {
 		appID: "com.taobao.taobao",
@@ -14586,7 +16397,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "KTC bank rewards and payment",
 		safetyRating: "safe",
 		removalImpact: "KTC TAP removed. No system impact.",
-		category: "Banking",
+		category: "Finance",
 	},
 	"com.tcrbank.retail.mobilebanking": {
 		appID: "com.tcrbank.retail.mobilebanking",
@@ -14594,7 +16405,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Thai Credit Mobile Banking app",
 		safetyRating: "safe",
 		removalImpact: "alpha removed. No system impact.",
-		category: "Banking",
+		category: "Finance",
 	},
 	"com.tdcm.trueidapp": {
 		appID: "com.tdcm.trueidapp",
@@ -14610,7 +16421,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Tencent gaming platform integration for Xiaomi",
 		safetyRating: "safe",
 		removalImpact: "Tencent games removed. No system impact.",
-		category: "Game",
+		category: "Gaming",
 	},
 	"com.tencent.mm": {
 		appID: "com.tencent.mm",
@@ -14690,7 +16501,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "TMB Bank mobile app (Thailand)",
 		safetyRating: "safe",
 		removalImpact: "TMB Touch removed. No system impact.",
-		category: "Banking",
+		category: "Finance",
 	},
 	"com.tmobile.pr.adapt": {
 		appID: "com.tmobile.pr.adapt",
@@ -14797,7 +16608,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Ride-hailing and food delivery service",
 		safetyRating: "safe",
 		removalImpact: "Uber removed. No system impact.",
-		category: "Transportation",
+		category: "Travel",
 	},
 	"com.ubercab.eats": {
 		appID: "com.ubercab.eats",
@@ -14805,7 +16616,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Food delivery service",
 		safetyRating: "safe",
 		removalImpact: "Uber Eats removed. No system impact.",
-		category: "Food Delivery",
+		category: "Food",
 	},
 	"com.unicostudio.braintest": {
 		appID: "com.unicostudio.braintest",
@@ -14837,7 +16648,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "United Overseas Bank mobile banking",
 		safetyRating: "safe",
 		removalImpact: "UOB banking removed. No system impact.",
-		category: "Banking",
+		category: "Finance",
 	},
 	"com.verizon.llkagent": {
 		appID: "com.verizon.llkagent",
@@ -14953,7 +16764,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "caution",
 		removalImpact:
 			"Alpha Camera features may be affected. Main camera should still work.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.vivo.android.connectivity.common.resources.overlay": {
 		appID: "com.vivo.android.connectivity.common.resources.overlay",
@@ -15046,7 +16857,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"Vivo's voice assistant (Jovi) for voice commands and smart features.",
 		safetyRating: "safe",
 		removalImpact: "Vivo Assistant removed. Use Google Assistant instead.",
-		category: "Assistant",
+		category: "AI",
 	},
 	"com.vivo.assistantfunction": {
 		appID: "com.vivo.assistantfunction",
@@ -15054,7 +16865,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Vivo assistant function modules and capabilities.",
 		safetyRating: "safe",
 		removalImpact: "Assistant functions disabled.",
-		category: "Assistant",
+		category: "AI",
 	},
 	"com.vivo.audiofx": {
 		appID: "com.vivo.audiofx",
@@ -15105,7 +16916,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Vivo card store for downloading additional card widgets.",
 		safetyRating: "safe",
 		removalImpact: "Card store removed.",
-		category: "Widget",
+		category: "Display",
 	},
 	"com.vivo.carrierlocation": {
 		appID: "com.vivo.carrierlocation",
@@ -15173,7 +16984,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Vivo countdown widget for tracking days to events.",
 		safetyRating: "safe",
 		removalImpact: "Countdown widget removed.",
-		category: "Widget",
+		category: "Display",
 	},
 	"com.vivo.crontab": {
 		appID: "com.vivo.crontab",
@@ -15420,7 +17231,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"Vivo health widget for displaying step count and health data.",
 		safetyRating: "safe",
 		removalImpact: "Health widget removed.",
-		category: "Widget",
+		category: "Display",
 	},
 	"com.vivo.hiboard": {
 		appID: "com.vivo.hiboard",
@@ -15437,7 +17248,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Vivo hover gesture detection for air interactions.",
 		safetyRating: "safe",
 		removalImpact: "Hover gestures disabled.",
-		category: "Gestures",
+		category: "Input",
 	},
 	"com.vivo.hybrid": {
 		appID: "com.vivo.hybrid",
@@ -15446,7 +17257,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"Vivo's hybrid app framework for running H5 web applications in native container.",
 		safetyRating: "safe",
 		removalImpact: "Hybrid apps may not work. Web-based features disabled.",
-		category: "Framework",
+		category: "System",
 	},
 	"com.vivo.imanager": {
 		appID: "com.vivo.imanager",
@@ -15505,7 +17316,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"Vivo magazine-style lock screen with rotating wallpapers and content.",
 		safetyRating: "safe",
 		removalImpact: "Magazine lock screen removed.",
-		category: "Lock Screen",
+		category: "Display",
 	},
 	"com.vivo.minscreen": {
 		appID: "com.vivo.minscreen",
@@ -15530,7 +17341,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"Vivo motion and gesture recognition service for air gestures and raise-to-wake.",
 		safetyRating: "safe",
 		removalImpact: "Motion gestures like raise-to-wake disabled.",
-		category: "Gestures",
+		category: "Input",
 	},
 	"com.vivo.multinlp": {
 		appID: "com.vivo.multinlp",
@@ -15547,7 +17358,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Vivo music card widget with album art and controls.",
 		safetyRating: "safe",
 		removalImpact: "Music card widget removed.",
-		category: "Widget",
+		category: "Display",
 	},
 	"com.vivo.musicwidgetmix": {
 		appID: "com.vivo.musicwidgetmix",
@@ -15555,7 +17366,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Vivo music widget for controlling music playback.",
 		safetyRating: "safe",
 		removalImpact: "Music widget removed.",
-		category: "Widget",
+		category: "Display",
 	},
 	"com.vivo.myeuiccoverlayapp": {
 		appID: "com.vivo.myeuiccoverlayapp",
@@ -15680,7 +17491,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Vivo app for remote control of PC from mobile device.",
 		safetyRating: "safe",
 		removalImpact: "Remote PC control functionality disabled.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"com.vivo.safecenter": {
 		appID: "com.vivo.safecenter",
@@ -15823,7 +17634,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Vivo timer widget for quick access to timers.",
 		safetyRating: "safe",
 		removalImpact: "Timer widget removed.",
-		category: "Widget",
+		category: "Display",
 	},
 	"com.vivo.Tips": {
 		appID: "com.vivo.Tips",
@@ -15849,7 +17660,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "China UnionPay mobile payment integration for Vivo devices.",
 		safetyRating: "safe",
 		removalImpact: "UnionPay payment features disabled.",
-		category: "Payment",
+		category: "Finance",
 	},
 	"com.vivo.upnpserver": {
 		appID: "com.vivo.upnpserver",
@@ -15881,7 +17692,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Vivo IR remote control app for TVs and home appliances.",
 		safetyRating: "safe",
 		removalImpact: "IR remote control functionality disabled.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"com.vivo.vibrator4d": {
 		appID: "com.vivo.vibrator4d",
@@ -15915,7 +17726,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Vivo camera algorithm service for HDR processing.",
 		safetyRating: "caution",
 		removalImpact: "Camera HDR functionality disabled.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.vivo.vms": {
 		appID: "com.vivo.vms",
@@ -15931,7 +17742,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Vivo touch gesture service for screen interactions.",
 		safetyRating: "caution",
 		removalImpact: "Touch gestures may be affected.",
-		category: "Gestures",
+		category: "Input",
 	},
 	"com.vivo.walkietalkie": {
 		appID: "com.vivo.walkietalkie",
@@ -15948,7 +17759,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"Vivo's weather app with forecasts, weather alerts, and location-based weather information.",
 		safetyRating: "safe",
 		removalImpact: "Vivo Weather removed. Use alternative weather app.",
-		category: "Weather",
+		category: "Utility",
 	},
 	"com.vivo.weather.provider": {
 		appID: "com.vivo.weather.provider",
@@ -15974,7 +17785,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Vivo widget for quick storage cleanup and RAM boost.",
 		safetyRating: "safe",
 		removalImpact: "Clean Speed widget removed.",
-		category: "Widget",
+		category: "Display",
 	},
 	"com.vivo.widget.gallery": {
 		appID: "com.vivo.widget.gallery",
@@ -15982,7 +17793,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Vivo gallery widget for displaying photos on home screen.",
 		safetyRating: "safe",
 		removalImpact: "Gallery widget removed.",
-		category: "Widget",
+		category: "Display",
 	},
 	"com.vivo.widgetweather": {
 		appID: "com.vivo.widgetweather",
@@ -15990,7 +17801,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Vivo weather widget for displaying weather on home screen.",
 		safetyRating: "safe",
 		removalImpact: "Weather widget removed.",
-		category: "Widget",
+		category: "Display",
 	},
 	"com.vivo.xspace": {
 		appID: "com.vivo.xspace",
@@ -16007,7 +17818,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "V/Line Victoria regional public transport app.",
 		safetyRating: "safe",
 		removalImpact: "V/Line app removed. No system impact.",
-		category: "Transport",
+		category: "Travel",
 	},
 	"com.vos.as.vit": {
 		appID: "com.vos.as.vit",
@@ -16081,7 +17892,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Modern VPN protocol",
 		safetyRating: "safe",
 		removalImpact: "WireGuard removed. No system impact.",
-		category: "VPN",
+		category: "Security",
 	},
 	"com.woolworths.rewards": {
 		appID: "com.woolworths.rewards",
@@ -16089,7 +17900,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Australian supermarket loyalty programme",
 		safetyRating: "safe",
 		removalImpact: "Woolworths Rewards removed. No system impact.",
-		category: "Loyalty",
+		category: "Shopping",
 	},
 	"com.wsomacp": {
 		appID: "com.wsomacp",
@@ -16105,7 +17916,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Device management synchronisation",
 		safetyRating: "caution",
 		removalImpact: "SyncML DM disabled. OTA updates may fail.",
-		category: "Update",
+		category: "System Update",
 	},
 	"com.x8bit.bitwarden": {
 		appID: "com.x8bit.bitwarden",
@@ -16170,7 +17981,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Notification barrage feature",
 		safetyRating: "risky",
 		removalImpact: "Barrage notifications removed. No system impact.",
-		category: "Notifications",
+		category: "System",
 	},
 	"com.xiaomi.bluetooth": {
 		appID: "com.xiaomi.bluetooth",
@@ -16178,7 +17989,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Xiaomi Bluetooth management",
 		safetyRating: "risky",
 		removalImpact: "Xiaomi Bluetooth features may not work.",
-		category: "Bluetooth",
+		category: "Connectivity",
 	},
 	"com.xiaomi.bluetooth.rro.device.config.overlay": {
 		appID: "com.xiaomi.bluetooth.rro.device.config.overlay",
@@ -16204,7 +18015,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact:
 			"AI camera enhancements disabled. Basic camera still functional.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.xiaomi.cameratools": {
 		appID: "com.xiaomi.cameratools",
@@ -16212,7 +18023,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Camera utility tools",
 		safetyRating: "risky",
 		removalImpact: "Camera tools removed. No system impact.",
-		category: "Camera",
+		category: "Photography",
 	},
 	"com.xiaomi.continuity.sdkapp": {
 		appID: "com.xiaomi.continuity.sdkapp",
@@ -16231,7 +18042,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact:
 			"Developer authentication removed. No impact for regular users.",
-		category: "Developer Tools",
+		category: "Developer",
 	},
 	"com.xiaomi.discover": {
 		appID: "com.xiaomi.discover",
@@ -16239,7 +18050,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Content discovery and recommendation service",
 		safetyRating: "risky",
 		removalImpact: "Discovery features disabled.",
-		category: "Content",
+		category: "Media",
 	},
 	"com.xiaomi.finddevice": {
 		appID: "com.xiaomi.finddevice",
@@ -16256,7 +18067,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Global version of Xiaomi Game Launcher",
 		safetyRating: "safe",
 		removalImpact: "Game launcher removed. No system impact.",
-		category: "Game",
+		category: "Gaming",
 	},
 	"com.xiaomi.gtv.settings": {
 		appID: "com.xiaomi.gtv.settings",
@@ -16264,7 +18075,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Settings for Xiaomi Google TV",
 		safetyRating: "risky",
 		removalImpact: "TV settings affected. TV only.",
-		category: "TV",
+		category: "Entertainment",
 	},
 	"com.xiaomi.hm.health": {
 		appID: "com.xiaomi.hm.health",
@@ -16298,7 +18109,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Analytics and recommendation service",
 		safetyRating: "safe",
 		removalImpact: "Recommendations removed. Privacy improved.",
-		category: "Analytics",
+		category: "Telemetry",
 	},
 	"com.xiaomi.market": {
 		appID: "com.xiaomi.market",
@@ -16330,7 +18141,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "File sharing service similar to AirDrop",
 		safetyRating: "safe",
 		removalImpact: "Mi Drop removed. Use Nearby Share instead.",
-		category: "Sharing",
+		category: "Connectivity",
 	},
 	"com.xiaomi.migameservice": {
 		appID: "com.xiaomi.migameservice",
@@ -16338,7 +18149,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Gaming services and optimisation for Xiaomi",
 		safetyRating: "safe",
 		removalImpact: "Game service removed. No system impact.",
-		category: "Game",
+		category: "Gaming",
 	},
 	"com.xiaomi.mimusic2": {
 		appID: "com.xiaomi.mimusic2",
@@ -16411,7 +18222,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Content sharing service for Mi TV",
 		safetyRating: "safe",
 		removalImpact: "Smart Share removed. No system impact.",
-		category: "Sharing",
+		category: "Connectivity",
 	},
 	"com.xiaomi.mitv.tvmanager": {
 		appID: "com.xiaomi.mitv.tvmanager",
@@ -16419,7 +18230,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "TV management and optimisation tool",
 		safetyRating: "risky",
 		removalImpact: "TV manager removed. TV only.",
-		category: "TV",
+		category: "Entertainment",
 	},
 	"com.xiaomi.mitv.updateservice": {
 		appID: "com.xiaomi.mitv.updateservice",
@@ -16427,7 +18238,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Update service for Mi TV",
 		safetyRating: "risky",
 		removalImpact: "TV updates disabled. TV only.",
-		category: "TV",
+		category: "Entertainment",
 	},
 	"com.xiaomi.mtb": {
 		appID: "com.xiaomi.mtb",
@@ -16443,7 +18254,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Xiaomi's mobile payment service",
 		safetyRating: "safe",
 		removalImpact: "Mi Pay removed. No system impact.",
-		category: "Payment",
+		category: "Finance",
 	},
 	"com.xiaomi.phone": {
 		appID: "com.xiaomi.phone",
@@ -16484,7 +18295,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact:
 			"Cannot manage Mi smart home devices. Only remove if unused.",
-		category: "IoT",
+		category: "Smart Home",
 	},
 	"com.xiaomi.statistic": {
 		appID: "com.xiaomi.statistic",
@@ -16516,7 +18327,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Quick settings for Mi TV (global version)",
 		safetyRating: "safe",
 		removalImpact: "Quick settings disabled.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.xiaomi.ugd": {
 		appID: "com.xiaomi.ugd",
@@ -16548,7 +18359,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Framework for Xiaomi services",
 		safetyRating: "risky",
 		removalImpact: "Some Xiaomi features may break.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.xiaomi.xmsfkeeper": {
 		appID: "com.xiaomi.xmsfkeeper",
@@ -16556,7 +18367,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Keeps Xiaomi Service Framework running",
 		safetyRating: "risky",
 		removalImpact: "Service framework persistence affected.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.xiaomo.tv.milegal": {
 		appID: "com.xiaomo.tv.milegal",
@@ -16564,7 +18375,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Legal information and terms for Mi TV",
 		safetyRating: "safe",
 		removalImpact: "Legal info removed. No system impact.",
-		category: "Information",
+		category: "Utility",
 	},
 	"com.xingin.xhs": {
 		appID: "com.xingin.xhs",
@@ -16580,7 +18391,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Web content provider for Xiaomi services",
 		safetyRating: "safe",
 		removalImpact: "Web content provider removed. No system impact.",
-		category: "System Service",
+		category: "System",
 	},
 	"com.xunmeng.pinduoduo": {
 		appID: "com.xunmeng.pinduoduo",
@@ -16661,7 +18472,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Ride-hailing and food delivery",
 		safetyRating: "safe",
 		removalImpact: "Bolt removed. No system impact.",
-		category: "Transportation",
+		category: "Travel",
 	},
 	"esrith.meawms": {
 		appID: "esrith.meawms",
@@ -16678,7 +18489,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Device and hardware information tool",
 		safetyRating: "safe",
 		removalImpact: "DevCheck disabled.",
-		category: "System Info",
+		category: "Diagnostics",
 	},
 	"flipboard.boxer.app": {
 		appID: "flipboard.boxer.app",
@@ -16686,7 +18497,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "News aggregator and magazine-style reader",
 		safetyRating: "safe",
 		removalImpact: "Flipboard removed. Use other news apps.",
-		category: "News",
+		category: "Media",
 	},
 	"fusion.android.tv.demo": {
 		appID: "fusion.android.tv.demo",
@@ -16694,7 +18505,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Demo content for TV retail display mode",
 		safetyRating: "safe",
 		removalImpact: "Demo mode disabled. Retail use only.",
-		category: "Demo",
+		category: "Factory",
 	},
 	"gogolook.callgogolook2": {
 		appID: "gogolook.callgogolook2",
@@ -16718,7 +18529,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "FINN MOBILE by TRUE telecommunications service app",
 		safetyRating: "safe",
 		removalImpact: "FINN MOBILE removed. No system impact.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"it.niedermann.owncloud.notes": {
 		appID: "it.niedermann.owncloud.notes",
@@ -16734,7 +18545,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Quick photo blur and mosaic tool",
 		safetyRating: "safe",
 		removalImpact: "Point Blur removed. No system impact.",
-		category: "Photo Editing",
+		category: "Photography",
 	},
 	"jp.naver.line.android": {
 		appID: "jp.naver.line.android",
@@ -16750,7 +18561,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "National Cancer Institute patient care and management app",
 		safetyRating: "safe",
 		removalImpact: "NCI Patient App removed. No system impact.",
-		category: "Healthcare",
+		category: "Health",
 	},
 	"kerry.express.th.mobile.tracking": {
 		appID: "kerry.express.th.mobile.tracking",
@@ -16758,7 +18569,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Package tracking and delivery",
 		safetyRating: "safe",
 		removalImpact: "Kerry Express removed. No system impact.",
-		category: "Logistics",
+		category: "Shopping",
 	},
 	"ktbcs.netbank": {
 		appID: "ktbcs.netbank",
@@ -16766,7 +18577,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Krungthai Bank mobile banking (Thailand)",
 		safetyRating: "safe",
 		removalImpact: "KTB Netbank removed. No system impact.",
-		category: "Banking",
+		category: "Finance",
 	},
 	"me.proton.android.drive": {
 		appID: "me.proton.android.drive",
@@ -16774,7 +18585,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "End-to-end encrypted cloud storage",
 		safetyRating: "safe",
 		removalImpact: "Proton Drive removed. No system impact.",
-		category: "Cloud Storage",
+		category: "Cloud",
 	},
 	"mediatek.factorymenu.ui": {
 		appID: "mediatek.factorymenu.ui",
@@ -16790,7 +18601,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Background service for Mi TV",
 		safetyRating: "risky",
 		removalImpact: "TV services disabled. TV only.",
-		category: "TV",
+		category: "Entertainment",
 	},
 	"miui.systemui.plugin": {
 		appID: "miui.systemui.plugin",
@@ -16806,7 +18617,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Open-source VPN client",
 		safetyRating: "safe",
 		removalImpact: "OpenVPN removed. No system impact.",
-		category: "VPN",
+		category: "Security",
 	},
 	"net.sf.rhino.rxmonitor": {
 		appID: "net.sf.rhino.rxmonitor",
@@ -16839,6 +18650,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "Network Analyzer Lite removed. No system impact.",
 		category: "Network",
+	},
+	"ohos.media.medialibrary": {
+		appID: "ohos.media.medialibrary",
+		appName: "OHOS Media Library",
+		description:
+			"HarmonyOS media library service providing unified media data management and storage access APIs for apps",
+		safetyRating: "risky",
+		removalImpact:
+			"Media library service broken. Photos, gallery, and media apps may lose file access.",
+		category: "System",
 	},
 	"org.adblockplus.adblockplussbrowser": {
 		appID: "org.adblockplus.adblockplussbrowser",
@@ -16894,7 +18715,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Connect Android to Linux desktop",
 		safetyRating: "safe",
 		removalImpact: "KDE Connect removed. No system impact.",
-		category: "Integration",
+		category: "System",
 	},
 	"org.malwarebytes.antimalware": {
 		appID: "org.malwarebytes.antimalware",
@@ -16958,7 +18779,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Email client by Yandex",
 		safetyRating: "safe",
 		removalImpact: "Yandex Mail removed. No system impact.",
-		category: "Email",
+		category: "Communication",
 	},
 	"scbtechx.pointx": {
 		appID: "scbtechx.pointx",
@@ -16966,7 +18787,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "SCB TechX reward points wallet platform",
 		safetyRating: "safe",
 		removalImpact: "PointX removed. No system impact.",
-		category: "Loyalty",
+		category: "Shopping",
 	},
 	"th.atome.paylater": {
 		appID: "th.atome.paylater",
@@ -16990,7 +18811,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Rewards and cashback",
 		safetyRating: "safe",
 		removalImpact: "Carrot Rewards removed. No system impact.",
-		category: "Rewards",
+		category: "Shopping",
 	},
 	"th.co.crie.tron2.android": {
 		appID: "th.co.crie.tron2.android",
@@ -16998,7 +18819,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Thai utility and service",
 		safetyRating: "safe",
 		removalImpact: "Tron 2 removed. No system impact.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"th.co.homepro.mobileapp": {
 		appID: "th.co.homepro.mobileapp",
@@ -17022,7 +18843,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Metropolitan Waterworks Authority",
 		safetyRating: "safe",
 		removalImpact: "MWA removed. No system impact.",
-		category: "Utilities",
+		category: "Utility",
 	},
 	"th.co.the1.the1app": {
 		appID: "th.co.the1.the1app",
@@ -17038,7 +18859,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Thai e-wallet and payment",
 		safetyRating: "safe",
 		removalImpact: "TrueMoney removed. No system impact.",
-		category: "Payment",
+		category: "Finance",
 	},
 	"th.go.dlt.qrlicence": {
 		appID: "th.go.dlt.qrlicence",
@@ -17094,7 +18915,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Qualcomm Bluetooth expansion service",
 		safetyRating: "risky",
 		removalImpact: "Bluetooth features may be affected.",
-		category: "Bluetooth",
+		category: "Connectivity",
 	},
 	"vendor.qti.bluetooth.xpan.overlay.target": {
 		appID: "vendor.qti.bluetooth.xpan.overlay.target",
@@ -17151,7 +18972,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "IMS Rich Communication Services",
 		safetyRating: "risky",
 		removalImpact: "RCS messaging removed. No system impact.",
-		category: "Messaging",
+		category: "Communication",
 	},
 	"vendor.qti.iwlan": {
 		appID: "vendor.qti.iwlan",
@@ -17183,7 +19004,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "GL.iNet router management and configuration app",
 		safetyRating: "safe",
 		removalImpact: "GL.iNet app removed. No system impact.",
-		category: "Networking",
+		category: "Network",
 	},
 };
 

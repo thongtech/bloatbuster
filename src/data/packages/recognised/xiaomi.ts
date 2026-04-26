@@ -3,6 +3,7 @@
  * Legitimate Xiaomi system applications and services.
  */
 export const xiaomiSystemPackages: string[] = [
+	"com.fido.xiaomi.uafclient",
 	"com.lbe.security.miui",
 	"com.lbe.security.miui.carrieroverlay",
 	"com.mi.android.globalFileexplorer",

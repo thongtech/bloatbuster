@@ -23,6 +23,7 @@ export const googleSystemPackages: string[] = [
 	"com.google.android.apps.internal.betterbug",
 	"com.google.android.apps.magazines",
 	"com.google.android.apps.maps",
+	"com.google.android.apps.meetings",
 	"com.google.android.apps.messaging",
 	"com.google.android.apps.nbu.files",
 	"com.google.android.apps.nexuslauncher",

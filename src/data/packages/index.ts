@@ -12,6 +12,7 @@ import { qualcommSystemPackages } from "./recognised/qualcomm";
 import { mediatekSystemPackages } from "./recognised/mediatek";
 import { vivoSystemPackages } from "./recognised/vivo";
 import { honorSystemPackages } from "./recognised/honor";
+import { huaweiSystemPackages } from "./recognised/huawei";
 import { miscSystemPackages } from "./recognised/misc";
 import { userApps } from "./recognised/user";
 
@@ -22,6 +23,7 @@ import { qualcommBloatwarePackages } from "./bloatware/qualcomm";
 import { mediatekBloatwarePackages } from "./bloatware/mediatek";
 import { vivoBloatwarePackages } from "./bloatware/vivo";
 import { honorBloatwarePackages } from "./bloatware/honor";
+import { huaweiBloatwarePackages } from "./bloatware/huawei";
 import { microsoftBloatwarePackages } from "./bloatware/microsoft";
 import { amazonBloatwarePackages } from "./bloatware/amazon";
 import { carrierBloatwarePackages } from "./bloatware/carrier";
@@ -45,6 +47,7 @@ export const packageDatabase: DeviceData = {
 		...mediatekSystemPackages,
 		...vivoSystemPackages,
 		...honorSystemPackages,
+		...huaweiSystemPackages,
 		...miscSystemPackages,
 		...userApps,
 	],
@@ -57,6 +60,7 @@ export const packageDatabase: DeviceData = {
 		...mediatekBloatwarePackages,
 		...vivoBloatwarePackages,
 		...honorBloatwarePackages,
+		...huaweiBloatwarePackages,
 		...microsoftBloatwarePackages,
 		...amazonBloatwarePackages,
 		...carrierBloatwarePackages,
