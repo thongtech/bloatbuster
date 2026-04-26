@@ -60,11 +60,11 @@ BloatBuster uses a three-tier safety rating system for bloatware packages:
 
 - **Samsung** – Galaxy One UI phones and watches
 - **Xiaomi** – MIUI/HyperOS devices, POCO phones, and TVs
+- **Huawei** – EMUI devices
 - **Honor** – MagicOS devices
 - **Google** – Pixel devices and Android One
 - **Vivo** – Funtouch OS/OriginOS devices
-- **Qualcomm** – Chipset-specific packages
-- **MediaTek** – Chipset-specific packages
+- **Qualcomm/MediaTek/HiSilicon** – Chipset-specific packages
 - **Carrier** – Network operator pre-installed apps
 - **Generic** – Common bloatware across all devices
 
