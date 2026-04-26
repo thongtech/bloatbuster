@@ -61,7 +61,7 @@ export function InstructionsAlert() {
 	const [usbOpened, setUsbOpened] = useState(false);
 	const [wifiOpened, setWifiOpened] = useState(false);
 	const clipboard = useClipboard({ timeout: CLIPBOARD_TIMEOUT_MS });
-	const commandText = "adb shell pm list packages";
+	const commandText = "adb shell pm list packages -e";
 
 	return (
 		<Paper
