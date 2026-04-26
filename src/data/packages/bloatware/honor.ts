@@ -19,7 +19,6 @@ export const honorBloatwarePackages: string[] = [
 	"com.hihonor.crossdeviceserviceshare",
 	"com.hihonor.ddmp",
 	"com.hihonor.detectrepair",
-	"com.hihonor.devicegroupmanage",
 	"com.hihonor.dmsdp",
 	"com.hihonor.email",
 	"com.hihonor.fitness.healthservice",

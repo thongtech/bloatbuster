@@ -39,6 +39,7 @@ export const huaweiSystemPackages: string[] = [
 	"com.huawei.def",
 	"com.huawei.deskclock",
 	"com.huawei.deviceauth",
+	"com.huawei.devicegroupmanage",
 	"com.huawei.dsdscardmanager",
 	"com.huawei.featurelayer.featureframework",
 	"com.huawei.fido.uafclient",

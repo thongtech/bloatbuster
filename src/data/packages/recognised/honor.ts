@@ -42,6 +42,7 @@ export const honorSystemPackages: string[] = [
 	"com.hihonor.deskclock",
 	"com.hihonor.desktop.explorer",
 	"com.hihonor.deviceauth",
+	"com.hihonor.devicegroupmanage",
 	"com.hihonor.featurelayer.sharedfeature.stylus",
 	"com.hihonor.filemanager",
 	"com.hihonor.fileservice",

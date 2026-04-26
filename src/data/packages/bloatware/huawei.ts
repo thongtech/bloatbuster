@@ -19,7 +19,6 @@ export const huaweiBloatwarePackages: string[] = [
 	"com.huawei.contentsensor",
 	"com.huawei.desktop.explorer",
 	"com.huawei.desktop.systemui",
-	"com.huawei.devicegroupmanage",
 	"com.huawei.devicemanager",
 	"com.huawei.distributed.kms",
 	"com.huawei.distributedpasteboard",
