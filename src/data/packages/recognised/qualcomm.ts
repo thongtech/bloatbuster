@@ -44,7 +44,6 @@ export const qualcommSystemPackages: string[] = [
 	"com.qualcomm.qti.ridemodeaudio",
 	"com.qualcomm.qti.seccamservice",
 	"com.qualcomm.qti.server.qtiwifi",
-	"com.qualcomm.qti.server.wigig.tethering.rro",
 	"com.qualcomm.qti.services.secureui",
 	"com.qualcomm.qti.services.systemhelper",
 	"com.qualcomm.qti.simcontacts",
