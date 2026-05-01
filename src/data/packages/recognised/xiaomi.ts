@@ -86,6 +86,7 @@ export const xiaomiSystemPackages: string[] = [
 	"com.xiaomi.cameramind",
 	"com.xiaomi.cameratools",
 	"com.xiaomi.discover",
+	"com.xiaomi.entitlement.o2",
 	"com.xiaomi.finddevice",
 	"com.xiaomi.gtv.settings",
 	"com.xiaomi.hm.health",

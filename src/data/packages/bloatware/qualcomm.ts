@@ -3,7 +3,6 @@
  * Optional Qualcomm services
  */
 export const qualcommBloatwarePackages: string[] = [
-	"com.qualcomm.atfwd2",
 	"com.qualcomm.qti.biometrics.fingerprint.qfsfactorytest",
 	"com.qualcomm.qti.xrwifi",
 	"com.trustonic.telecoms.setup",

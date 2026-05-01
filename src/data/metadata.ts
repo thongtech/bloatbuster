@@ -8007,8 +8007,7 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		appName: "HFF Service",
 		description: "Huawei HMS Libraries system service.",
 		safetyRating: "caution",
-		removalImpact:
-			"May affect HMS-dependent Huawei features.",
+		removalImpact: "May affect HMS-dependent Huawei features.",
 		category: "System",
 	},
 	"com.huawei.hiai": {
@@ -18043,6 +18042,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact:
 			"Developer authentication removed. No impact for regular users.",
 		category: "Developer",
+	},
+	"com.xiaomi.entitlement.o2": {
+		appID: "com.xiaomi.entitlement.o2",
+		appName: "Xiaomi Entitlement Service",
+		description:
+			"Carrier entitlement client for IMS services such as VoLTE, VoWiFi, and eSIM provisioning",
+		safetyRating: "risky",
+		removalImpact:
+			"Carrier provisioning may fail, which can break IMS features.",
+		category: "Telephony",
 	},
 	"com.xiaomi.discover": {
 		appID: "com.xiaomi.discover",

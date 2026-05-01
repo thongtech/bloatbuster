@@ -17,6 +17,7 @@ export const qualcommSystemPackages: string[] = [
 	"com.qti.snapdragon.qdcm_ff",
 	"com.qti.xdivert",
 	"com.qualcomm.atfwd",
+	"com.qualcomm.atfwd2",
 	"com.qualcomm.embms",
 	"com.qualcomm.location",
 	"com.qualcomm.qcrilmsgtunnel",
