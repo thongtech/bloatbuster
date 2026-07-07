@@ -40,7 +40,6 @@ export const qualcommSystemPackages: string[] = [
 	"com.qualcomm.qti.qcolor",
 	"com.qualcomm.qti.qms.service.connectionsecurity",
 	"com.qualcomm.qti.qms.service.trustzoneaccess",
-	"com.qualcomm.qti.remoteSimlockAuth",
 	"com.qualcomm.qti.ridemodeaudio",
 	"com.qualcomm.qti.seccamservice",
 	"com.qualcomm.qti.server.qtiwifi",

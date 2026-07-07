@@ -3,7 +3,6 @@
  * Legitimate Vivo system applications and services.
  */
 export const vivoSystemPackages: string[] = [
-	"android.autoinstalls.config.vivo.devices",
 	"android.overlay.vivoresrro",
 	"android.overlay.vrro",
 	"com.android.bbk.lockscreen3",

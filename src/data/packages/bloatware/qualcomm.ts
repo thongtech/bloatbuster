@@ -4,6 +4,7 @@
  */
 export const qualcommBloatwarePackages: string[] = [
 	"com.qualcomm.qti.biometrics.fingerprint.qfsfactorytest",
+	"com.qualcomm.qti.remoteSimlockAuth",
 	"com.qualcomm.qti.server.wigig.tethering.rro",
 	"com.qualcomm.qti.xrwifi",
 	"com.trustonic.telecoms.setup",

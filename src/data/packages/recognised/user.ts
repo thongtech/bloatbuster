@@ -109,7 +109,6 @@ export const userApps: string[] = [
 	"com.linkedin.android",
 	"com.longdo.dict",
 	"com.mcdonalds.au.gma",
-	"com.microsoft.appmanager",
 	"com.microsoft.bing",
 	"com.microsoft.office.excel",
 	"com.microsoft.office.officehubrow",
