@@ -151,7 +151,6 @@ export const userApps: string[] = [
 	"com.shoppening.sf",
 	"com.siamnorthsolution.thaifastdictionary",
 	"com.sitron.amway",
-	"com.snapchat.android",
 	"com.speedify.speedifyandroid",
 	"com.spotify.music",
 	"com.ss.android.ugc.trill",

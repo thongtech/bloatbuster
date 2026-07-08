@@ -42,6 +42,7 @@ export const miscBloatwarePackages: string[] = [
 	"com.qiyi.video",
 	"com.rongcard.eid",
 	"com.rongcard.eidapi",
+	"com.snapchat.android",
 	"com.shopee.ph",
 	"com.strikersoft.lfi.widget",
 	"com.sina.weibo",
