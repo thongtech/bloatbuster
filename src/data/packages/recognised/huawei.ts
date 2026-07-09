@@ -65,7 +65,6 @@ export const huaweiSystemPackages: string[] = [
 	"com.huawei.ims",
 	"com.huawei.languagedownloader",
 	"com.huawei.lbs",
-	"com.huawei.maps.app",
 	"com.huawei.mediacontroller",
 	"com.huawei.mirror",
 	"com.huawei.motionservice",

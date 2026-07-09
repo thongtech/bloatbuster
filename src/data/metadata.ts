@@ -9882,6 +9882,22 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Bing removed. No system impact.",
 		category: "Search",
 	},
+	"com.microsoft.amp.apps.bingnews": {
+		appID: "com.microsoft.amp.apps.bingnews",
+		appName: "Microsoft Bing News",
+		description: "Microsoft news app and feed service",
+		safetyRating: "safe",
+		removalImpact: "Bing News removed. No system impact.",
+		category: "News",
+	},
+	"com.microsoft.bingintl": {
+		appID: "com.microsoft.bingintl",
+		appName: "Microsoft Bing International",
+		description: "Regional Bing experience and localisation package",
+		safetyRating: "safe",
+		removalImpact: "Bing regional integration removed. No system impact.",
+		category: "Search",
+	},
 	"com.microsoft.deviceintegrationservice": {
 		appID: "com.microsoft.deviceintegrationservice",
 		appName: "Microsoft Device Integration",

@@ -55,6 +55,7 @@ export const huaweiBloatwarePackages: string[] = [
 	"com.huawei.livewallpaper.paradise",
 	"com.huawei.localBackup",
 	"com.huawei.magazine",
+	"com.huawei.maps.app",
 	"com.huawei.meetime",
 	"com.huawei.mmitest",
 	"com.huawei.notepad",
