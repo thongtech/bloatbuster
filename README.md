@@ -64,6 +64,7 @@ BloatBuster uses a three-tier safety rating system for bloatware packages:
 - **Honor** – MagicOS devices
 - **Google** – Pixel devices and Android One
 - **Vivo** – Funtouch OS/OriginOS devices
+- **Motorola** – Hello UI devices
 - **Qualcomm/MediaTek/HiSilicon** – Chipset-specific packages
 - **Carrier** – Network operator pre-installed apps
 - **Generic** – Common bloatware across all devices

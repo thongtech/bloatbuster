@@ -4,6 +4,7 @@
  */
 export const miscBloatwarePackages: string[] = [
 	"cn.wps.moffice_eng",
+	"com.adobe.scan.android",
 	"com.android.calllogbackup",
 	"com.android.printspooler",
 	"com.baidu.input",
@@ -33,6 +34,8 @@ export const miscBloatwarePackages: string[] = [
 	"com.micredit.in",
 	"com.milink.service",
 	"com.mipay.wallet.in",
+	"com.aura.oobe.motorola",
+	"com.dti.motorola",
 	"com.mstar.android.tv.disclaimercustomization",
 	"com.mygalaxy",
 	"com.netease.cloudmusic",
@@ -51,6 +54,7 @@ export const miscBloatwarePackages: string[] = [
 	"com.ss.android.ugc.aweme",
 	"com.sukhavati.gotoplaying.bubble.BubbleShooter.mint",
 	"com.swiftkey.swiftkeyconfigurator",
+	"com.taboola.mip",
 	"com.taobao.taobao",
 	"com.tencent.igxiaomi",
 	"com.tencent.mobileqq",

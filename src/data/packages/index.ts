@@ -13,6 +13,7 @@ import { mediatekSystemPackages } from "./recognised/mediatek";
 import { vivoSystemPackages } from "./recognised/vivo";
 import { honorSystemPackages } from "./recognised/honor";
 import { huaweiSystemPackages } from "./recognised/huawei";
+import { motorolaSystemPackages } from "./recognised/motorola";
 import { miscSystemPackages } from "./recognised/misc";
 import { userApps } from "./recognised/user";
 
@@ -30,6 +31,7 @@ import { carrierBloatwarePackages } from "./bloatware/carrier";
 import { gamesBloatwarePackages } from "./bloatware/games";
 import { factoryTestingBloatwarePackages } from "./bloatware/factory-testing";
 import { androidBloatwarePackages } from "./bloatware/android";
+import { motorolaBloatwarePackages } from "./bloatware/motorola";
 import { miscBloatwarePackages } from "./bloatware/misc";
 
 /**
@@ -48,6 +50,7 @@ export const packageDatabase: DeviceData = {
 		...vivoSystemPackages,
 		...honorSystemPackages,
 		...huaweiSystemPackages,
+		...motorolaSystemPackages,
 		...miscSystemPackages,
 		...userApps,
 	],
@@ -67,6 +70,7 @@ export const packageDatabase: DeviceData = {
 		...gamesBloatwarePackages,
 		...factoryTestingBloatwarePackages,
 		...androidBloatwarePackages,
+		...motorolaBloatwarePackages,
 		...miscBloatwarePackages,
 	],
 };

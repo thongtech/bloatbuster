@@ -107,6 +107,7 @@ export const googleSystemPackages: string[] = [
 	"com.google.android.overlay.gmsconfig.asi",
 	"com.google.android.overlay.gmsconfig.common",
 	"com.google.android.overlay.gmsconfig.comms",
+	"com.google.android.overlay.gmsconfig.contextualsearch",
 	"com.google.android.overlay.gmsconfig.csearch",
 	"com.google.android.overlay.gmsconfig.gemini",
 	"com.google.android.overlay.gmsconfig.geotz",

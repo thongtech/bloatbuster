@@ -96,6 +96,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 			"Auto-install config removed. Stops unwanted app installations.",
 		category: "System",
 	},
+	"android.autoinstalls.config.motorola.layout": {
+		appID: "android.autoinstalls.config.motorola.layout",
+		appName: "Motorola Auto-Install Config",
+		description:
+			"Motorola device layout and auto-installation configuration for pre-installed apps after factory reset",
+		safetyRating: "caution",
+		removalImpact:
+			"Auto-install config removed. Stops Motorola bloatware reinstallation.",
+		category: "System",
+	},
 	"android.autoinstalls.config.samsung": {
 		appID: "android.autoinstalls.config.samsung",
 		appName: "Samsung Auto-Install Config",
@@ -450,6 +460,15 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "Lightroom removed. No system impact.",
 		category: "Photography",
+	},
+	"com.adobe.scan.android": {
+		appID: "com.adobe.scan.android",
+		appName: "Adobe Scan",
+		description:
+			"Document scanning app that converts physical documents to PDFs using the device camera",
+		safetyRating: "safe",
+		removalImpact: "Adobe Scan removed. No system impact.",
+		category: "Productivity",
 	},
 	"com.agoda.mobile.consumer": {
 		appID: "com.agoda.mobile.consumer",
@@ -1332,6 +1351,15 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Wide back gesture disabled.",
 		category: "Navigation",
 	},
+	"com.android.internal.systemui.navbar.hidegestural": {
+		appID: "com.android.internal.systemui.navbar.hidegestural",
+		appName: "Hide Gestural Navigation",
+		description:
+			"OEM overlay that suppresses the gesture navigation bar entirely, used on devices with physical or on-screen alternatives",
+		safetyRating: "caution",
+		removalImpact: "Gesture bar hidden by OEM overlay restored. Navigation may change.",
+		category: "Navigation",
+	},
 	"com.android.internal.systemui.navbar.hide": {
 		appID: "com.android.internal.systemui.navbar.hide",
 		appName: "Hide Navigation Bar",
@@ -1600,6 +1628,24 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "NFC vendor customisations may not work.",
 		category: "System Overlay",
 	},
+	"com.android.nfc.overlay": {
+		appID: "com.android.nfc.overlay",
+		appName: "NFC Overlay",
+		description:
+			"Runtime resource overlay for NFC system configuration on Motorola and other OEM devices",
+		safetyRating: "caution",
+		removalImpact: "NFC behaviour or appearance may change.",
+		category: "System Overlay",
+	},
+	"com.android.nfc.overlay.mumba": {
+		appID: "com.android.nfc.overlay.mumba",
+		appName: "NFC Overlay (Mumba)",
+		description:
+			"Device-specific NFC overlay for Motorola Mumba codename devices",
+		safetyRating: "caution",
+		removalImpact: "NFC configuration may be affected on Mumba devices.",
+		category: "System Overlay",
+	},
 	"com.android.nfc.resources.overlay.common": {
 		appID: "com.android.nfc.resources.overlay.common",
 		appName: "NFC Resources Common Overlay",
@@ -1766,6 +1812,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "MIUI phone customisations disabled.",
 		category: "System",
 	},
+	"com.android.phone.overlay.carriersettings": {
+		appID: "com.android.phone.overlay.carriersettings",
+		appName: "Phone Carrier Settings Overlay",
+		description:
+			"Carrier-specific overlay for the Android Phone app, applying operator configuration to call and telephony features",
+		safetyRating: "caution",
+		removalImpact:
+			"Carrier phone settings overlay removed. Some operator features may not display correctly.",
+		category: "Telephony",
+	},
 	"com.android.phone.overlay.common": {
 		appID: "com.android.phone.overlay.common",
 		appName: "Phone Common Overlay",
@@ -1783,6 +1839,25 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact:
 			"MIUI phone UI customisation may break. Call functionality affected.",
 		category: "System",
+	},
+	"com.android.phone.overlay.motcommon": {
+		appID: "com.android.phone.overlay.motcommon",
+		appName: "Phone Motorola Common Overlay",
+		description:
+			"Motorola common resource overlay for the Android Phone app, applying shared Motorola telephony customisations",
+		safetyRating: "caution",
+		removalImpact:
+			"Motorola telephony customisations removed. Call UI may change.",
+		category: "System Overlay",
+	},
+	"com.android.phone.overlay.noHAC": {
+		appID: "com.android.phone.overlay.noHAC",
+		appName: "Phone No HAC Overlay",
+		description:
+			"Overlay that disables Hearing Aid Compatibility (HAC) mode in the Phone app for devices without HAC hardware support",
+		safetyRating: "caution",
+		removalImpact: "HAC option may appear in phone settings on unsupported devices.",
+		category: "Telephony",
 	},
 	"com.android.photopicker": {
 		appID: "com.android.photopicker",
@@ -1962,6 +2037,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact: "Telephony UI may be affected.",
 		category: "System Overlay",
+	},
+	"com.android.providers.telephony.overlay.carriersettings": {
+		appID: "com.android.providers.telephony.overlay.carriersettings",
+		appName: "Telephony Provider Carrier Settings Overlay",
+		description:
+			"Carrier-specific overlay for the telephony provider, applying operator configuration to SMS and MMS handling",
+		safetyRating: "caution",
+		removalImpact:
+			"Carrier telephony configuration removed. SMS or MMS behaviour may change.",
+		category: "Telephony",
 	},
 	"com.android.providers.telephony.overlay.miui": {
 		appID: "com.android.providers.telephony.overlay.miui",
@@ -2389,6 +2474,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Accessibility menu removed. Only remove if not needed.",
 		category: "Accessibility",
 	},
+	"com.android.systemui.accessibility.accessibilitymenu.auto_generated_rro_product__": {
+		appID: "com.android.systemui.accessibility.accessibilitymenu.auto_generated_rro_product__",
+		appName: "Accessibility Menu Product Overlay",
+		description:
+			"Auto-generated product runtime resource overlay for the accessibility menu",
+		safetyRating: "safe",
+		removalImpact:
+			"Accessibility menu product overlay removed. No system impact.",
+		category: "Accessibility",
+	},
 	"com.android.systemui.auto_generated_rro_product__": {
 		appID: "com.android.systemui.auto_generated_rro_product__",
 		appName: "System UI Product Overlay",
@@ -2582,6 +2677,14 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Tangerine colour theme removed. No system impact.",
 		category: "Customisation",
 	},
+	"com.android.theme.font.Exo2Regular": {
+		appID: "com.android.theme.font.Exo2Regular",
+		appName: "Exo 2 Font",
+		description: "Exo 2 geometric sans-serif system font theme",
+		safetyRating: "caution",
+		removalImpact: "Exo 2 font removed. No system impact.",
+		category: "Customisation",
+	},
 	"com.android.theme.font.notoserifsource": {
 		appID: "com.android.theme.font.notoserifsource",
 		appName: "Noto Serif Font",
@@ -2590,12 +2693,52 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Noto Serif font removed. No system impact.",
 		category: "Customisation",
 	},
+	"com.android.theme.font.RobotoSlabRegular": {
+		appID: "com.android.theme.font.RobotoSlabRegular",
+		appName: "Roboto Slab Font",
+		description: "Roboto Slab serif system font theme",
+		safetyRating: "caution",
+		removalImpact: "Roboto Slab font removed. No system impact.",
+		category: "Customisation",
+	},
+	"com.android.theme.font.RookeryRegular": {
+		appID: "com.android.theme.font.RookeryRegular",
+		appName: "Rookery Font",
+		description: "Rookery display system font theme",
+		safetyRating: "caution",
+		removalImpact: "Rookery font removed. No system impact.",
+		category: "Customisation",
+	},
+	"com.android.theme.font.SpaceGrotesk": {
+		appID: "com.android.theme.font.SpaceGrotesk",
+		appName: "Space Grotesk Font",
+		description: "Space Grotesk geometric sans-serif system font theme",
+		safetyRating: "caution",
+		removalImpact: "Space Grotesk font removed. No system impact.",
+		category: "Customisation",
+	},
+	"com.android.theme.font.WorkSans": {
+		appID: "com.android.theme.font.WorkSans",
+		appName: "Work Sans Font",
+		description: "Work Sans grotesque sans-serif system font theme",
+		safetyRating: "caution",
+		removalImpact: "Work Sans font removed. No system impact.",
+		category: "Customisation",
+	},
 	"com.android.theme.icon.pebble": {
 		appID: "com.android.theme.icon.pebble",
 		appName: "Pebble Icon Shape",
 		description: "Pebble-shaped icon theme",
 		safetyRating: "caution",
 		removalImpact: "Pebble icon shape removed. No system impact.",
+		category: "Customisation",
+	},
+	"com.android.theme.icon.round": {
+		appID: "com.android.theme.icon.round",
+		appName: "Round Icon Shape",
+		description: "Round (circular) icon shape theme",
+		safetyRating: "caution",
+		removalImpact: "Round icon shape removed. No system impact.",
 		category: "Customisation",
 	},
 	"com.android.theme.icon.roundedrect": {
@@ -3139,6 +3282,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Wi-Fi UI may be affected.",
 		category: "System",
 	},
+	"com.android.wifi.resources.overlay.motCommon": {
+		appID: "com.android.wifi.resources.overlay.motCommon",
+		appName: "WiFi Motorola Common Overlay",
+		description:
+			"Motorola common Wi-Fi resources overlay applied across Motorola devices for shared Wi-Fi UI customisation",
+		safetyRating: "caution",
+		removalImpact:
+			"Motorola Wi-Fi UI customisations removed. Wi-Fi still functional.",
+		category: "System Overlay",
+	},
 	"com.android.wifi.resources.overlay.pineapple": {
 		appID: "com.android.wifi.resources.overlay.pineapple",
 		appName: "WiFi Pineapple Overlay",
@@ -3163,6 +3316,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "risky",
 		removalImpact: "Wi-Fi features may be affected.",
 		category: "System",
+	},
+	"com.android.wifi.resources.overlay.WifiVodafoneOverlay": {
+		appID: "com.android.wifi.resources.overlay.WifiVodafoneOverlay",
+		appName: "WiFi Vodafone Overlay",
+		description:
+			"Vodafone carrier-specific Wi-Fi resources overlay for network branding and Wi-Fi configuration on Vodafone devices",
+		safetyRating: "caution",
+		removalImpact:
+			"Vodafone Wi-Fi branding removed. Wi-Fi still functional.",
+		category: "System Overlay",
 	},
 	"com.android.wifi.resources.rro": {
 		appID: "com.android.wifi.resources.rro",
@@ -3283,6 +3446,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "AT&T TV removed. No system impact.",
 		category: "Media",
+	},
+	"com.aura.oobe.motorola": {
+		appID: "com.aura.oobe.motorola",
+		appName: "Motorola OOBE",
+		description:
+			"Out-of-Box Experience setup and adware provisioning app for Motorola devices that installs carrier-specific applications during first boot",
+		safetyRating: "safe",
+		removalImpact:
+			"Motorola OOBE removed. Stops carrier app auto-installation.",
+		category: "Setup",
 	},
 	"com.aura.oobe.samsung": {
 		appID: "com.aura.oobe.samsung",
@@ -3487,6 +3660,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "Game removed. No system impact.",
 		category: "Gaming",
+	},
+	"com.bluetooth.aptxmode": {
+		appID: "com.bluetooth.aptxmode",
+		appName: "aptX Bluetooth Mode",
+		description:
+			"Qualcomm aptX Bluetooth audio codec mode controller that enables aptX and aptX HD high-quality wireless audio on supported devices",
+		safetyRating: "caution",
+		removalImpact:
+			"aptX Bluetooth audio codec disabled. Bluetooth audio reverts to SBC.",
+		category: "Connectivity",
 	},
 	"com.bmaapp": {
 		appID: "com.bmaapp",
@@ -3833,6 +4016,15 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Dolby audio removed. No system impact.",
 		category: "Audio",
 	},
+	"com.dolby.daxservice": {
+		appID: "com.dolby.daxservice",
+		appName: "Dolby DAX Service",
+		description:
+			"Dolby Digital Audio Experience (DAX) processing service providing cinema-grade surround sound and audio enhancement on devices with Dolby Atmos certification",
+		safetyRating: "caution",
+		removalImpact: "Dolby Atmos audio processing disabled. Audio quality may decrease.",
+		category: "Audio",
+	},
 	"com.dsi.ant.plugins.antplus": {
 		appID: "com.dsi.ant.plugins.antplus",
 		appName: "ANT+ Plugins",
@@ -3865,6 +4057,15 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "ANT+ disabled. Fitness trackers may not work.",
 		category: "Connectivity",
+	},
+	"com.dti.motorola": {
+		appID: "com.dti.motorola",
+		appName: "Motorola DTI Service",
+		description:
+			"Device Technology India (DTI) background service pre-installed on Motorola devices for the Indian market, providing localised device management",
+		safetyRating: "safe",
+		removalImpact: "DTI service removed. No system impact on non-Indian market devices.",
+		category: "System",
 	},
 	"com.dticket": {
 		appID: "com.dticket",
@@ -5319,6 +5520,16 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		description: "Google communications services configuration",
 		safetyRating: "risky",
 		removalImpact: "Communication features may be affected.",
+		category: "System Overlay",
+	},
+	"com.google.android.overlay.gmsconfig.contextualsearch": {
+		appID: "com.google.android.overlay.gmsconfig.contextualsearch",
+		appName: "GMS Config Contextual Search Overlay",
+		description:
+			"Google Mobile Services configuration overlay enabling contextual search features such as Circle to Search and Now on Tap",
+		safetyRating: "caution",
+		removalImpact:
+			"Contextual search configuration removed. Circle to Search may be affected.",
 		category: "System Overlay",
 	},
 	"com.google.android.overlay.gmsconfig.csearch": {
@@ -9083,6 +9294,15 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "Indeed removed. No system impact.",
 		category: "Productivity",
 	},
+	"com.inmobi.weather": {
+		appID: "com.inmobi.weather",
+		appName: "InMobi Weather",
+		description:
+			"Ad-supported weather widget pre-installed by device manufacturers as part of InMobi advertising partnerships",
+		safetyRating: "safe",
+		removalImpact: "InMobi weather widget removed. Use a third-party weather app.",
+		category: "Weather",
+	},
 	"com.instagram.android": {
 		appID: "com.instagram.android",
 		appName: "Instagram",
@@ -11024,6 +11244,1020 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		removalImpact: "PromPlus removed. No system impact.",
 		category: "Health",
 	},
+	"com.motorola.account": {
+		appID: "com.motorola.account",
+		appName: "Motorola Account",
+		description:
+			"Motorola account management service for syncing device preferences and accessing Motorola services",
+		safetyRating: "safe",
+		removalImpact: "Motorola account removed. No system impact.",
+		category: "Account",
+	},
+	"com.motorola.actions": {
+		appID: "com.motorola.actions",
+		appName: "Moto Actions",
+		description:
+			"Motorola gesture-based actions allowing features like chop twice for torch, twist for camera, and pick up to stop ringing",
+		safetyRating: "safe",
+		removalImpact:
+			"Moto gesture actions disabled. Chop, twist, and other gestures stop working.",
+		category: "System",
+	},
+	"com.motorola.actions.overlay": {
+		appID: "com.motorola.actions.overlay",
+		appName: "Moto Actions Overlay",
+		description: "Runtime resource overlay for Moto Actions gesture UI",
+		safetyRating: "safe",
+		removalImpact: "Moto Actions overlay removed. No system impact if Actions already removed.",
+		category: "System Overlay",
+	},
+	"com.motorola.aiservices": {
+		appID: "com.motorola.aiservices",
+		appName: "Motorola AI Services",
+		description:
+			"On-device AI processing service powering Motorola AI features such as photo enhancement and contextual suggestions",
+		safetyRating: "safe",
+		removalImpact: "Motorola AI features disabled. No system impact.",
+		category: "AI",
+	},
+	"com.motorola.android.connectivity.resources.overlay": {
+		appID: "com.motorola.android.connectivity.resources.overlay",
+		appName: "Motorola Connectivity Resources Overlay",
+		description:
+			"Motorola connectivity resources overlay for Wi-Fi, Bluetooth, and cellular UI customisation",
+		safetyRating: "caution",
+		removalImpact: "Motorola connectivity UI customisations removed.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.coresettingsext.overlay.doubletap": {
+		appID: "com.motorola.android.coresettingsext.overlay.doubletap",
+		appName: "Double Tap Wake Overlay",
+		description:
+			"Overlay enabling double-tap-to-wake gesture via Motorola core settings extension",
+		safetyRating: "safe",
+		removalImpact: "Double tap to wake gesture disabled.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.coresettingsext.overlay.mumba": {
+		appID: "com.motorola.android.coresettingsext.overlay.mumba",
+		appName: "Core Settings Mumba Overlay",
+		description:
+			"Motorola core settings extension overlay for Mumba codename devices",
+		safetyRating: "caution",
+		removalImpact: "Device-specific settings overlay removed. Settings UI may change.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.fmradio": {
+		appID: "com.motorola.android.fmradio",
+		appName: "Motorola FM Radio",
+		description:
+			"FM radio application for Motorola devices with a wired headphone acting as the antenna",
+		safetyRating: "safe",
+		removalImpact: "FM Radio removed. No system impact.",
+		category: "Entertainment",
+	},
+	"com.motorola.android.launcher.overlay.animation.scale": {
+		appID: "com.motorola.android.launcher.overlay.animation.scale",
+		appName: "Launcher Animation Scale Overlay",
+		description:
+			"Overlay controlling launcher animation speed and scale transitions on Motorola devices",
+		safetyRating: "safe",
+		removalImpact: "Launcher animation scale overlay removed. Animations may change.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.launcher.overlay.mumba.midram": {
+		appID: "com.motorola.android.launcher.overlay.mumba.midram",
+		appName: "Launcher Mumba Mid-RAM Overlay",
+		description:
+			"Launcher overlay optimised for mid-RAM Motorola Mumba codename devices to reduce memory pressure",
+		safetyRating: "caution",
+		removalImpact:
+			"Mid-RAM launcher optimisations removed. Launcher may use more memory.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.launcher.overlay.retail.global": {
+		appID: "com.motorola.android.launcher.overlay.retail.global",
+		appName: "Launcher Retail Global Overlay",
+		description:
+			"Global retail configuration overlay for the Motorola launcher defining default home screen layout for retail units",
+		safetyRating: "safe",
+		removalImpact: "Retail launcher overlay removed. No impact on non-retail units.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.nativedropboxagent": {
+		appID: "com.motorola.android.nativedropboxagent",
+		appName: "Motorola Native Dropbox Agent",
+		description:
+			"Native crash and diagnostic log collection agent that uploads device logs to Motorola servers for quality assurance",
+		safetyRating: "safe",
+		removalImpact: "Crash log upload disabled. No user-facing impact.",
+		category: "Diagnostics",
+	},
+	"com.motorola.android.networkstack.overlay.mcc460": {
+		appID: "com.motorola.android.networkstack.overlay.mcc460",
+		appName: "Network Stack China MCC Overlay",
+		description:
+			"Network stack overlay for Mobile Country Code 460 (China), applying China-specific network configuration",
+		safetyRating: "caution",
+		removalImpact: "China network configuration removed. Only affects MCC 460 devices.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.networkstack.tethering.overlay.motCommon": {
+		appID: "com.motorola.android.networkstack.tethering.overlay.motCommon",
+		appName: "Tethering Motorola Common Overlay",
+		description:
+			"Motorola common tethering resources overlay for hotspot and USB tethering configuration",
+		safetyRating: "caution",
+		removalImpact: "Motorola tethering customisations removed. Tethering still functional.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.overlay.appclone": {
+		appID: "com.motorola.android.overlay.appclone",
+		appName: "App Clone Overlay",
+		description:
+			"Overlay enabling the Motorola app cloning feature for running dual instances of social apps with different accounts",
+		safetyRating: "safe",
+		removalImpact: "App clone overlay removed. App cloning may be disabled.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.overlay.common": {
+		appID: "com.motorola.android.overlay.common",
+		appName: "Motorola Common Overlay",
+		description:
+			"Shared Motorola overlay applying common UI and behaviour customisations across all Motorola devices",
+		safetyRating: "caution",
+		removalImpact:
+			"Motorola common overlay removed. UI may revert to AOSP defaults.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.overlay.crystaltalkai": {
+		appID: "com.motorola.android.overlay.crystaltalkai",
+		appName: "Crystal Talk AI Overlay",
+		description:
+			"Overlay for Motorola Crystal Talk AI noise suppression and voice enhancement during calls",
+		safetyRating: "safe",
+		removalImpact: "Crystal Talk AI call enhancement overlay removed. No system impact.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.overlay.dualsim": {
+		appID: "com.motorola.android.overlay.dualsim",
+		appName: "Dual SIM Overlay",
+		description:
+			"Overlay enabling dual SIM management UI and behaviour on Motorola dual-SIM devices",
+		safetyRating: "caution",
+		removalImpact: "Dual SIM overlay removed. SIM management UI may be affected.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.overlay.hw_dualsim": {
+		appID: "com.motorola.android.overlay.hw_dualsim",
+		appName: "Hardware Dual SIM Overlay",
+		description:
+			"Hardware-level dual SIM overlay for Motorola devices with physical dual SIM card slots",
+		safetyRating: "caution",
+		removalImpact: "Hardware dual SIM overlay removed. SIM card detection may be affected.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.overlay.lpptoga": {
+		appID: "com.motorola.android.overlay.lpptoga",
+		appName: "LPP to GA Overlay",
+		description:
+			"Overlay transitioning Motorola devices from Limited Partner Programme (LPP) to General Availability (GA) configuration",
+		safetyRating: "caution",
+		removalImpact: "LPP-to-GA configuration overlay removed. Device config may be affected.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.overlay.midram": {
+		appID: "com.motorola.android.overlay.midram",
+		appName: "Mid-RAM Overlay",
+		description:
+			"Memory optimisation overlay for Motorola mid-range devices with limited RAM, reducing background process limits",
+		safetyRating: "caution",
+		removalImpact: "Mid-RAM optimisations removed. Device may use more memory.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.overlay.midram.upcoming": {
+		appID: "com.motorola.android.overlay.midram.upcoming",
+		appName: "Mid-RAM Upcoming Overlay",
+		description:
+			"Upcoming mid-RAM device optimisation overlay for next-generation Motorola mid-range hardware",
+		safetyRating: "caution",
+		removalImpact: "Upcoming mid-RAM overlay removed. No current impact.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.overlay.payjoy": {
+		appID: "com.motorola.android.overlay.payjoy",
+		appName: "PayJoy Overlay",
+		description:
+			"PayJoy device financing enforcement overlay on carrier-financed Motorola devices in emerging markets",
+		safetyRating: "caution",
+		removalImpact:
+			"PayJoy overlay removed. Financing lock enforcement may be bypassed.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.overlay.qcom.common": {
+		appID: "com.motorola.android.overlay.qcom.common",
+		appName: "Qualcomm Common Overlay",
+		description:
+			"Common overlay for Motorola devices powered by Qualcomm Snapdragon chipsets",
+		safetyRating: "caution",
+		removalImpact: "Qualcomm-specific Motorola customisations removed.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.overlay.vendor.common": {
+		appID: "com.motorola.android.overlay.vendor.common",
+		appName: "Vendor Common Overlay",
+		description:
+			"Vendor-level common overlay applying shared Motorola configurations at the vendor partition level",
+		safetyRating: "caution",
+		removalImpact: "Vendor overlay removed. System may revert to AOSP vendor defaults.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.overlay.wfd": {
+		appID: "com.motorola.android.overlay.wfd",
+		appName: "Wi-Fi Display Overlay",
+		description:
+			"Wi-Fi Display (Miracast) overlay for screen mirroring configuration on Motorola devices",
+		safetyRating: "caution",
+		removalImpact: "Wi-Fi Display overlay removed. Screen mirroring may be affected.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.providers.chromehomepage": {
+		appID: "com.motorola.android.providers.chromehomepage",
+		appName: "Motorola Chrome Homepage",
+		description:
+			"Content provider that sets a Motorola-branded homepage in Chrome for carrier and retail deployments",
+		safetyRating: "safe",
+		removalImpact: "Motorola Chrome homepage removed. Chrome reverts to Google default.",
+		category: "Browser",
+	},
+	"com.motorola.android.providers.settings": {
+		appID: "com.motorola.android.providers.settings",
+		appName: "Motorola Settings Provider",
+		description:
+			"Motorola settings provider supplying device-specific default values and configurations to the Android settings framework",
+		safetyRating: "caution",
+		removalImpact: "Motorola settings defaults removed. Device-specific settings may reset.",
+		category: "System",
+	},
+	"com.motorola.android.providers.settings.auto_generated_rro_product__": {
+		appID: "com.motorola.android.providers.settings.auto_generated_rro_product__",
+		appName: "Motorola Settings Provider Product Overlay",
+		description:
+			"Auto-generated product RRO for Motorola settings provider customisation",
+		safetyRating: "caution",
+		removalImpact: "Settings provider overlay removed. Device-specific defaults may change.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.providers.settings.overlay.dppcamera": {
+		appID: "com.motorola.android.providers.settings.overlay.dppcamera",
+		appName: "DPP Camera Settings Overlay",
+		description:
+			"Default product profile overlay applying camera-specific settings defaults on Motorola devices",
+		safetyRating: "safe",
+		removalImpact: "Camera settings defaults overlay removed. No system impact.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.providers.settings.overlay.dppnone": {
+		appID: "com.motorola.android.providers.settings.overlay.dppnone",
+		appName: "DPP None Settings Overlay",
+		description:
+			"Default product profile overlay for Motorola devices with no specific DPP camera configuration",
+		safetyRating: "safe",
+		removalImpact: "DPP settings overlay removed. No system impact.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.provisioning": {
+		appID: "com.motorola.android.provisioning",
+		appName: "Motorola Provisioning",
+		description:
+			"Device provisioning service that configures Motorola-specific settings, carrier customisations, and pre-installed apps during initial setup",
+		safetyRating: "caution",
+		removalImpact: "Provisioning service removed. Carrier and OEM setup may be incomplete.",
+		category: "Setup",
+	},
+	"com.motorola.android.settings.overlay.appclone": {
+		appID: "com.motorola.android.settings.overlay.appclone",
+		appName: "Settings App Clone Overlay",
+		description:
+			"Overlay adding the app clone settings entry to Motorola Settings for managing dual app instances",
+		safetyRating: "safe",
+		removalImpact: "App clone settings overlay removed. App cloning toggle may disappear.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.settings.overlay.fps.side": {
+		appID: "com.motorola.android.settings.overlay.fps.side",
+		appName: "Side Fingerprint Settings Overlay",
+		description:
+			"Settings overlay for Motorola devices with a side-mounted fingerprint sensor, adding sensor-specific enrolment and configuration options",
+		safetyRating: "caution",
+		removalImpact:
+			"Side fingerprint settings overlay removed. Fingerprint enrolment UI may change.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.settings.overlay.global": {
+		appID: "com.motorola.android.settings.overlay.global",
+		appName: "Motorola Global Settings Overlay",
+		description:
+			"Global settings overlay applying Motorola-specific entries and defaults to the Android Settings app for worldwide markets",
+		safetyRating: "caution",
+		removalImpact: "Motorola settings customisations removed. Settings may revert to AOSP.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.settings.overlay.power.bottom": {
+		appID: "com.motorola.android.settings.overlay.power.bottom",
+		appName: "Bottom Power Button Settings Overlay",
+		description:
+			"Settings overlay for Motorola devices with a bottom-placed power button, adjusting layout and gesture options accordingly",
+		safetyRating: "caution",
+		removalImpact: "Power button layout overlay removed. Settings UI may change.",
+		category: "System Overlay",
+	},
+	"com.motorola.android.systemui.overlay.att": {
+		appID: "com.motorola.android.systemui.overlay.att",
+		appName: "System UI AT&T Overlay",
+		description: "AT&T carrier-specific System UI overlay for Motorola devices",
+		safetyRating: "safe",
+		removalImpact: "AT&T carrier System UI overlay removed. Only affects AT&T devices.",
+		category: "Carrier",
+	},
+	"com.motorola.android.systemui.overlay.sprint": {
+		appID: "com.motorola.android.systemui.overlay.sprint",
+		appName: "System UI Sprint Overlay",
+		description: "Sprint carrier-specific System UI overlay for Motorola devices",
+		safetyRating: "safe",
+		removalImpact: "Sprint carrier System UI overlay removed. Only affects Sprint devices.",
+		category: "Carrier",
+	},
+	"com.motorola.android.systemui.overlay.tmo": {
+		appID: "com.motorola.android.systemui.overlay.tmo",
+		appName: "System UI T-Mobile Overlay",
+		description: "T-Mobile carrier-specific System UI overlay for Motorola devices",
+		safetyRating: "safe",
+		removalImpact: "T-Mobile System UI overlay removed. Only affects T-Mobile devices.",
+		category: "Carrier",
+	},
+	"com.motorola.android.systemui.overlay.usc": {
+		appID: "com.motorola.android.systemui.overlay.usc",
+		appName: "System UI US Cellular Overlay",
+		description:
+			"US Cellular carrier-specific System UI overlay for Motorola devices",
+		safetyRating: "safe",
+		removalImpact: "US Cellular System UI overlay removed. Only affects US Cellular devices.",
+		category: "Carrier",
+	},
+	"com.motorola.android.systemui.overlay.vzw": {
+		appID: "com.motorola.android.systemui.overlay.vzw",
+		appName: "System UI Verizon Overlay",
+		description: "Verizon carrier-specific System UI overlay for Motorola devices",
+		safetyRating: "safe",
+		removalImpact: "Verizon System UI overlay removed. Only affects Verizon devices.",
+		category: "Carrier",
+	},
+	"com.motorola.appdirectedsmsproxy": {
+		appID: "com.motorola.appdirectedsmsproxy",
+		appName: "App-Directed SMS Proxy",
+		description:
+			"SMS proxy service that routes app-directed SMS messages for carrier services and provisioning on Motorola devices",
+		safetyRating: "caution",
+		removalImpact: "App-directed SMS routing disabled. Carrier provisioning via SMS may fail.",
+		category: "Telephony",
+	},
+	"com.motorola.appforecast": {
+		appID: "com.motorola.appforecast",
+		appName: "App Forecast",
+		description:
+			"Predictive app launching service that pre-loads applications based on usage patterns to reduce launch times",
+		safetyRating: "safe",
+		removalImpact:
+			"App pre-loading disabled. App launch times may be slightly slower.",
+		category: "System",
+	},
+	"com.motorola.attvowifi": {
+		appID: "com.motorola.attvowifi",
+		appName: "AT&T Wi-Fi Calling",
+		description:
+			"AT&T Voice over Wi-Fi calling service enabling phone calls over a Wi-Fi connection when cellular signal is weak",
+		safetyRating: "safe",
+		removalImpact: "AT&T Wi-Fi calling disabled. Only affects AT&T subscribers.",
+		category: "Carrier",
+	},
+	"com.motorola.audiorecorder": {
+		appID: "com.motorola.audiorecorder",
+		appName: "Motorola Audio Recorder",
+		description:
+			"Built-in voice and audio recorder application for Motorola devices",
+		safetyRating: "safe",
+		removalImpact: "Audio recorder removed. Use a third-party app.",
+		category: "Productivity",
+	},
+	"com.motorola.bach.modemstats": {
+		appID: "com.motorola.bach.modemstats",
+		appName: "Modem Statistics",
+		description:
+			"Background service collecting modem performance and connectivity statistics on Motorola Bach platform devices for diagnostic purposes",
+		safetyRating: "safe",
+		removalImpact: "Modem stats collection disabled. No user-facing impact.",
+		category: "Diagnostics",
+	},
+	"com.motorola.batterycare.overlay": {
+		appID: "com.motorola.batterycare.overlay",
+		appName: "Battery Care Overlay",
+		description:
+			"Overlay for Motorola Battery Care feature that limits charging to 80% to preserve long-term battery health",
+		safetyRating: "safe",
+		removalImpact: "Battery Care overlay removed. Battery care feature may not function.",
+		category: "System Overlay",
+	},
+	"com.motorola.batterycare.overlay.appside": {
+		appID: "com.motorola.batterycare.overlay.appside",
+		appName: "Battery Care App Overlay",
+		description:
+			"Application-side overlay for the Motorola Battery Care feature providing the Settings UI for charge limit configuration",
+		safetyRating: "safe",
+		removalImpact:
+			"Battery Care settings UI overlay removed. Battery care settings may not appear.",
+		category: "System Overlay",
+	},
+	"com.motorola.bug2go": {
+		appID: "com.motorola.bug2go",
+		appName: "Bug2Go",
+		description:
+			"Motorola internal bug reporting and feedback tool that captures device state and logs for support submissions",
+		safetyRating: "safe",
+		removalImpact: "Bug reporting tool removed. No system impact.",
+		category: "Diagnostics",
+	},
+	"com.motorola.callredirectionservice": {
+		appID: "com.motorola.callredirectionservice",
+		appName: "Call Redirection Service",
+		description:
+			"Android call redirection service implementation for Motorola that allows third-party apps to redirect or modify incoming calls",
+		safetyRating: "caution",
+		removalImpact: "Call redirection disabled. Apps relying on call redirect may not work.",
+		category: "Telephony",
+	},
+	"com.motorola.camera5": {
+		appID: "com.motorola.camera5",
+		appName: "Motorola Camera",
+		description:
+			"Motorola's proprietary camera application (5th generation) with AI scene detection, night mode, and Motorola-specific photo features",
+		safetyRating: "safe",
+		removalImpact:
+			"Motorola Camera removed. Install Google Camera or another camera app.",
+		category: "Photography",
+	},
+	"com.motorola.carriersettingsext": {
+		appID: "com.motorola.carriersettingsext",
+		appName: "Carrier Settings Extension",
+		description:
+			"Motorola carrier settings extension providing additional carrier configuration beyond the standard Android carrier settings",
+		safetyRating: "caution",
+		removalImpact: "Carrier settings extension removed. Carrier features may not configure correctly.",
+		category: "Carrier",
+	},
+	"com.motorola.ccc.devicemanagement": {
+		appID: "com.motorola.ccc.devicemanagement",
+		appName: "Motorola Device Management",
+		description:
+			"Motorola device management service handling remote configuration, MDM policies, and carrier-provisioned device settings",
+		safetyRating: "caution",
+		removalImpact: "Device management service removed. MDM and carrier policies may fail.",
+		category: "System",
+	},
+	"com.motorola.ccc.notification": {
+		appID: "com.motorola.ccc.notification",
+		appName: "Motorola Notification Service",
+		description:
+			"Motorola notification management service coordinating system notifications for device updates and carrier messages",
+		safetyRating: "caution",
+		removalImpact:
+			"Motorola notification service disabled. System update notifications may not appear.",
+		category: "System",
+	},
+	"com.motorola.ccc.ota": {
+		appID: "com.motorola.ccc.ota",
+		appName: "Motorola OTA Update Service",
+		description:
+			"Over-the-air firmware update service that checks for and downloads Motorola system updates",
+		safetyRating: "caution",
+		removalImpact:
+			"OTA update service removed. Firmware updates must be applied manually.",
+		category: "System",
+	},
+	"com.motorola.contacts.preloadcontacts": {
+		appID: "com.motorola.contacts.preloadcontacts",
+		appName: "Preloaded Contacts",
+		description:
+			"Pre-populated contacts list with carrier and Motorola support numbers pre-installed on the device",
+		safetyRating: "safe",
+		removalImpact: "Preloaded contacts removed. No system impact.",
+		category: "Contacts",
+	},
+	"com.motorola.coresettingsext": {
+		appID: "com.motorola.coresettingsext",
+		appName: "Core Settings Extension",
+		description:
+			"Motorola core settings extension providing additional system settings entries and device-specific configuration options",
+		safetyRating: "caution",
+		removalImpact: "Core settings extension removed. Some Motorola settings may disappear.",
+		category: "System",
+	},
+	"com.motorola.dciservice": {
+		appID: "com.motorola.dciservice",
+		appName: "DCI Service",
+		description:
+			"Motorola Device Configuration and Integrity (DCI) service managing device certification and configuration validation",
+		safetyRating: "caution",
+		removalImpact: "DCI service removed. Device certification checks may be affected.",
+		category: "System",
+	},
+	"com.motorola.demo": {
+		appID: "com.motorola.demo",
+		appName: "Motorola Demo",
+		description:
+			"Retail demo mode application for Motorola devices showcasing device features in retail stores",
+		safetyRating: "safe",
+		removalImpact: "Demo mode removed. No system impact on non-retail devices.",
+		category: "System",
+	},
+	"com.motorola.dolby.dolbyui": {
+		appID: "com.motorola.dolby.dolbyui",
+		appName: "Dolby Audio UI",
+		description:
+			"Motorola Dolby Atmos audio settings UI for adjusting equaliser, surround sound, and audio profiles",
+		safetyRating: "safe",
+		removalImpact:
+			"Dolby audio settings UI removed. Audio reverts to device default.",
+		category: "Audio",
+	},
+	"com.motorola.enterprise.adapter.service": {
+		appID: "com.motorola.enterprise.adapter.service",
+		appName: "Enterprise Adapter Service",
+		description:
+			"Motorola enterprise adapter providing MDM and EMM integration for enterprise device management deployments",
+		safetyRating: "caution",
+		removalImpact: "Enterprise adapter removed. MDM features may not work correctly.",
+		category: "Enterprise",
+	},
+	"com.motorola.enterprise.service": {
+		appID: "com.motorola.enterprise.service",
+		appName: "Enterprise Service",
+		description:
+			"Core Motorola enterprise management service handling enterprise policies, certificates, and configuration profiles",
+		safetyRating: "caution",
+		removalImpact: "Enterprise service removed. Enterprise management may break.",
+		category: "Enterprise",
+	},
+	"com.motorola.entitlement": {
+		appID: "com.motorola.entitlement",
+		appName: "Motorola Entitlement",
+		description:
+			"Carrier entitlement service that verifies subscription status for features such as Wi-Fi calling and VoLTE on Motorola devices",
+		safetyRating: "caution",
+		removalImpact:
+			"Entitlement service removed. Wi-Fi calling and VoLTE may require re-activation.",
+		category: "Carrier",
+	},
+	"com.motorola.faceunlock": {
+		appID: "com.motorola.faceunlock",
+		appName: "Face Unlock",
+		description:
+			"Motorola face recognition service for biometric device unlock using the front camera",
+		safetyRating: "caution",
+		removalImpact: "Face unlock disabled. Use PIN, pattern, or fingerprint.",
+		category: "Security",
+	},
+	"com.motorola.fmplayer": {
+		appID: "com.motorola.fmplayer",
+		appName: "Motorola FM Player",
+		description:
+			"FM radio player application for Motorola devices providing live radio playback via the headphone antenna",
+		safetyRating: "safe",
+		removalImpact: "FM Player removed. No system impact.",
+		category: "Entertainment",
+	},
+	"com.motorola.gamemode": {
+		appID: "com.motorola.gamemode",
+		appName: "Moto Game Mode",
+		description:
+			"Motorola gaming performance optimisation service that boosts CPU and GPU resources, disables notifications, and suppresses interruptions during gameplay",
+		safetyRating: "safe",
+		removalImpact: "Game mode removed. Gaming performance optimisation disabled.",
+		category: "Gaming",
+	},
+	"com.motorola.genie": {
+		appID: "com.motorola.genie",
+		appName: "Moto Genie",
+		description:
+			"Motorola personalised news and content feed service that surfaces articles, recommendations, and updates on the lock screen and home screen",
+		safetyRating: "safe",
+		removalImpact: "Moto Genie news feed removed. No system impact.",
+		category: "Entertainment",
+	},
+	"com.motorola.gesture": {
+		appID: "com.motorola.gesture",
+		appName: "Moto Gestures",
+		description:
+			"Motorola gesture recognition service managing Moto Actions including chop twice for torch, twist for camera, and swipe for notifications",
+		safetyRating: "safe",
+		removalImpact: "Moto gesture recognition disabled. Chop and twist gestures stop working.",
+		category: "System",
+	},
+	"com.motorola.help": {
+		appID: "com.motorola.help",
+		appName: "Motorola Help",
+		description:
+			"Motorola support and help application providing tutorials, troubleshooting guides, and customer service contact for Motorola devices",
+		safetyRating: "safe",
+		removalImpact: "Motorola Help removed. No system impact.",
+		category: "Support",
+	},
+	"com.motorola.help.extlog": {
+		appID: "com.motorola.help.extlog",
+		appName: "Motorola Help Extended Log",
+		description:
+			"Extended logging service for the Motorola Help app that captures device diagnostics for support cases",
+		safetyRating: "safe",
+		removalImpact: "Help extended logging removed. No system impact.",
+		category: "Diagnostics",
+	},
+	"com.motorola.hiddenmenuapp": {
+		appID: "com.motorola.hiddenmenuapp",
+		appName: "Hidden Menu",
+		description:
+			"Motorola engineering hidden menu providing diagnostic tests, hardware calibration, and factory testing utilities",
+		safetyRating: "safe",
+		removalImpact: "Hidden engineering menu removed. No system impact.",
+		category: "Diagnostics",
+	},
+	"com.motorola.installer": {
+		appID: "com.motorola.installer",
+		appName: "Motorola Installer",
+		description:
+			"Motorola app installer service that manages the installation of carrier and OEM pre-installed applications",
+		safetyRating: "caution",
+		removalImpact: "Motorola installer removed. Carrier app auto-installation may fail.",
+		category: "System",
+	},
+	"com.motorola.iotservice": {
+		appID: "com.motorola.iotservice",
+		appName: "Motorola IoT Service",
+		description:
+			"IoT connectivity service for Motorola devices managing integration with smart home and IoT devices",
+		safetyRating: "caution",
+		removalImpact: "IoT service removed. Smart home connectivity may be affected.",
+		category: "Connectivity",
+	},
+	"com.motorola.launcher3": {
+		appID: "com.motorola.launcher3",
+		appName: "Motorola Launcher",
+		description:
+			"Motorola's customised Android launcher based on AOSP Launcher3 with Moto-specific features and gestures",
+		safetyRating: "safe",
+		removalImpact:
+			"Motorola launcher removed. Install a third-party launcher before removing.",
+		category: "Launcher",
+	},
+	"com.motorola.launcher3.auto_generated_rro_product__": {
+		appID: "com.motorola.launcher3.auto_generated_rro_product__",
+		appName: "Motorola Launcher Product Overlay",
+		description:
+			"Auto-generated product runtime resource overlay for Motorola launcher customisation",
+		safetyRating: "caution",
+		removalImpact: "Launcher product overlay removed. Launcher appearance may change.",
+		category: "System Overlay",
+	},
+	"com.motorola.launcherconfig": {
+		appID: "com.motorola.launcherconfig",
+		appName: "Launcher Configuration",
+		description:
+			"Configuration package providing default home screen layout, grid size, and app arrangement for the Motorola launcher",
+		safetyRating: "caution",
+		removalImpact:
+			"Launcher configuration removed. Default home screen layout may change.",
+		category: "Launcher",
+	},
+	"com.motorola.lifetimedata": {
+		appID: "com.motorola.lifetimedata",
+		appName: "Lifetime Data",
+		description:
+			"Background service collecting device lifetime metrics such as charge cycles, screen-on time, and drop events for analytics",
+		safetyRating: "safe",
+		removalImpact: "Lifetime data collection disabled. No user-facing impact.",
+		category: "Diagnostics",
+	},
+	"com.motorola.mobiledesktop": {
+		appID: "com.motorola.mobiledesktop",
+		appName: "Motorola Ready For",
+		description:
+			"Motorola Ready For desktop mode enabling a PC-like experience when the phone is connected to a monitor via USB-C, HDMI, or wirelessly",
+		safetyRating: "safe",
+		removalImpact: "Ready For desktop mode removed. No system impact.",
+		category: "Productivity",
+	},
+	"com.motorola.moto": {
+		appID: "com.motorola.moto",
+		appName: "Moto",
+		description:
+			"Core Motorola experience app providing access to Moto Actions, Moto Display, and other Motorola feature settings",
+		safetyRating: "caution",
+		removalImpact:
+			"Moto app removed. Access to Moto-specific features may be lost.",
+		category: "System",
+	},
+	"com.motorola.motocare": {
+		appID: "com.motorola.motocare",
+		appName: "Moto Care",
+		description:
+			"Motorola device care application providing diagnostics, health checks, and customer support access",
+		safetyRating: "safe",
+		removalImpact: "Moto Care removed. No system impact.",
+		category: "Diagnostics",
+	},
+	"com.motorola.motocit": {
+		appID: "com.motorola.motocit",
+		appName: "Moto CIT",
+		description:
+			"Motorola Component Integration Testing (CIT) tool for hardware diagnostics and factory calibration testing",
+		safetyRating: "safe",
+		removalImpact: "CIT diagnostic tool removed. No system impact.",
+		category: "Diagnostics",
+	},
+	"com.motorola.motosecurecore": {
+		appID: "com.motorola.motosecurecore",
+		appName: "Moto Secure Core",
+		description:
+			"Motorola security core service managing device integrity, secure boot verification, and hardware-backed security features",
+		safetyRating: "risky",
+		removalImpact:
+			"Security core disabled. Device integrity checks may fail. DO NOT REMOVE.",
+		category: "Security",
+	},
+	"com.motorola.msimsettings": {
+		appID: "com.motorola.msimsettings",
+		appName: "Multi-SIM Settings",
+		description:
+			"Motorola multi-SIM management settings providing UI for configuring dual SIM preferences, default SIM selection, and data switching",
+		safetyRating: "caution",
+		removalImpact:
+			"Multi-SIM settings removed. Dual SIM configuration may be inaccessible.",
+		category: "Telephony",
+	},
+	"com.motorola.mykey": {
+		appID: "com.motorola.mykey",
+		appName: "Motorola My Key",
+		description:
+			"Motorola programmable key management service allowing customisation of hardware button actions and shortcuts",
+		safetyRating: "caution",
+		removalImpact: "My Key service removed. Programmable button customisation disabled.",
+		category: "Security",
+	},
+	"com.motorola.nfwlocationattribution": {
+		appID: "com.motorola.nfwlocationattribution",
+		appName: "NFW Location Attribution",
+		description:
+			"Non-Framework (NFW) location attribution service tracking which apps accessed location data outside the standard Android framework for privacy reporting",
+		safetyRating: "safe",
+		removalImpact: "NFW location attribution disabled. No user-facing impact.",
+		category: "Location",
+	},
+	"com.motorola.om": {
+		appID: "com.motorola.om",
+		appName: "Moto Unplugged",
+		description:
+			"Motorola digital wellbeing app that starts timed focus sessions limiting which apps and notifications are available, with optional password protection to end early",
+		safetyRating: "safe",
+		removalImpact: "Moto Unplugged focus sessions unavailable. No system impact.",
+		category: "Health",
+	},
+	"com.motorola.omadm.service": {
+		appID: "com.motorola.omadm.service",
+		appName: "Motorola OMA DM Service",
+		description:
+			"Open Mobile Alliance Device Management (OMA DM) service for carrier-provisioned remote device management on Motorola devices",
+		safetyRating: "caution",
+		removalImpact: "OMA DM service removed. Carrier remote management disabled.",
+		category: "System",
+	},
+	"com.motorola.overlay.launcher3": {
+		appID: "com.motorola.overlay.launcher3",
+		appName: "Motorola Launcher3 Overlay",
+		description:
+			"Overlay package applying Motorola-specific resources and theming to the Launcher3-based Motorola launcher",
+		safetyRating: "caution",
+		removalImpact: "Launcher overlay removed. Launcher appearance may change.",
+		category: "System Overlay",
+	},
+	"com.motorola.paks": {
+		appID: "com.motorola.paks",
+		appName: "Motorola Paks",
+		description:
+			"Motorola software packs delivery service that manages the download and installation of optional Motorola feature packages",
+		safetyRating: "safe",
+		removalImpact: "Paks delivery service removed. No system impact.",
+		category: "System",
+	},
+	"com.motorola.paks.notification": {
+		appID: "com.motorola.paks.notification",
+		appName: "Motorola Paks Notifications",
+		description:
+			"Notification service for Motorola Paks software delivery, alerting users to available optional feature packages",
+		safetyRating: "safe",
+		removalImpact: "Paks notifications removed. No system impact.",
+		category: "System",
+	},
+	"com.motorola.personalize": {
+		appID: "com.motorola.personalize",
+		appName: "Motorola Personalise",
+		description:
+			"Motorola personalisation service managing wallpapers, themes, ringtones, and device appearance customisation",
+		safetyRating: "safe",
+		removalImpact: "Personalise service removed. No system impact.",
+		category: "Customisation",
+	},
+	"com.motorola.playautoinstallext": {
+		appID: "com.motorola.playautoinstallext",
+		appName: "Play Auto-Install Extension",
+		description:
+			"Motorola extension for Google Play auto-install that enables carrier and OEM pre-installed apps to be restored from Play Store after factory reset",
+		safetyRating: "safe",
+		removalImpact: "Play auto-install extension removed. Pre-installed apps may not restore.",
+		category: "System",
+	},
+	"com.motorola.revoker.services": {
+		appID: "com.motorola.revoker.services",
+		appName: "Motorola Revoker Services",
+		description:
+			"Motorola application revoker service managing app permission revocation and licence enforcement for pre-installed applications",
+		safetyRating: "caution",
+		removalImpact: "Revoker service removed. App licence enforcement may be affected.",
+		category: "System",
+	},
+	"com.motorola.safetycenter.resources.overlay": {
+		appID: "com.motorola.safetycenter.resources.overlay",
+		appName: "Safety Centre Resources Overlay",
+		description:
+			"Motorola overlay for the Android Safety Centre providing device-specific safety and emergency information",
+		safetyRating: "safe",
+		removalImpact: "Safety Centre overlay removed. Safety Centre still functions.",
+		category: "System Overlay",
+	},
+	"com.motorola.securevault": {
+		appID: "com.motorola.securevault",
+		appName: "Motorola Secure Vault",
+		description:
+			"Encrypted private storage application for protecting sensitive photos, videos, and files behind biometric authentication",
+		safetyRating: "safe",
+		removalImpact: "Secure Vault removed. Export vault contents before removing.",
+		category: "Security",
+	},
+	"com.motorola.securityhub": {
+		appID: "com.motorola.securityhub",
+		appName: "Moto Secure",
+		description:
+			"Motorola security hub providing a unified dashboard for device security status, app permissions, and privacy controls",
+		safetyRating: "safe",
+		removalImpact: "Moto Secure removed. No system impact.",
+		category: "Security",
+	},
+	"com.motorola.securityhubext": {
+		appID: "com.motorola.securityhubext",
+		appName: "Moto Secure Extension",
+		description:
+			"Extension for Motorola security hub adding additional security features and third-party security integrations",
+		safetyRating: "safe",
+		removalImpact: "Security hub extension removed. No system impact.",
+		category: "Security",
+	},
+	"com.motorola.settings.mep.overlay": {
+		appID: "com.motorola.settings.mep.overlay",
+		appName: "MEP Settings Overlay",
+		description:
+			"Motorola Extensible Protocol (MEP) settings overlay enabling multi-SIM MEP functionality configuration on supported devices",
+		safetyRating: "caution",
+		removalImpact: "MEP settings overlay removed. MEP multi-SIM settings may be unavailable.",
+		category: "System Overlay",
+	},
+	"com.motorola.setup": {
+		appID: "com.motorola.setup",
+		appName: "Motorola Setup",
+		description:
+			"Motorola setup wizard guiding users through initial device configuration including account setup, data transfer, and Motorola feature introduction",
+		safetyRating: "safe",
+		removalImpact: "Setup wizard removed. Only needed during first boot.",
+		category: "Setup",
+	},
+	"com.motorola.setup.auto_generated_rro_product__": {
+		appID: "com.motorola.setup.auto_generated_rro_product__",
+		appName: "Motorola Setup Product Overlay",
+		description:
+			"Auto-generated product runtime resource overlay for Motorola setup wizard customisation",
+		safetyRating: "safe",
+		removalImpact: "Setup product overlay removed. No system impact.",
+		category: "System Overlay",
+	},
+	"com.motorola.setup.overlay.gemini": {
+		appID: "com.motorola.setup.overlay.gemini",
+		appName: "Setup Gemini Overlay",
+		description:
+			"Overlay integrating Google Gemini AI assistant into the Motorola setup wizard for AI-assisted device configuration",
+		safetyRating: "safe",
+		removalImpact: "Gemini setup overlay removed. Gemini integration skipped during setup.",
+		category: "System Overlay",
+	},
+	"com.motorola.slpc_sys": {
+		appID: "com.motorola.slpc_sys",
+		appName: "Smart Low Power Core System",
+		description:
+			"Motorola Smart Low Power Core (SLPC) system service managing intelligent power gating and CPU cluster optimisation for battery efficiency",
+		safetyRating: "caution",
+		removalImpact: "SLPC power optimisation disabled. Battery life may decrease.",
+		category: "System",
+	},
+	"com.motorola.smart5g": {
+		appID: "com.motorola.smart5g",
+		appName: "Smart 5G",
+		description:
+			"Motorola Smart 5G service that intelligently switches between 5G and 4G LTE based on network conditions and battery level to balance performance and power consumption",
+		safetyRating: "caution",
+		removalImpact: "Smart 5G switching disabled. Device stays on 5G at higher power cost.",
+		category: "Connectivity",
+	},
+	"com.motorola.smartfeed": {
+		appID: "com.motorola.smartfeed",
+		appName: "Moto Smart Feed",
+		description:
+			"Motorola personalised content feed service aggregating news, articles, and recommendations on the home screen swipe panel",
+		safetyRating: "safe",
+		removalImpact: "Smart Feed removed. No system impact.",
+		category: "Entertainment",
+	},
+	"com.motorola.spaces": {
+		appID: "com.motorola.spaces",
+		appName: "Motorola Spaces",
+		description:
+			"Motorola Spaces feature providing separate work and personal profiles on the home screen with isolated app and notification environments",
+		safetyRating: "safe",
+		removalImpact: "Motorola Spaces removed. No system impact.",
+		category: "Productivity",
+	},
+	"com.motorola.systemserver": {
+		appID: "com.motorola.systemserver",
+		appName: "Motorola System Server",
+		description:
+			"Motorola system server extension injecting Motorola-specific services into the Android system server process",
+		safetyRating: "risky",
+		removalImpact:
+			"Motorola system services disabled. Device may become unstable. DO NOT REMOVE.",
+		category: "System",
+	},
+	"com.motorola.systemui.overlay.moto.sysbar": {
+		appID: "com.motorola.systemui.overlay.moto.sysbar",
+		appName: "Motorola System Bar Overlay",
+		description:
+			"Motorola system bar overlay customising the appearance and behaviour of the navigation and status bars",
+		safetyRating: "caution",
+		removalImpact:
+			"Motorola system bar customisations removed. System bar may revert to AOSP.",
+		category: "System Overlay",
+	},
+	"com.motorola.thermalservice": {
+		appID: "com.motorola.thermalservice",
+		appName: "Motorola Thermal Service",
+		description:
+			"Thermal management service monitoring CPU, GPU, and battery temperatures, throttling performance to prevent overheating",
+		safetyRating: "risky",
+		removalImpact:
+			"Thermal management disabled. Device may overheat under load. DO NOT REMOVE.",
+		category: "System",
+	},
+	"com.motorola.timeweatherwidget": {
+		appID: "com.motorola.timeweatherwidget",
+		appName: "Time & Weather Widget",
+		description:
+			"Motorola home screen time and weather widget displaying the current time, date, and local weather conditions",
+		safetyRating: "safe",
+		removalImpact: "Time and weather widget removed. Use a third-party widget.",
+		category: "Widget",
+	},
+	"com.motorola.vzw.pco.extensions.pcoreceiver": {
+		appID: "com.motorola.vzw.pco.extensions.pcoreceiver",
+		appName: "Verizon PCO Receiver",
+		description:
+			"Verizon Protocol Configuration Options (PCO) receiver for Motorola that processes network-provisioned PCO data for Verizon carrier services",
+		safetyRating: "safe",
+		removalImpact: "Verizon PCO receiver removed. Only affects Verizon subscribers.",
+		category: "Carrier",
+	},
+	"com.motorola.wifi.motowifimetrics": {
+		appID: "com.motorola.wifi.motowifimetrics",
+		appName: "Motorola Wi-Fi Metrics",
+		description:
+			"Background service collecting Wi-Fi performance metrics on Motorola devices for network quality analysis and improvement",
+		safetyRating: "safe",
+		removalImpact: "Wi-Fi metrics collection disabled. No user-facing impact.",
+		category: "Connectivity",
+	},
 	"com.mstar.android.tv.disclaimercustomization": {
 		appID: "com.mstar.android.tv.disclaimercustomization",
 		appName: "MStar TV Disclaimer",
@@ -11136,6 +12370,15 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "NPerf removed. No system impact.",
 		category: "Utility",
+	},
+	"com.oem.euiccpartnerapp": {
+		appID: "com.oem.euiccpartnerapp",
+		appName: "eUICC Partner App",
+		description:
+			"OEM embedded SIM (eUICC) partner management application handling eSIM profile download, activation, and carrier switching for devices with an embedded SIM",
+		safetyRating: "caution",
+		removalImpact: "eSIM management disabled. eSIM profiles cannot be added or switched.",
+		category: "Carrier",
 	},
 	"com.okta.android.auth": {
 		appID: "com.okta.android.auth",
@@ -16389,6 +17632,15 @@ export const bloatwareDatabase: Record<string, BloatwareMetadata> = {
 		safetyRating: "safe",
 		removalImpact: "T3 Smart removed. No system impact.",
 		category: "Smart Home",
+	},
+	"com.taboola.mip": {
+		appID: "com.taboola.mip",
+		appName: "Taboola News",
+		description:
+			"Taboola pre-installed content recommendation and native advertising widget that surfaces sponsored articles and ads on the home screen or notifications",
+		safetyRating: "safe",
+		removalImpact: "Taboola ads and content feed removed. No system impact.",
+		category: "Advertising",
 	},
 	"com.tailscale.ipn": {
 		appID: "com.tailscale.ipn",

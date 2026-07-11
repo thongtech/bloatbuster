@@ -5,6 +5,7 @@
 export const androidBloatwarePackages: string[] = [
 	"android.autoinstalls.config.caixun",
 	"android.autoinstalls.config.google.nexus",
+	"android.autoinstalls.config.motorola.layout",
 	"android.autoinstalls.config.samsung",
 	"android.autoinstalls.config.vivo.devices",
 	"android.autoinstalls.config.xiaomi.amelie",
@@ -31,6 +32,7 @@ export const androidBloatwarePackages: string[] = [
 	"com.android.stk.overlay.miui",
 	"com.android.stk2",
 	"com.android.systemui.accessibility.accessibilitymenu",
+	"com.android.systemui.accessibility.accessibilitymenu.auto_generated_rro_product__",
 	"com.android.traceur",
 	"com.android.traceur.auto_generated_rro_product__",
 	"com.android.traceur.auto_generated_rro_vendor__",
