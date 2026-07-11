@@ -19,7 +19,6 @@ export const googleBloatwarePackages: string[] = [
 	"com.google.android.apps.messaging",
 	"com.google.android.apps.motionsense.bridge",
 	"com.google.android.apps.nbu.files",
-	"com.google.android.apps.photos",
 	"com.google.android.apps.pixelmigrate",
 	"com.google.android.apps.plus",
 	"com.google.android.apps.restore",

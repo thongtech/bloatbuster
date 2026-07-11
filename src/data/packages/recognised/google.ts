@@ -24,6 +24,7 @@ export const googleSystemPackages: string[] = [
 	"com.google.android.apps.maps",
 	"com.google.android.apps.meetings",
 	"com.google.android.apps.nexuslauncher",
+	"com.google.android.apps.photos",
 	"com.google.android.apps.podcasts",
 	"com.google.android.apps.recorder",
 	"com.google.android.apps.scone",

@@ -39,4 +39,5 @@ export const androidBloatwarePackages: string[] = [
 	"com.android.tv.overlay.lowram",
 	"com.android.virtualization.terminal",
 	"com.android.virtualmachine.res",
+	"com.android.wifi.resources.overlay.WifiVodafoneOverlay",
 ];
